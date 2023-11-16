@@ -296,13 +296,18 @@ nav#cssmenu ul {
   top: 0
 }
 
+
+
 #cssmenu ul ul li a {
-  border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+  /* border-bottom: 1px solid rgba(150, 150, 150, 0.15); */
   padding: 11px 15px;
   width: 190px;
   font-size: 12px;
   text-decoration: none;
-  color: #ddd;
+  color: black;
+  background-color: white;
+  /* --bs-bg-opacity: .5; */
+  opacity: 1;
   font-weight: 400;
 }
 
@@ -313,7 +318,7 @@ nav#cssmenu ul {
 
 #cssmenu ul ul li:hover>a,
 #cssmenu ul ul li a:hover {
-  color: #fff
+  color: #00723c
 }
 
 #cssmenu ul ul li.has-sub>a:after {
@@ -415,11 +420,12 @@ nav#cssmenu ul {
   }
 
   #cssmenu ul ul li {
-    background: #333 !important;
+    background: #f7f4f4 !important;
+    opacity: 1;
   }
 
   #cssmenu ul ul li:hover {
-    background: #363636 !important
+    background: #f8f6f6 !important
   }
 
   #cssmenu ul ul ul li a {
@@ -428,7 +434,7 @@ nav#cssmenu ul {
 
   #cssmenu ul ul li a {
     color: #ddd;
-    background: none
+    background: none;
   }
 
   #cssmenu ul ul li:hover>a,
@@ -729,7 +735,7 @@ div#slider-home .carousel-item::before {
 }
 
 
-@media  (max-width:1060px) {
+@media (max-width:1060px) {
   .header-top {
     /* display: none; */
   }

@@ -11,7 +11,8 @@
 
 .flip-card {
   perspective: 1000px;
-  min-height: 400px; /* Set a minimum height for the flip card */
+  min-height: 400px;
+  /* Set a minimum height for the flip card */
 }
 
 .flip-card-inner {
@@ -26,15 +27,37 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.background-image {
+  background-image: url('/images/Product-background-image.png');
+  position: absolute;
+  width: 100%;
+
+}
+
+
+/* background */
+.product-img2 {
+  position: absolute;
+}
+
+/* background */
+
+
+
+
+
 .flip-card-front,
 .flip-card-back {
   position: absolute;
-  top: 0; /* Set the top and left properties to ensure */
-  left: 0; /* the front and back cards are overlaid on each other */
+  top: 0;
+  /* Set the top and left properties to ensure */
+  left: 0;
+  /* the front and back cards are overlaid on each other */
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
+
 .flip-card-front,
 .flip-card-back {
   /* ... existing styles ... */
@@ -49,15 +72,18 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 1; /* Ensure the front card stays on top initially */
+  z-index: 1;
+  /* Ensure the front card stays on top initially */
 }
 
 .flip-card-front img {
-  object-fit: cover; /* This will ensure the image covers the entire container */
+  object-fit: cover;
+  /* This will ensure the image covers the entire container */
   width: 100%;
   height: 100%;
   min-height: 400px;
 }
+
 .flip-card-back {
   /* ... existing styles ... */
   transform: rotateY(-180deg);
@@ -76,7 +102,8 @@
 }
 
 .flip-card-back {
-  box-sizing: border-box; /* make padding included in the height */
+  box-sizing: border-box;
+  /* make padding included in the height */
   /* background-color: #bbb; */
   color: white;
 
@@ -109,18 +136,16 @@
 
 .glow-on-hover:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -163,9 +188,11 @@
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
