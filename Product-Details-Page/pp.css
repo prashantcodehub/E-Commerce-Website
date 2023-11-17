@@ -81,7 +81,7 @@
 /* custom style */
 .picZoomer-pic-wp,
 .picZoomer-zoom-wp {
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
 }
 
 
@@ -138,7 +138,7 @@ section {
 ._product-detail-content {
   background: #fff;
   padding: 15px;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
 }
 
 ._product-detail-content p._p-name {
