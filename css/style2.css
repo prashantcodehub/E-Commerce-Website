@@ -269,7 +269,8 @@ xgallery
 }
 .cd-gallery img {
   display: block;
-  width: 100%;
+  width: 80%;
+  height: 250px;
 }
 .cd-gallery .cd-fail-message {
   display: none;
