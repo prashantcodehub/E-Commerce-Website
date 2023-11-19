@@ -1,1043 +1,140 @@
-<!doctype html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+    rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <link
-            href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap"
-            rel="stylesheet">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="MyCustomCss/CSS.css">
-
-        <!-- vbzdnfvbzdnb -->
-        <!-- New section -->
-
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/custom.css">
-        <link rel="stylesheet" href="/MyCustomCss/Cards.css">
-
-        <link
-            href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700'
-            rel='stylesheet' type='text/css'>
-
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="Header.css">
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="scss/i-Cart.css">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-
-        <!-- Style -->
-        <link rel="stylesheet" href="css/style.css">
-
-        <link rel="stylesheet" href="MyCustomCss/CSS.css">
-        <link rel="stylesheet" href="css/Header.css">
-        <script src="JS__FILE/haeder.js"></script>
-        <script src="JS__FILE/js.js"></script>
-        <link rel="stylesheet" href="/MyCustomCss/shop-btn.css">
-        <title>Website</title>
         <link rel="stylesheet" href="Product-Details-Page/pp.css">
-        <link rel="stylesheet" href="Product-Details-Page/Product-details.css">
-        <style>
-            #bigbox {
-  width: 1024px;
-  height: 150px;
-  background-color: red;
-}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/* #bigbox div {
-  float: left;
-} */
-
-#logobox {
-  height: 150px;
-  width: 150px;
-  background-color: blue;
-}
-
-/* #column2 {
-  height: 150px;
-  width: 550px;
-  background-color: green;
-} */
-
-/* .row {
-  height: 50%;
-  width: 550px;
-  background-color: black;
-  color: white;
-} */
-
-/* #rightContent {
-  float: right !important;
-  background-color: yellow;
-  height: 100%;
-  width: 200px;
-} */
-
-.eco-heading{
-    letter-spacing: 10px;
-    color: #00723c;
-    padding: 20px;
-    text-transform: capitalize;
-}
-        </style>
-
+        <title>eCommerce Product Detail</title>
+        <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+            rel="stylesheet">
+<style></style>
     </head>
 
     <body>
 
-        <header>
-
-            <div class="header-top col-7">
-                <div class="container d-flex search-btn-my">
-                    <div class="input-group">
-                        <div class="form-outline">
-                            <input type="search" id="form1"
-                                placeholder="Search..."
-                                class="form-control-search-btn" />
-
-                        </div>
-                        <button type="button" class="btn2 search-btn2"
-                            style="    width: 90px; height: 38px;">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                    <div class="cart">
-                        <!-- <span class="count">1</span> -->
-                        <!--   <span class="count">1</span> -->
-                        <img
-                            src="https://i.pinimg.com/474x/b1/f8/b8/b1f8b811b7619cb8298599295f2a4879.jpg"
-                            alt="icon-cart">
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="header-main">
-                <div class="container">
-                    <nav id='cssmenu'>
-                        <div class="logo">
-                            <a href><img
-                                    src="/images/logo_small.png"
-                                    style="padding: 18px;
-                                    margin-top: -84px;"></a>
-                        </div>
-                        <div id="head-mobile"></div>
-                        <div class="button"></div>
-                        <ul class="navbar-nav text-uppercase ml-auto">
-                            <li class='active'><a href='/Home.html'>Home</a></li>
-                            <li class><a
-                                    href='#'>About</a></li>
-                            <li class><a href='/Service.html'>Services</a></li>
-                            <li><a href='/Product.html'>Products</a>
-                                <ul>
-                                    <li><a href='#'>Product 1</a></li>
-                                    <li><a href='#'>Product 2</a>
-                                        <!-- <ul>
-                                            <li><a href='#'>Services 21</a></li>
-                                        </ul> -->
-                                    </li>
-
-                                    <!-- <li><a href='#'>Services 3</a></li>
-                                    <li><a href='#'>Services 4</a></li> -->
-                                </ul>
-                            </li>
-                            <li><a href='#'>Resources</a></li>
-                            <!-- <li><a href='#'>Special Offers</a></li> -->
-                            <li><a href='/Contact.html'>Contact</a></li>
-                            <!-- <li><a href='#'>Book Online</a></li> -->
-                            <!-- <li class="nav-item">
-                                  <a id="login" class="nav-link btn btn-primary btn-lg text-uppercase js-scroll-trigger" class="conn" href="">Login | Signup<i class="fa fa-lock"></i></a>
-                                </li> -->
-                            <li class="nav__cta d-flex"
-                                style="margin-right: -20px;">
-                                <!-- <a href="#" class="cta">LogIn</a> -->
-                                <img src="images/icons8-person-80.png"
-                                    style="width: 30px;" alt>
-                                <a href class>Signup</a>
-                            </li>
-                        </ul>
-
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <!-- Link to page
-        ================================================== -->
-
-        <!-- New Section -->
-        <!-- <div>
-            <img src="/new-img/Product-page.png"
-                style="position: absolute; height: 500px;" alt>
-        </div> -->
-
-        <section id="services" class="services section-bg">
-            <div class="container-fluid">
-
-                <div class="col-sm-12 text-center mb-4">
-
-                </div>
-
-                <div class="row row-sm">
-                    <div class="col-md-6 _boxzoom">
-                        <div class="zoom-thumb">
-                            <ul class="piclist">
-                                <li><img src="/new-img/Product-image/Flora.png"
-                                        alt></li>
-                                <li><img
-                                        src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
-                                        alt></li>
-                                <li><img
-                                        src="/new-img/Product-image/Flora.png"
-                                        alt></li>
-                                <li><img
-                                        src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
-                                        alt></li>
+        <div class="container" style="width: 100%; padding: 0%;">
+            <div class="card">
+                <div class="container-fliud">
+                    <div class="wrapper row" style="    margin-left: 30px;">
+                        <div class="preview col-md-4">
+                            <div class="preview-pic tab-content">
+                                <div class="tab-pane active" id="pic-1"><img
+                                        src="/new-img/Product-back-image.png" />
+                                    <img style="    position: absolute;
+                                    margin-left: -308px;
+                                    width: 272px;
+                                    height: 384px;
+                                " src="new-img/red-product.png" alt="">
+                                    </div>
+                                <div class="tab-pane" id="pic-2"><img src /></div>
+                                <div class="tab-pane" id="pic-3"><img src /></div>
+                                <div class="tab-pane" id="pic-4"><img src /></div>
+                                <div class="tab-pane" id="pic-5"><img src /></div>
+                            </div>
+                            <ul class="preview-thumbnail nav nav-tabs">
+                                <li class="active"><a data-target="#pic-1"
+                                        data-toggle="tab"><img
+                                            src="/new-img/red-product.png" /></a></li>
+                                <li><a data-target="#pic-2" data-toggle="tab"><img
+                                            src="/new-img/red-product.png" /></a></li>
+                                <li><a data-target="#pic-3" data-toggle="tab"><img
+                                            src="/new-img/red-product.png" /></a></li>
+                                <li><a data-target="#pic-4" data-toggle="tab"><img
+                                            src="/new-img/red-product.png" /></a></li>
+                                <li><a data-target="#pic-5" data-toggle="tab"><img
+                                            src="/new-img/red-product.png" /></a></li>
                             </ul>
-                        </div>
-                        <div class="_product-images">
-                            <div class="picZoomer">
-                                <img class="my_img"
-                                    src="/new-img/Product-image/Flora.png"
-                                    alt>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="_product-detail-content">
-                            <h1 class="_p-name"> Flora </h1>
-                            <div class="_p-price-box">
-                                <div class="p-list">
-                                    <span> M.R.P. <i class="fa fa-inr"></i>
-                                        <!-- <del> Price </del> </span> -->
-                                        <span class="price"> Price </span>
-                                    </div>
-                                    <!-- <div class="_p-add-cart">
-                                        <div class="_p-qty">
-                                            <span>Add Quantity</span>
-                                            <div class="value-button decrease_"
-                                                id
-                                                value="Decrease Value">-</div>
-                                            <input type="number" name="qty"
-                                                id="number" value="1" />
-                                            <div class="value-button increase_"
-                                                id
-                                                value="Increase Value">+</div>
-                                        </div>
-                                    </div> -->
 
-                                    <div class="_p-features">
-                                        <span> Description About this product:-
-                                        </span>
-                                        <ul>
-                                            <li>FLORA is international research
-                                                based products derived
-                                                from natural source containing
-                                                naturally available
-                                                proteins.</li>
-                                            <li>Nutrients of FLORA give
-                                                synergistic effects on flowering
-                                                process and reducing any growth
-                                                constraints. Retention
-                                                of flower and fruits are highly
-                                                improved resulting in
-                                                higher yield with quality
-                                                produce.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="_p-features">
-                                        <span> Advantages:-
-                                        </span>
-                                        <ul>
-                                            <li>Acts as a energizer and yield
-                                                booster.</li>
-                                            <li>It induces flowering and
-                                                enhances canopy.</li>
-                                            <li>Helps in better bloom
-                                                development.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="_p-features">
-                                        <span> Applications:-
-                                        </span>
-                                        <ul>
-                                            <li>2ml/lt of water</li>
-                                            <li>Pre Flowering stage & Bud
-                                                Initiation stage.</li>
-                                            <li>Helps in better bloom
-                                                development.</li>
-                                        </ul>
-                                    </div>
-                                    <form action method="post"
-                                        accept-charset="utf-8">
-                                        <ul class="spe_ul"></ul>
-                                        <div class="_p-qty-and-cart">
-                                            <div class="_p-add-cart">
-                                                <button
-                                                    class="btn-theme btn buy-btn"
-                                                    tabindex="0">
-                                                    <i
-                                                        class="fa fa-shopping-cart"></i>
-                                                    Buy Now
-                                                </button>
-                                                <button
-                                                    class="btn-theme btn btn-success"
-                                                    tabindex="0">
-                                                    <i
-                                                        class="fa fa-shopping-cart"></i>
-                                                    Add to Cart
-                                                </button>
-                                                <input type="hidden" name="pid"
-                                                    value="18" />
-                                                <input type="hidden"
-                                                    name="price"
-                                                    value="850" />
-                                                <input type="hidden" name="url"
-                                                    value />
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="details col-md-7">
+                            <h1 class="product-title">Organo</h1>
+                            <!-- <div class="rating">
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="review-no">41 reviews</span>
+                            </div> -->
+                            <p class="product-description">Through intensive
+                                research efforts we have
+                                developed ORION – first of its kind product for
+                                seed treatment. It is produced with new
+                                generation organic stimulant technology in
+                                Russia.
+                            </p>
 
-            </section>
-            <!-- <section class="sec bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 title_bx">
-                        <h3 class="title"> Recent Post </h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 list-slider mt-4">
-                        <div class="owl-carousel common_wd  owl-theme"
-                            id="recent_post">
-                            <div class="item">
-                                <div class="sq_box shadow">
-                                    <div class="pdis_img">
-                                        <span class="wishlist">
-                                            <a alt="Add to Wish List"
-                                                title="Add to Wish List"
-                                                href="javascript:void(0);"> <i
-                                                    class="fa fa-heart"></i></a>
-                                        </span>
-                                        <a href="#">
-                                            <img
-                                                src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/">
-                                        </a>
-                                    </div>
-                                    <h4 class="mb-1"> <a href="details.php">
-                                            Milton Bottle </a> </h4>
-                                    <div class="price-box mb-2">
-                                        <span class="price"> Price <i
-                                                class="fa fa-inr"></i> 200
-                                        </span>
-                                        <span class="offer-price"> Offer Price
-                                            <i class="fa fa-inr"></i> 120
-                                        </span>
-                                    </div>
-                                    <div class="btn-box text-center">
-                                        <a class="btn btn-sm"
-                                            href="javascript:void(0);"> <i
-                                                class="fa fa-shopping-cart"></i>
-                                            Add to Cart </a>
-                                    </div>
-                                </div>
+                            <div class="advantage-product    ">
+                                <span class="product-sub-heading"> Advantage </span> <p>ORGANO is 100% chemical
+                                        free, resistant free and residue
+                                        free.ORGANO is recommended for all kinds
+                                        of plants may it be
+                                        fruits, flowers, grains or vegetables</p>
                             </div>
-                            <div class="item">
-                                <div class="sq_box shadow">
-                                    <div class="pdis_img">
-                                        <span class="wishlist">
-                                            <a alt="Add to Wish List"
-                                                title="Add to Wish List"
-                                                href="javascript:void(0);"> <i
-                                                    class="fa fa-heart"></i></a>
-                                        </span>
-                                        <a href="#">
-                                            <img
-                                                src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/">
-                                        </a>
-                                    </div>
-                                    <h4 class="mb-1"> <a href="details.php">
-                                            Milton Bottle </a> </h4>
-                                    <div class="price-box mb-2">
-                                        <span class="price"> Price <i
-                                                class="fa fa-inr"></i> 200
-                                        </span>
-                                        <span class="offer-price"> Offer Price
-                                            <i class="fa fa-inr"></i> 120
-                                        </span>
-                                    </div>
-                                    <div class="btn-box text-center">
-                                        <a class="btn btn-sm"
-                                            href="javascript:void(0);"> <i
-                                                class="fa fa-shopping-cart"></i>
-                                            Add to Cart </a>
-                                    </div>
-                                </div>
+
+                            <div class=" application-product">
+                                <span class=" product-sub-heading"> Applications
+                                </span>  <p>- 10ml/100ml water sufficient for 10kg
+                                    </p>
+                               
                             </div>
-                            <div class="item">
-                                <div class="sq_box shadow">
-                                    <div class="pdis_img">
-                                        <span class="wishlist">
-                                            <a alt="Add to Wish List"
-                                                title="Add to Wish List"
-                                                href="javascript:void(0);"> <i
-                                                    class="fa fa-heart"></i></a>
-                                        </span>
-                                        <a href="#">
-                                            <img
-                                                src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/">
-                                        </a>
-                                    </div>
-                                    <h4 class="mb-1"> <a href="#"> Milton Bottle
-                                        </a> </h4>
-                                    <div class="price-box mb-2">
-                                        <span class="price"> Price <i
-                                                class="fa fa-inr"></i> 200
-                                        </span>
-                                        <span class="offer-price"> Offer Price
-                                            <i class="fa fa-inr"></i> 120
-                                        </span>
-                                    </div>
-                                    <div class="btn-box text-center">
-                                        <a class="btn btn-sm"
-                                            href="javascript:void(0);"> <i
-                                                class="fa fa-shopping-cart"></i>
-                                            Add to Cart </a>
-                                    </div>
-                                </div>
+
+                            <div class="ingredient-product  ">
+                                <span class="product-sub-heading"> Ingredients</span>
+                                    <p>water, Organic long grains Rice .
+                                    </p>
+                                
                             </div>
-                            <div class="item">
-                                <div class="sq_box shadow">
-                                    <div class="pdis_img">
-                                        <span class="wishlist">
-                                            <a alt="Add to Wish List"
-                                                title="Add to Wish List"
-                                                href="javascript:void(0);"> <i
-                                                    class="fa fa-heart"></i></a>
-                                        </span>
-                                        <a href="#">
-                                            <img
-                                                src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/">
-                                        </a>
-                                    </div>
-                                    <h4 class="mb-1"> <a href="#"> Milton Bottle
-                                        </a> </h4>
-                                    <div class="price-box mb-2">
-                                        <span class="price"> Price <i
-                                                class="fa fa-inr"></i> 200
-                                        </span>
-                                        <span class="offer-price"> Offer Price
-                                            <i class="fa fa-inr"></i> 120
-                                        </span>
-                                    </div>
-                                    <div class="btn-box text-center">
-                                        <a class="btn btn-sm"
-                                            href="javascript:void(0);"> <i
-                                                class="fa fa-shopping-cart"></i>
-                                            Add to Cart </a>
-                                    </div>
-                                </div>
+                            <div class="stars" >
+                                <span class="star-color fa fa-star checked"></span>
+                                <span class="star-color fa fa-star checked"></span>
+                                <span class="star-color fa fa-star checked"></span>
+                                <span class="star-color fa fa-star"></span>
+                                <span class="star-color fa fa-star"></span>
                             </div>
-                            <div class="item">
-                                <div class="sq_box shadow">
-                                    <div class="pdis_img">
-                                        <span class="wishlist">
-                                            <a alt="Add to Wish List"
-                                                title="Add to Wish List"
-                                                href="javascript:void(0);"> <i
-                                                    class="fa fa-heart"></i></a>
-                                        </span>
-                                        <a href="#">
-                                            <img
-                                                src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/">
-                                        </a>
-                                    </div>
-                                    <h4 class="mb-1"> <a href="details.php">
-                                            Milton Bottle </a> </h4>
-                                    <div class="price-box mb-2">
-                                        <span class="price"> Price <i
-                                                class="fa fa-inr"></i> 200
-                                        </span>
-                                        <span class="offer-price"> Offer Price
-                                            <i class="fa fa-inr"></i> 120
-                                        </span>
-                                    </div>
-                                    <div class="btn-box text-center">
-                                        <a class="btn btn-sm"
-                                            href="javascript:void(0);"> <i
-                                                class="fa fa-shopping-cart"></i>
-                                            Add to Cart </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="sq_box shadow">
-                                    <div class="pdis_img">
-                                        <span class="wishlist">
-                                            <a alt="Add to Wish List"
-                                                title="Add to Wish List"
-                                                href="javascript:void(0);"> <i
-                                                    class="fa fa-heart"></i></a>
-                                        </span>
-                                        <a href="#">
-                                            <img
-                                                src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/">
-                                        </a>
-                                    </div>
-                                    <h4 class="mb-1"> <a href="details.php">
-                                            Milton Bottle </a> </h4>
-                                    <div class="price-box mb-2">
-                                        <span class="price"> Price <i
-                                                class="fa fa-inr"></i> 200
-                                        </span>
-                                        <span class="offer-price"> Offer Price
-                                            <i class="fa fa-inr"></i> 120
-                                        </span>
-                                    </div>
-                                    <div class="btn-box text-center">
-                                        <a class="btn btn-sm"
-                                            href="javascript:void(0);"> <i
-                                                class="fa fa-shopping-cart"></i>
-                                            Add to Cart </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="sq_box shadow">
-                                    <div class="pdis_img">
-                                        <span class="wishlist">
-                                            <a alt="Add to Wish List"
-                                                title="Add to Wish List"
-                                                href="javascript:void(0);"> <i
-                                                    class="fa fa-heart"></i></a>
-                                        </span>
-                                        <a href="#">
-                                            <img
-                                                src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/">
-                                        </a>
-                                    </div>
-                                    <h4 class="mb-1"> <a href="details.php">
-                                            Milton Bottle </a> </h4>
-                                    <div class="price-box mb-2">
-                                        <span class="price"> Price <i
-                                                class="fa fa-inr"></i> 200
-                                        </span>
-                                        <span class="offer-price"> Offer Price
-                                            <i class="fa fa-inr"></i> 120
-                                        </span>
-                                    </div>
-                                    <div class="btn-box text-center">
-                                        <a class="btn btn-sm"
-                                            href="javascript:void(0);"> <i
-                                                class="fa fa-shopping-cart"></i>
-                                            Add to Cart </a>
-                                    </div>
-                                </div>
+                            <!-- <span class="review-no">4  </span> -->
+
+                            <!-- <h4 class="price">current price: <span>$180</span></h4>
+                            <p class="vote"><strong>91%</strong> of buyers
+                                enjoyed this product! <strong>(87 votes)</strong></p>
+                            <h5 class="sizes">sizes:
+                                <span class="size" data-toggle="tooltip"
+                                    title="small">s</span>
+                                <span class="size" data-toggle="tooltip"
+                                    title="medium">m</span>
+                                <span class="size" data-toggle="tooltip"
+                                    title="large">l</span>
+                                <span class="size" data-toggle="tooltip"
+                                    title="xtra large">xl</span>
+                            </h5>
+                            <h5 class="colors">colors:
+                                <span class="color orange not-available"
+                                    data-toggle="tooltip" title="Not In store"></span>
+                                <span class="color green"></span>
+                                <span class="color blue"></span>
+                            </h5> -->
+                            <h4 class="price">₹ <span></span></h4>
+                            <div class="action">
+                                <button class="add-to-cart btn btn-default"
+                                    type="button">Order Now</button>
+                                <button class="like btn btn-default"
+                                    type="button"><span class="fa fa-heart"></span></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
-            <script>
-           
-;(function($){
-	$.fn.picZoomer = function(options){
-		var opts = $.extend({}, $.fn.picZoomer.defaults, options), 
-			$this = this,
-			$picBD = $('<div class="picZoomer-pic-wp"></div>').css({'width':opts.picWidth+'px', 'height':opts.picHeight+'px'}).appendTo($this),
-			$pic = $this.children('img').addClass('picZoomer-pic').appendTo($picBD),
-			$cursor = $('<div class="picZoomer-cursor"><i class="f-is picZoomCursor-ico"></i></div>').appendTo($picBD),
-			cursorSizeHalf = {w:$cursor.width()/2 ,h:$cursor.height()/2},
-			$zoomWP = $('<div class="picZoomer-zoom-wp"><img src="" alt="" class="picZoomer-zoom-pic"></div>').appendTo($this),
-			$zoomPic = $zoomWP.find('.picZoomer-zoom-pic'),
-			picBDOffset = {x:$picBD.offset().left,y:$picBD.offset().top};
-		
-		opts.zoomWidth = opts.zoomWidth||opts.picWidth;
-		opts.zoomHeight = opts.zoomHeight||opts.picHeight;
-		var zoomWPSizeHalf = {w:opts.zoomWidth/2 ,h:opts.zoomHeight/2};
-
-		$zoomWP.css({'width':opts.zoomWidth+'px', 'height':opts.zoomHeight+'px'});
-		$zoomWP.css(opts.zoomerPosition || {top: 0, left: opts.picWidth+30+'px'});
-		
-		$zoomPic.css({'width':opts.picWidth*opts.scale+'px', 'height':opts.picHeight*opts.scale+'px'});
-
-		$picBD.on('mouseenter',function(event){
-			$cursor.show();
-			$zoomWP.show();
-			$zoomPic.attr('src',$pic.attr('src'))
-		}).on('mouseleave',function(event){
-			$cursor.hide();
-			$zoomWP.hide();
-		}).on('mousemove', function(event){
-			var x = event.pageX-picBDOffset.x,
-				y = event.pageY-picBDOffset.y;
-
-			$cursor.css({'left':x-cursorSizeHalf.w+'px', 'top':y-cursorSizeHalf.h+'px'});
-			$zoomPic.css({'left':-(x*opts.scale-zoomWPSizeHalf.w)+'px', 'top':-(y*opts.scale-zoomWPSizeHalf.h)+'px'});
-
-		});
-		return $this;
-
-	};
-	$.fn.picZoomer.defaults = {
-        picHeight: 460,
-		scale: 2.5,
-		zoomerPosition: {top: '0', left: '380px'},
-
-		zoomWidth: 400,
-		zoomHeight: 460
-	};
-})(jQuery); 
-
-
-
-$(document).ready(function () {
-     $('.picZoomer').picZoomer();
-    $('.piclist li').on('click', function (event) {
-        var $pic = $(this).find('img');
-        $('.picZoomer-pic').attr('src', $pic.attr('src'));
-    });
-   
-  var owl = $('#recent_post');
-              owl.owlCarousel({
-                margin:20,
-                dots:false,
-                nav: true,
-                navText: [
-                  "<i class='fa fa-chevron-left'></i>",
-                  "<i class='fa fa-chevron-right'></i>"
-                ],
-                autoplay: true,
-                autoplayHoverPause: true,
-                responsive: {
-                  0: {
-                    items: 2
-                  },
-                  600: {
-                    items:3
-                  },
-                  1000: {
-                    items:5
-                  },
-                  1200: {
-                    items:4
-                  }
-                }
-  });    
-  
-        $('.decrease_').click(function () {
-            decreaseValue(this);
-        });
-        $('.increase_').click(function () {
-            increaseValue(this);
-        });
-        function increaseValue(_this) {
-            var value = parseInt($(_this).siblings('input#number').val(), 10);
-            value = isNaN(value) ? 0 : value;
-            value++;
-            $(_this).siblings('input#number').val(value);
-        }
-
-        function decreaseValue(_this) {
-            var value = parseInt($(_this).siblings('input#number').val(), 10);
-            value = isNaN(value) ? 0 : value;
-            value < 1 ? value = 1 : '';
-            value--;
-            $(_this).siblings('input#number').val(value);
-        }
-    });
-
-        </script>
-            <!-- New Section -->
-
-            <!-- start new sectin to why sunfieldagro product -->
-
-            <!--  end new sectin to why sunfieldagro  product -->
-
-            <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-            <!-- <link rel="stylesheet" href="assets/css/lity.css"> -->
-
-            <!-- New section -->
-
-            <!-- new section testinomal -->
-            <!-- <link rel="stylesheet" href="/myNewScss/NewScss.css"> -->
-            <!-- <link rel="stylesheet" href="MyJS/test.js"> -->
-
-            <!-- new section testinomal -->
-
-            <!-- strt location section -->
-
-            <!-- new sction -->
-
-            <!-- Footer -->
-
-            <link rel="stylesheet" href="Footer.css">
-
-            <footer class="footer-section">
-                <div class="container-footer">
-                    <div class="footer-cta pt-1 pb-1">
-                        <div class="row">
-                            <div class="col-xl-4 col-md-4 mb-12">
-                                <div class="single-cta">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <div class="cta-text">
-                                        <h4>Find us</h4>
-                                        <span>1354 New Delhi, India</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-4 mb-12">
-                                <div class="single-cta">
-                                    <i class="fas fa-phone"></i>
-                                    <div class="cta-text">
-                                        <h4>Call us</h4>
-                                        <span>+123456987</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-4 mb-12">
-                                <div class="single-cta">
-                                    <i class="far fa-envelope-open"></i>
-                                    <div class="cta-text">
-                                        <h4>Mail us</h4>
-                                        <span>Test@gmail.com</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-content pt-5 pb-5">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-4 mb-50">
-                                <div class="footer-widget">
-                                    <div class="footer-logo">
-                                        <a href><img
-                                                src="https://sunfieldagro.com/wp-content/uploads/2020/02/Footer_logo_small.png"
-                                                class="img-fluid" alt="logo"></a>
-                                    </div>
-                                    <div class="footer-text">
-                                        <p>Lorem ipsum dolor sit amet, consec
-                                            tetur
-                                            adipisicing elit, sed do eiusmod
-                                            tempor
-                                            incididuntut consec tetur
-                                            adipisicing
-                                            elit,Lorem ipsum dolor sit amet.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                                <div class="footer-widget">
-                                    <div class="footer-widget-heading">
-                                        <h3>Useful Links</h3>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a
-                                                href="/About-Section/About-Section.html">about</a></li>
-                                        <li><a href="/Service.html">services</a></li>
-
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Our Services</a></li>
-                                        <li><a href="#">Expert Team</a></li>
-                                        <li><a href="#">Contact us</a></li>
-                                        <li><a href="#">Latest News</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                                <div class="footer-widget">
-                                    <div class="footer-widget-heading">
-                                        <h3>Subscribe</h3>
-                                    </div>
-                                    <div class="footer-text mb-25">
-                                        <p>Don’t miss to subscribe to our new
-                                            feeds,
-                                            kindly fill the form below.</p>
-                                    </div>
-                                    <div class="subscribe-form">
-                                        <form action="#">
-                                            <input type="text"
-                                                placeholder="Email Address">
-                                            <button><i
-                                                    class="fab fa-telegram-plane"></i></button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </footer>
-            <!-- Footer -->
-
-            <script src="js/jquery-3.3.1.min.js"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/jquery.sticky.js"></script>
-            <script src="js/main.js"></script>
-
-            <script src="JS__FILE/haeder.js"></script>
-
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-            <script>
-        
-$(document).ready(function()
-{
-"use strict";
-
-var menuActive = false;
-var header = $('.header');
-setHeader();
-initCustomDropdown();
-initPageMenu();
-
-function setHeader()
-{
-
-    if(window.innerWidth > 991 && menuActive)
-    {
-        closeMenu();
-    }
-}
-
-function initCustomDropdown()
-{
-    if($('.custom_dropdown_placeholder').length && $('.custom_list').length)
-    {
-        var placeholder = $('.custom_dropdown_placeholder');
-        var list = $('.custom_list');
-    }
-
-    placeholder.on('click', function (ev)
-    {
-        if(list.hasClass('active'))
-        {
-            list.removeClass('active');
-        }
-        else
-        {
-            list.addClass('active');
-        }
-
-        $(document).one('click', function closeForm(e)
-        {
-            if($(e.target).hasClass('clc'))
-            {
-                $(document).one('click', closeForm);
-            }
-            else
-            {
-                list.removeClass('active');
-            }
-        });
-
-    });
-
-    $('.custom_list a').on('click', function (ev)
-    {
-        ev.preventDefault();
-        var index = $(this).parent().index();
-
-        placeholder.text( $(this).text() ).css('opacity', '1');
-
-        if(list.hasClass('active'))
-        {
-            list.removeClass('active');
-        }
-        else
-        {
-            list.addClass('active');
-        }
-    });
-
-
-    $('select').on('change', function (e)
-    {
-        placeholder.text(this.value);
-
-        $(this).animate({width: placeholder.width() + 'px' });
-    });
-}
-
-/* 
-
-4. Init Page Menu
-
-*/
-
-function initPageMenu()
-{
-    if($('.page_menu').length && $('.page_menu_content').length)
-    {
-        var menu = $('.page_menu');
-        var menuContent = $('.page_menu_content');
-        var menuTrigger = $('.menu_trigger');
-
-        //Open / close page menu
-        menuTrigger.on('click', function()
-        {
-            if(!menuActive)
-            {
-                openMenu();
-            }
-            else
-            {
-                closeMenu();
-            }
-        });
-
-        //Handle page menu
-        if($('.page_menu_item').length)
-        {
-            var items = $('.page_menu_item');
-            items.each(function()
-            {
-                var item = $(this);
-                if(item.hasClass("has-children"))
-                {
-                    item.on('click', function(evt)
-                    {
-                        evt.preventDefault();
-                        evt.stopPropagation();
-                        var subItem = item.find('> ul');
-                        if(subItem.hasClass('active'))
-                        {
-                            subItem.toggleClass('active');
-                            TweenMax.to(subItem, 0.3, {height:0});
-                        }
-                        else
-                        {
-                            subItem.toggleClass('active');
-                            TweenMax.set(subItem, {height:"auto"});
-                            TweenMax.from(subItem, 0.3, {height:0});
-                        }
-                    });
-                }
-            });
-        }
-    }
-}
-
-function openMenu()
-{
-    var menu = $('.page_menu');
-    var menuContent = $('.page_menu_content');
-    TweenMax.set(menuContent, {height:"auto"});
-    TweenMax.from(menuContent, 0.3, {height:0});
-    menuActive = true;
-}
-
-function closeMenu()
-{
-    var menu = $('.page_menu');
-    var menuContent = $('.page_menu_content');
-    TweenMax.to(menuContent, 0.3, {height:0});
-    menuActive = false;
-}
-
-   
-});
-    </script>
-
-            <!-- All CDN -->
-            <script src="
-        https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
-        "></script>
-
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-            <script> 
-    (function($) {
-    $.fn.menumaker = function(options) {
-        var cssmenu = $(this),
-            settings = $.extend({
-                format: "dropdown",
-                sticky: false
-            }, options);
-        return this.each(function() {
-            $(this).find(".button").on('click', function() {
-                $(this).toggleClass('menu-opened');
-                var mainmenu = $(this).next('ul');
-                if (mainmenu.hasClass('open')) {
-                    mainmenu.slideToggle().removeClass('open');
-                } else {
-                    mainmenu.slideToggle().addClass('open');
-                    if (settings.format === "dropdown") {
-                        mainmenu.find('ul').show();
-                    }
-                }
-            });
-            cssmenu.find('li ul').parent().addClass('has-sub');
-            multiTg = function() {
-                cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
-                cssmenu.find('.submenu-button').on('click', function() {
-                    $(this).toggleClass('submenu-opened');
-                    if ($(this).siblings('ul').hasClass('open')) {
-                        $(this).siblings('ul').removeClass('open').slideToggle();
-                    } else {
-                        $(this).siblings('ul').addClass('open').slideToggle();
-                    }
-                });
-            };
-            if (settings.format === 'multitoggle') multiTg();
-            else cssmenu.addClass('dropdown');
-            if (settings.sticky === true) cssmenu.css('position', 'fixed');
-            resizeFix = function() {
-                var mediasize = 1000;
-                if ($(window).width() > mediasize) {
-                    cssmenu.find('ul').show();
-                }
-                if ($(window).width() <= mediasize) {
-                    cssmenu.find('ul').hide().removeClass('open');
-                }
-            };
-            resizeFix();
-            return $(window).on('resize', resizeFix);
-        });
-    };
-})(jQuery);
-
-(function($) {
-    $(document).ready(function() {
-        $("#cssmenu").menumaker({
-            format: "multitoggle"
-        });
-    });
-})(jQuery);
-    </script>
-
-            <!-- All CDN -->
-
-        </body>
-
-    </html>
+        </div>
+    </body>
+</html>
