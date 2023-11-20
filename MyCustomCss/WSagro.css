@@ -59,7 +59,7 @@ figure {
 }
 
 article img {
-    max-width: 60%;
+    max-width: 56%;
     transform-origin: center;
     transform: scale(var(--img-scale));
     transition: transform 0.4s ease-in-out;

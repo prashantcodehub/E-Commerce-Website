@@ -90,6 +90,26 @@
     padding: 20px;
     text-transform: capitalize;
 }
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
         </style>
 
     </head>
@@ -160,7 +180,7 @@
                                     <li><a href='#'>Services 4</a></li> -->
                                 </ul>
                             </li>
-                            <li><a href='#'>Resources</a></li>
+                            <!-- <li><a href='#'>Resources</a></li> -->
                             <!-- <li><a href='#'>Special Offers</a></li> -->
                             <li><a href='/Contact.html'>Contact</a></li>
                             <!-- <li><a href='#'>Book Online</a></li> -->
@@ -193,12 +213,17 @@
         ================================================== -->
         <link rel="stylesheet" href="My-Animations/animations.css">
         <link rel="stylesheet" href="My-Animations/about-seg.css">
-        <div class="ani-container">
-            <span class="welcome"> organic
-                and eco-friendly </span>
-            <span class="muzile">Providng the healthy Products</span>
-            <!-- <span class="muzile">text</span> -->
+        <div class="text-home-page">
+            <div class="ani-container">
+                <span class="welcome"> organic
+                    and eco-friendly </span>
+
+                <!-- <span class="muzile">text</span> -->
+            </div>
+            <span class="muzile " style="position: absolute;
+            margin-top: 220px; left: 45px;">Providng the healthy Products</span>
         </div>
+
         <!-- <div class="home-text" style="position: absolute;  margin-top: 5%; margin-left: 40px; margin-right: 45%;">
             <div>
                 <h2 class="eco-heading" style="margin-left: 19px;">
@@ -229,7 +254,6 @@
 
         </div>
 
-        <!-- New Section -->
         <div class="my-container" style="background-color: bisque;">
             <div class="about-back-img">
                 <img src="/new-img/about-back-img.png" alt>
@@ -237,9 +261,9 @@
             <div class="container my-5"
                 style="background-color: bisque; height: 550px;">
 
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img class="w-100 mt-5"
+                <div class="row sec-5 show-animate section-location section-dom">
+                    <div class="col-lg-4 images">
+                        <img class="location-animate plants-imgs w-100 mt-4"
                             src="/new-img/Leaf.png" />
                     </div>
 
@@ -283,30 +307,7 @@
             </div>
 
         </div>
-        <h1 class="animantion-heading">
-            <span class="span-animations">A well-known</span>
-            <span class="span-animations">manufacturer</span>
-            <span class="span-animations">exporter
-                and importer</span>
-            <span class="span-animations">of high grade</span>
-            <span class="span-animations">organic fertilizers,</span>
-            <span class="span-animations"> soil conditioners,</span>
-            <span class="span-animations">plant
-                growth promoters</span>
-            <span class="span-animations">and bio-pesticides</span>
-            <span class="span-animations">and
-                fungicides.</span>
-            <span class="span-animations">except</span>
-            <span class="span-animations">the</span>
-            <span class="span-animations">limits</span>
-            <span class="span-animations">you</span>
-            <span class="span-animations">place</span>
-            <span class="span-animations">on</span>
-            <span class="span-animations">your</span>
-            <span class="span-animations">own</span>
-            <span class="span-animations">thinking.</span>
-        </h1>
-        <!--Brian Tracy-->
+
         <!-- New Section -->
 
         <link rel="stylesheet" href="MyCustomCss/CSS.css">
@@ -321,7 +322,7 @@
 
         <div class="card-container">
             <div class="container-text-haeding">
-              
+
                 <h2 class="hr-lines"> PRODUCTS <br> CATEGOREY </h2>
             </div>
             <div class="product-img2">
@@ -365,10 +366,9 @@
                         </div>
                     </div>
 
-                    <!-- You can repeat the above structure for more flip cards and just change the random value in the image URL -->
                     <!-- Flip Card -->
                     <div
-                        class="col-lg-3 col-md-4  col-sm-6  col-12 three animate blur delay-3">
+                        class="col-lg-3 col-md-4 col-sm-6 col-12 two animate slide delay-2">
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <!-- Front -->
@@ -470,6 +470,17 @@
 
         </div>
 
+        <div>
+            <section class="section1 sec-5 show-animate section-location section-dom">
+                <div class="images d-flex">
+                    <h1 class="animates location-animate">hello</h1>
+                    <h1 class="animates location-animate">hello</h1>
+                    <h1 class="animates location-animate">hello</h1>
+
+                </div>
+            </section>
+        </div>
+
         <!-- start new sectin to why sunfieldagro product -->
         <link rel="stylesheet" href="/MyCustomCss/WSagro.css">
         <div class="why-sun-container" style="margin-top: 10%;">
@@ -486,13 +497,15 @@
                     </h1>
                 </div>
                 <div class="back-img" style="position: absolute;">
-                    <img src="new-img/why-img.png" alt>
+                    <img style="    margin-top: 10px;" src="new-img/why-img.png"
+                        alt>
                 </div>
                 <section class="articles">
                     <article>
                         <div class="article-wrapper">
                             <figure>
                                 <img src="/new-img/3.png"
+                                    style="    margin-top: 10px;"
                                     alt />
                             </figure>
                             <div class="article-body">
@@ -523,6 +536,7 @@
                         <div class="article-wrapper">
                             <figure>
                                 <img src="/new-img/2.png"
+                                    style="    margin-top: 10px;"
                                     alt />
                             </figure>
                             <div class="article-body">
@@ -611,33 +625,25 @@
                                     alt>
                             </div>
 
-                            <div class="row-color">
-                                <div class="cards-color">
-                                    <div class="testimonials_text_before"><i
-                                            class="fa fa-quote-right"></i></div>
+                            <div class="testimonials_text_before"><i
+                                    class="fa fa-quote-right"></i></div>
 
-                                    <div class="testimonials_text row-color">
-                                        <p>Lorem Ipsum is simply dummy text of
-                                            the
-                                            printing and typesetting industry.
-                                            Lorem
-                                            Ipsum has been the industry's
-                                            standard dummy
-                                            text ever since the 1500s, when an
-                                            unknown printer took a galley of
-                                            type and
-                                            scrambled it to make a type specimen
-                                            book.
-                                        </p>
-                                        <div class="testimonials_information">
-                                            <h3>NAme</h3>
-                                            <h4>Para</h4>
-                                        </div>
-                                    </div>
-                                    <div class="testimonials_text_after"><i
-                                            class="fa fa-quote-left"></i></div>
+                            <div class="testimonials_text">
+                                <p>Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s, when an
+                                    unknown printer took a galley of type and
+                                    scrambled it to make a type specimen book.
+                                </p>
+
+                                <div class="testimonials_information">
+                                    <h3>Name</h3>
+                                    <h4>para</h4>
                                 </div>
                             </div>
+                            <div class="testimonials_text_after"><i
+                                    class="fa fa-quote-left"></i></div>
                         </div>
 
                         <div class="testimonials_content active">
@@ -704,22 +710,76 @@
 
         <!-- strt location section -->
         <link rel="stylesheet" href="/MyCustomCss/location-page.css">
+        <link rel="stylesheet" href="Contact/contact.css">
         <div class="container-location">
             <div class="text-area">
-                <div class="text-location">
-                    <h1 class="haeding-location">Locations We are Available at
+                <!-- <section class="sect2 show-animate section-dom">
+                    <h1 class="location-animate">Nice</h1>
+                    <p class="location-animate">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptates labore dolore</p>
+                </section> -->
+                <div class="text-location sect2 section-location section-dom">
+                    <h1 class="haeding-location location-animate">Locations We
+                        are Available at
                     </h1>
-                    <!-- <h1 class="haeding-location">Locations
-                        <span
-                           class="txt-rotate"
-                           data-period="2000"
-                           data-rotate='[ "We are Available At"]'></span>
-                      </h1> -->
                 </div>
-                <div class="location-image">
+                <!-- <div class="location-image">
                     <img id="location-img2" src="/images/location.png" alt>
                 </div>
-                <div class="location-text-all"></div>
+                <div class="location-text-all"></div> -->
+                <div class="contact-container">
+                    <!-- <div class="contact-form-container">-->
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="contact-info col-lg-6">
+
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <!-- <i class="fas fa-home"></i> -->
+                                        <img src="/new-img/36.png" alt>
+                                    </div>
+
+                                    <div class="contact-info-content">
+                                        <h4>Mumbai</h4>
+                                        <!-- <p>NEW DELHI<br /> INDIA <br />12345</p> -->
+                                    </div>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <!-- <i class="fas fa-phone"></i> -->
+                                        <img src="/new-img/37.png" alt>
+                                    </div>
+
+                                    <div class="contact-info-content">
+                                        <h4>Kolkata</h4>
+                                        <!--   <p>123456789</p> -->
+                                    </div>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <!-- <i class="fas fa-envelope"></i> -->
+                                        <img src="/new-img/38.png" alt>
+                                    </div>
+
+                                    <div class="contact-info-content">
+                                        <h4>Delhi</h4>
+                                        <!--    <p>Demo@gamil.com</p> -->
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="contact-form col-lg-6">
+                                <img src="/new-img/35.png" alt>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
             </div>
         </div>
         <!-- End location section -->
@@ -737,12 +797,12 @@
                 height: 474px;">
 
             </div>
-            <div class="heading-get">
-                <h1 class="get-in-touch" style="    text-align: center;
+            <div class="heading-get sect2 section-location section-dom">
+                <h1 class="get-in-touch " style="    text-align: center;
                 margin-bottom: -57px;
                 margin-top: 67px;
                 color: #f7941d;font-size: 46px;
-                font-weight: 700;">Get In Touch !</h1>
+                font-weight: 700;" > Get In Touch !</h1>
             </div>
 
             <section class="ftco-section">
@@ -1247,6 +1307,7 @@ function closeMenu()
         <!-- All CDN -->
         <script src="My-Animations/why-seg.js"></script>
         <script src="My-Animations/about-seg.js"></script>
+        <script src="MyCustomCss/animation-cards.js"></script>
     </body>
 
 </html>
