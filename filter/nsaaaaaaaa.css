@@ -215,12 +215,16 @@ main[role=main] {
 }
 
 .product .product-sidebar button:hover {
-  width: 130px;
+  width: 83px;
   grid-area: 1 / 1;
   background-color: #f79410;
   position: relative;
   background-position: 15px center;
   border-color: #9bb6aa;
+}
+
+.product .product-sidebar button:hover .shop-icon {
+  display: none;
 }
 
 .product .product-sidebar button:hover span {
@@ -229,6 +233,8 @@ main[role=main] {
   -moz-opacity: 1;
   -khtml-opacity: 1;
   opacity: 1;
+  position: relative;
+  margin-left: -20px;
 }
 
 .product:hover .product-sidebar {
