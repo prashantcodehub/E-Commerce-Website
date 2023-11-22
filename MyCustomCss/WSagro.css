@@ -7,7 +7,7 @@
 
 }
 
-.why-heading h1{
+.why-heading h1 {
     color: #00723c;
     /* font-family: ; */
     font-weight: 500;
@@ -27,7 +27,7 @@ article {
     position: relative;
     border-radius: 16px;
     box-shadow: none;
-    background: #fff;
+    /* background: #fff; */
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
@@ -67,6 +67,11 @@ article img {
 
 .article-body {
     padding: 24px;
+}
+
+.article-body p {
+    color: black;
+    font-size: 15px;
 }
 
 article a {

@@ -183,6 +183,10 @@
                     width: 160px;
                 }
             }
+            header {
+  box-shadow: 2px 5px 20px 2px rgba(95, 94, 94, 0.8);
+
+}
         </style>
     </head>
 
@@ -227,7 +231,8 @@
                         <div id="head-mobile"></div>
                         <div class="button"></div>
                         <ul class="navbar-nav text-uppercase ml-auto">
-                            <li class='active'><a href='/Home.html'>Home</a></li>
+                            <li class='active'><a href='/Home.html'><i
+                                class="fa fa-home"> </i>Home</a></li>
                             <li class><a
                                     href='/About.html'>About</a></li>
                             <li class><a href>Gallery</a></li>
@@ -246,7 +251,7 @@
                             </li>
                             <!-- <li><a href='#'>Resources</a></li>  -->
                             <!-- <li><a href='#'>Special Offers</a></li> -->
-                            <li><a href='/Contact/Contact.html'>Contact</a></li>
+                            <li><a href='/Contact.html'>Contact</a></li>
                             <!-- <li><a href='#'>Book Online</a></li> -->
                             <!-- <li class="nav-item">
                                   <a id="login" class="nav-link btn btn-primary btn-lg text-uppercase js-scroll-trigger" class="conn" href="">Login | Signup<i class="fa fa-lock"></i></a>
@@ -256,7 +261,15 @@
                                 <!-- <a href="#" class="cta">LogIn</a> -->
                                 <!-- <img src="images/icons8-person-80.png"
                                     style="width: 30px;" alt> -->
-                                <a href="/Login.html" class>Signup</a>
+                                <a href="/Login.html" class><i class="bi bi-person-fill"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16"
+                                    fill="currentColor"
+                                    class="bi bi-person-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                </svg></i>Signup</a>
                             </li>
                         </ul>
 
@@ -268,6 +281,9 @@
         ================================================== -->
 
         <!-- New Section -->
+
+        <link rel="stylesheet" href="/My-Animations/right-animation.js">
+        <!-- <link rel="stylesheet" href="/MyCustomCss/right-animation.css"> -->
         <div class="container-services">
 
             <section class="light">
@@ -275,7 +291,7 @@
                     <div class="h1 text-center text-dark" style="color:#00723c;"
                         id="pageHeaderTitle">Our Products</div>
 
-                    <article class="postcard light blue" onclick="clickhere()">
+                    <article class="postcard light blue block animatable bounceInRight" onclick="clickhere()">
                         <a class="postcard__img_link" href="/Product.html">
                             <img class="postcard__img"
                                 src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
@@ -318,8 +334,7 @@
                                 alt="Image Title" />
                         </a>
                         <div class="postcard__text t-dark">
-                            <h1 class="postcard__title red"><a href="#">Product
-                                    Title</a></h1>
+                            <h1 class="postcard__title red"><a href="#">Bio Fertilizers</a></h1>
                             <div class="postcard__subtitle small">
                                 <!-- <time datetime="2020-05-25 12:00:00">
                                     <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
@@ -345,8 +360,7 @@
                                 alt="Image Title" />
                         </a>
                         <div class="postcard__text t-dark">
-                            <h1 class="postcard__title green"><a href="#">Product
-                                    Title</a></h1>
+                            <h1 class="postcard__title green"><a href="#">Granlues Fertilizers</a></h1>
                             <div class="postcard__subtitle small">
                                 <!-- <time datetime="2020-05-25 12:00:00">
                                     <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020

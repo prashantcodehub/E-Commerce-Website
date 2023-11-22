@@ -227,7 +227,7 @@ nav#cssmenu ul {
 #cssmenu ul li.active:hover,
 #cssmenu ul li.active,
 #cssmenu ul li.has-sub.active:hover {
-  background: yellowgreen !important;
+  background: #f79410 !important;
   -webkit-transition: background .3s ease;
   -ms-transition: background .3s ease;
   transition: background .3s ease;
@@ -740,3 +740,4 @@ div#slider-home .carousel-item::before {
     /* display: none; */
   }
 }
+

@@ -86,6 +86,22 @@
     opacity: 0.9;
 }
 
+.testimonials_text:hover{
+    color: red;
+    background-color: #b3fcee;
+}
+.testimonials_content:hover{
+    color: #720000;
+    /* background-color: #00723c; */
+}
+.testimonials_text p:hover{
+    color: #f79410;
+    /* background-color: #b3fcee; */
+}
+
+
+
+
 .testimonials_avatar {
     position: absolute;
     left: 50%;
@@ -115,6 +131,7 @@
     border: 1ps solid #f1f1f1;
     border-radius: 10px;
     transition: all .3s ease-in-out;
+    text-align: center;
 }
 
 .testimonials_text_after {
