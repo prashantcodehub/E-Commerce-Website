@@ -187,6 +187,84 @@
   box-shadow: 2px 5px 20px 2px rgba(95, 94, 94, 0.8);
 
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+.new2113{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new2113:nth-child(1){
+  color: #e0ffff;
+  }
+.new2113:nth-child(2){
+  color: #42455a;
+  background: #e0ffff;
+} 
+.new2113:nth-child(3){
+  color: #e0ffff;
+}
+.new2113:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+.new2113 .container{
+  margin: 100px;
+}
+.new2113 h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+.new2113 h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.new2113 .text-container2{
+   display: flex;
+}
+.new2113 .text-container2 .text-box2{
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+.new2113 .text-container2 .text-box2 h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  .new2113 h1{
+    font-size: 2rem;
+    text-align: center; 
+  }
+  .new2113 .text-container2{
+    flex-direction: column;
+  } 
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
         </style>
     </head>
 
@@ -232,7 +310,7 @@
                         <div class="button"></div>
                         <ul class="navbar-nav text-uppercase ml-auto">
                             <li class='active'><a href='/Home.html'><i
-                                class="fa fa-home"> </i>Home</a></li>
+                                        class="fa fa-home"> </i>Home</a></li>
                             <li class><a
                                     href='/About.html'>About</a></li>
                             <li class><a href>Gallery</a></li>
@@ -261,15 +339,16 @@
                                 <!-- <a href="#" class="cta">LogIn</a> -->
                                 <!-- <img src="images/icons8-person-80.png"
                                     style="width: 30px;" alt> -->
-                                <a href="/Login.html" class><i class="bi bi-person-fill"><svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16"
-                                    fill="currentColor"
-                                    class="bi bi-person-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                                </svg></i>Signup</a>
+                                <a href="/Login.html" class><i
+                                        class="bi bi-person-fill"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16"
+                                            fill="currentColor"
+                                            class="bi bi-person-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                        </svg></i>Signup</a>
                             </li>
                         </ul>
 
@@ -291,7 +370,8 @@
                     <div class="h1 text-center text-dark" style="color:#00723c;"
                         id="pageHeaderTitle">Our Products</div>
 
-                    <article class="postcard light blue block animatable bounceInRight" onclick="clickhere()">
+                    <article class="postcard light blue  reveal"
+                        onclick="clickhere()">
                         <a class="postcard__img_link" href="/Product.html">
                             <img class="postcard__img"
                                 src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
@@ -327,14 +407,16 @@
 
                         </div>
                     </article>
-                    <article class="postcard light red" onclick="clickhere()">
+                    <article class="postcard light red reveal"
+                        onclick="clickhere()">
                         <a class="postcard__img_link" href="#">
                             <img class="postcard__img"
                                 src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
                                 alt="Image Title" />
                         </a>
                         <div class="postcard__text t-dark">
-                            <h1 class="postcard__title red"><a href="#">Bio Fertilizers</a></h1>
+                            <h1 class="postcard__title red"><a href="#">Bio
+                                    Fertilizers</a></h1>
                             <div class="postcard__subtitle small">
                                 <!-- <time datetime="2020-05-25 12:00:00">
                                     <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
@@ -353,14 +435,109 @@
 
                         </div>
                     </article>
-                    <article class="postcard light green" onclick="clickhere()">
+                    <article class="postcard light green reveal"
+                        onclick="clickhere()">
                         <a class="postcard__img_link" href="#">
                             <img class="postcard__img"
                                 src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
                                 alt="Image Title" />
                         </a>
                         <div class="postcard__text t-dark">
-                            <h1 class="postcard__title green"><a href="#">Granlues Fertilizers</a></h1>
+                            <h1 class="postcard__title green"><a href="#">Granlues
+                                    Fertilizers</a></h1>
+                            <div class="postcard__subtitle small">
+                                <!-- <time datetime="2020-05-25 12:00:00">
+                                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                                </time> -->
+                            </div>
+                            <div class="postcard__bar"></div>
+                            <div class="postcard__preview-txt">Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit.
+                                Eligendi, fugiat asperiores inventore beatae
+                                accusamus odit minima enim, commodi quia,
+                                doloribus eius! Ducimus nemo accusantium maiores
+                                velit corrupti tempora reiciendis molestiae
+                                repellat vero. Eveniet ipsam adipisci illo iusto
+                                quibusdam, sunt neque nulla unde ipsum
+                                dolores nobis enim quidem excepturi, illum quos!</div>
+
+                        </div>
+                    </article>
+                    <article class="postcard light blue  reveal"
+                        onclick="clickhere()">
+                        <a class="postcard__img_link" href="/Product.html">
+                            <img class="postcard__img"
+                                src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
+                                alt="Image Title" />
+                        </a>
+                        <div class="postcard__text t-dark">
+                            <h1 class="postcard__title blue"><a
+                                    href="/Product.html">Bio Fertilizer</a></h1>
+                            <div class="postcard__subtitle small">
+                                <!-- <time datetime="2020-05-25 12:00:00">
+                                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                                </time> -->
+                            </div>
+                            <div class="postcard__bar"></div>
+                            <div class="postcard__preview-txt">Yonik is a bio
+                                fertilizer contaning Phosphorus
+                                Solublizing Bacteria (PSB).
+                                • It can save upto 50% of crop phosphate
+                                fertilizer
+                                requirement.
+                                • It prevents soil erosion and improves soil
+                                structure and
+                                fertlity.
+                                • Develops plant immune system, increases plan
+                                resistance to disease pest and antibiotic
+                                stress.
+                                • Yonik contains living symbiotic bacterial
+                                cultures
+                                producing more than 1 million spores per ml.
+                                • Can be used on any and all crops without any
+                                residue
+                                or side effects</div>
+
+                        </div>
+                    </article>
+                    <article class="postcard light red reveal"
+                        onclick="clickhere()">
+                        <a class="postcard__img_link" href="#">
+                            <img class="postcard__img"
+                                src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
+                                alt="Image Title" />
+                        </a>
+                        <div class="postcard__text t-dark">
+                            <h1 class="postcard__title red"><a href="#">Bio
+                                    Fertilizers</a></h1>
+                            <div class="postcard__subtitle small">
+                                <!-- <time datetime="2020-05-25 12:00:00">
+                                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                                </time> -->
+                            </div>
+                            <div class="postcard__bar"></div>
+                            <div class="postcard__preview-txt">Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit.
+                                Eligendi, fugiat asperiores inventore beatae
+                                accusamus odit minima enim, commodi quia,
+                                doloribus eius! Ducimus nemo accusantium maiores
+                                velit corrupti tempora reiciendis molestiae
+                                repellat vero. Eveniet ipsam adipisci illo iusto
+                                quibusdam, sunt neque nulla unde ipsum
+                                dolores nobis enim quidem excepturi, illum quos!</div>
+
+                        </div>
+                    </article>
+                    <article class="postcard light green reveal"
+                        onclick="clickhere()">
+                        <a class="postcard__img_link" href="#">
+                            <img class="postcard__img"
+                                src="https://sunfieldagro.com/wp-content/uploads/2021/01/Organo.png"
+                                alt="Image Title" />
+                        </a>
+                        <div class="postcard__text t-dark">
+                            <h1 class="postcard__title green"><a href="#">Granlues
+                                    Fertilizers</a></h1>
                             <div class="postcard__subtitle small">
                                 <!-- <time datetime="2020-05-25 12:00:00">
                                     <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
@@ -384,6 +561,43 @@
             </section>
         </div>
         <!-- New Section -->
+
+        <!--  <section class="new2113">
+           
+        </section>
+      <section class="new2113">
+            <div class="container reveal">
+                <h2>
+
+                </h2>
+                <div class="text-container2">
+                    <div class="text-box2">
+                        <h3>Section Text</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempore
+                            eius molestiae perferendis eos provident vitae iste.
+                        </p>
+                    </div>
+                    <div class="text-box">
+                        <h3>Section Text</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempore
+                            eius molestiae perferendis eos provident vitae iste.
+                        </p>
+                    </div>
+                    <div class="text-box">
+                        <h3>Section Text</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempore
+                            eius molestiae perferendis eos provident vitae iste.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
 
         <!-- Footer -->
 
@@ -495,6 +709,28 @@
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+        <script>
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+  
+</script>
+
         <script>
         
 $(document).ready(function()
@@ -722,8 +958,7 @@ function closeMenu()
 })(jQuery);
     </script>
 
-
-<script>
+        <script>
     function clickhere(){
         window.location = '/Product.html'
     }

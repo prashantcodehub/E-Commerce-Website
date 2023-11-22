@@ -87,17 +87,11 @@
 }
 
 .testimonials_text:hover{
-    color: red;
-    background-color: #b3fcee;
+    color: #00723c;
+    background-color: orange;
 }
-.testimonials_content:hover{
-    color: #720000;
-    /* background-color: #00723c; */
-}
-.testimonials_text p:hover{
-    color: #f79410;
-    /* background-color: #b3fcee; */
-}
+
+
 
 
 
