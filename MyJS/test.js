@@ -38,3 +38,9 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+
+
+function ProductD(){
+     location.window = '/Product-d.html'
+}

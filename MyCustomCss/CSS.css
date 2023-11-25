@@ -14326,12 +14326,12 @@ input[type=password]::-ms-clear {
 
 /* about  section cssssss */
 .my-container {
-  height: 580px;
+  height: 100dvh;
 }
 
 .about-back-img {
   position: absolute;
-  margin-top: 26.7%;
+  margin-top: 30%;
 }
 
 /* about  section cssssss */

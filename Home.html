@@ -4,6 +4,7 @@
     <head>
         <!-- Required meta tags -->
         <!-- all css here -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="owl-css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="owl-css/fontawesome.min.css" rel="stylesheet"
             type="text/css" />
@@ -47,6 +48,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <!-- Style -->
+        <link rel="stylesheet" href="MyCustomCss/Header.css">
         <link rel="stylesheet" href="css/style.css">
 
         <link rel="stylesheet" href="MyCustomCss/CSS.css">
@@ -55,86 +57,6 @@
         <script src="JS__FILE/js.js"></script>
         <link rel="stylesheet" href="/MyCustomCss/shop-btn.css">
         <title>Website</title>
-
-        <style>
-            #bigbox {
-  width: 1024px;
-  height: 150px;
-  background-color: red;
-}
-
-/* #bigbox div {
-  float: left;
-} */
-
-#logobox {
-  height: 150px;
-  width: 150px;
-  background-color: blue;
-}
-
-/* #column2 {
-  height: 150px;
-  width: 550px;
-  background-color: green;
-} */
-
-/* .row {
-  height: 50%;
-  width: 550px;
-  background-color: black;
-  color: white;
-} */
-
-/* #rightContent {
-  float: right !important;
-  background-color: yellow;
-  height: 100%;
-  width: 200px;
-} */
-
-.eco-heading{
-    letter-spacing: 10px;
-    color: #00723c;
-    padding: 20px;
-    text-transform: capitalize;
-}
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	/* background-color:#25d366; */
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-
-header {
-  box-shadow: 2px 5px 20px 2px rgba(95, 94, 94, 0.8);
-
-}
-/* .fixed-header{
-        width: 100%;
-        position: fixed;        
-        background: #333;
-        background-color: rgb(253, 253, 253);
-        padding: 10px 0;
-        color: #fff;
-    }
-    .fixed-header{
-        top: 0;
-    } */
-        </style>
 
     </head>
 
@@ -236,37 +158,54 @@ header {
                 </div>
             </header>
             <!-- Link to page
-    ================================================== -->
+                ================================================== -->
             <link rel="stylesheet" href="My-Animations/animations.css">
             <link rel="stylesheet" href="My-Animations/about-seg.css">
             <link rel="stylesheet" href="My-Animations/providing.css">
-            <div class="text-home-page">
-                <div class="ani-container">
-                    <span class="welcome"> organic
-                        and eco-friendly </span>
 
-                    <!-- <span class="muzile">text</span> -->
+            <div class="   text-white home-page">
+                <div class="image-section">
+                    <img class="home-image" src="new-img/Home-img.png" alt>
                 </div>
-                <div class="typewriter">
-                    <h1 class="muzile" style="position: absolute;
-                margin-top: 220px; left: 45px;">
-                        Providng the healthy Products.</h1>
+                <div class="card-img-overlay text-content"  style="left: 9%;">
+                    <div>
+                        <h1 class="ani-container" style="line-height: 5.5;">
+                            <span class="welcome"> organic
+                                and eco-friendly </span>
+                            <!-- <h2 class="typewriter"><span>hello</span></h2> -->
+                        </h1>
+
+                        <h2 class="typewriter"><span>Providing Healthy Products</span></h2>
+                    </div>
+
                 </div>
+
             </div>
 
+            <!-- <div class="card bg-dark text-white" style="max-width: 100%;">
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/017.webp" class="card-img" alt="Stony Beach"/>
+                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.
+                  </p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div> -->
             <!-- <a href="#mymodal" class="float">
         <i class="fa fa-whatsapp my-float"></i>
     </a> -->
 
             <!-- Button trigger modal -->
-            <a class=" float" data-toggle="modal"
+            <!-- <a class=" float" data-toggle="modal"
                 data-target="#exampleModalCenter">
                 <i class="my-float"> <img
                         src="data:image/png;base64,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"
                         class="border-0"
                         style="border-radius: 20px; background-color: #00723c; opacity: 0.8; filter: blur(2px);"
                         alt></i>
-            </a>
+            </a> -->
 
             <!-- Modal -->
             <div class="modal fade ml-4" id="exampleModalCenter" tabindex="-1"
@@ -310,45 +249,15 @@ header {
                 </div>
             </div>
 
-            <!-- <div class="home-text" style="position: absolute;  margin-top: 5%; margin-left: 40px; margin-right: 45%;">
-        <div>
-            <h2 class="eco-heading" style="margin-left: 19px;">
-                organic
-                and eco-friendly
-            </h2>
-        </div>
-        <div>
-            <h3 style="margin-left: 40px;">
-                Providng the healthy Products
-            </h3>
-           
-        </div>
-
-        <div class="ani-container">
-            <span class="welcome">welcome </span>
-            <span class="muzile">text</span>
-        </div>
-        <div class="centerer">
-
-            <a href
-                class="btn " style="  color: #00723c;  margin-top: 50px;
-                margin-left: 122px;">Read More</a>
-        </div>
-    </div> -->
-            <div class="hero"
-                style="background-image: url('/new-img/Home-img.png');">
-
-            </div>
-
             <div class="my-container" style="background-color: bisque;">
                 <div class="about-back-img">
-                    <img src="/new-img/about-back-img.png" alt>
+                    <img id="back-img1" src="/new-img/about-back-img.png" alt>
                 </div>
                 <div class="container my-5"
-                    style="background-color: bisque; height: 550px;">
+                    style=" ">
 
                     <div
-                        class="row sec-5 show-animate section-location section-dom">
+                        class="row">
                         <div class="col-lg-4 images reveal-plant">
                             <img class="location-animate plants-imgs w-100 mt-4"
                                 src="/new-img/Leaf.png" />
@@ -431,67 +340,74 @@ header {
 
                             <div class="col-12">
                                 <div class="owl-carousel slider_carousel">
-                                    <div class="card_box">
-                                        <img class="img-fluid w-100"
-                                            src="new-img/Product-image/Urja cropped.png" alt>
+                                    <div class="card_box" onclick="ProductD()">
+                                        <img id="product-img1" class="img-fluid "
+                                            src="new-img/Bio Kit.png" alt>
                                         <div class="card_text">
-                                            <h4>Urja Cropped</h4>
+                                            <h4>Bio Kit</h4>
                                             <p></p>
                                         </div>
                                     </div>
-                                    <div class="card_box">
+                                    <div class="card_box" onclick="ProductD()">
                                         <img class="img-fluid w-100"
-                                            src="new-img/Product-image/Urja cropped.png" alt>
+                                            src="new-img/Bio Fertilizers.png"
+                                            alt>
                                         <div class="card_text">
-                                            <h4>Urja Cropped</h4>
+                                            <h4>Bio Fertilizers</h4>
                                             <p></p>
                                         </div>
                                     </div>
-                                    <div class="card_box">
+                                    <div class="card_box" onclick="ProductD()">
                                         <img class="img-fluid w-100"
-                                            src="new-img/Product-image/Urja cropped.png" alt>
+                                            src="new-img/Bio pest management.png"
+                                            alt>
                                         <div class="card_text">
-                                            <h4>Urja Cropped</h4>
+                                            <h4>Bio pest management</h4>
                                             <p></p>
                                         </div>
                                     </div>
-                                    <div class="card_box">
+                                    <div class="card_box" onclick="ProductD()">
                                         <img class="img-fluid w-100"
-                                            src="new-img/Product-image/Urja cropped.png" alt>
+                                            src="new-img/Granlues Fertilizers.png"
+                                            alt>
                                         <div class="card_text">
-                                            <h4>Urja Cropped</h4>
+                                            <h4>Granlues Fertilizers</h4>
                                             <p></p>
                                         </div>
                                     </div>
-                                    <div class="card_box">
+                                    <div class="card_box" onclick="ProductD()">
                                         <img class="img-fluid w-100"
-                                            src="new-img/Product-image/Urja cropped.png" alt>
+                                            src="new-img/NPK Ferrilizers.png"
+                                            alt>
                                         <div class="card_text">
-                                            <h4>Urja Cropped</h4>
+                                            <h4>NPK Ferrilizers</h4>
                                             <p></p>
                                         </div>
                                     </div>
-                                    <div class="card_box">
+                                    <div class="card_box" onclick="ProductD()">
                                         <img class="img-fluid w-100"
-                                            src="new-img/Product-image/Urja cropped.png" alt>
+                                            src="new-img/Liquid organic fertilizers.png"
+                                            alt>
                                         <div class="card_text">
-                                            <h4>Urja Cropped</h4>
+                                            <h4>Liquid organic fertilizers</h4>
                                             <p></p>
                                         </div>
                                     </div>
-                                    <div class="card_box">
+                                    <div class="card_box" onclick="ProductD()">
                                         <img class="img-fluid w-100"
-                                            src="new-img/Product-image/Urja cropped.png" alt>
+                                            src="new-img/Soil Conditioner.png"
+                                            alt>
                                         <div class="card_text">
-                                            <h4>Urja Cropped</h4>
+                                            <h4>Soil Conditioner</h4>
                                             <p></p>
                                         </div>
                                     </div>
-                                    <div class="card_box">
+                                    <div class="card_box" onclick="ProductD()">
                                         <img class="img-fluid w-100"
-                                            src="new-img/Product-image/Urja cropped.png" alt>
+                                            src="new-img/Granlues Fertilizers.png"
+                                            alt>
                                         <div class="card_text">
-                                            <h4>Urja Cropped</h4>
+                                            <h4> Granlues</h4>
                                             <p></p>
                                         </div>
                                     </div>
@@ -1119,14 +1035,14 @@ header {
                                         <li><a href="#">Home</a></li>
                                         <li><a
                                                 href="/About-Section/About-Section.html">about</a></li>
-                                        <li><a href="/Service.html">services</a></li>
+                                        <li><a href>Product</a></li>
 
                                         <li><a href="#">Contact</a></li>
                                         <li><a href="#">About us</a></li>
-                                        <li><a href="#">Our Services</a></li>
-                                        <li><a href="#">Expert Team</a></li>
+                                        <!-- <li><a href="#">Our Services</a></li> -->
+                                        <!-- <li><a href="#">Expert Team</a></li> -->
                                         <li><a href="#">Contact us</a></li>
-                                        <li><a href="#">Latest News</a></li>
+                                        <!-- <li><a href="#">Latest News</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -1169,231 +1085,6 @@ header {
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-        <script>
-        
-$(document).ready(function()
-{
-"use strict";
-
-var menuActive = false;
-var header = $('.header');
-setHeader();
-initCustomDropdown();
-initPageMenu();
-
-function setHeader()
-{
-
-    if(window.innerWidth > 991 && menuActive)
-    {
-        closeMenu();
-    }
-}
-
-function initCustomDropdown()
-{
-    if($('.custom_dropdown_placeholder').length && $('.custom_list').length)
-    {
-        var placeholder = $('.custom_dropdown_placeholder');
-        var list = $('.custom_list');
-    }
-
-    placeholder.on('click', function (ev)
-    {
-        if(list.hasClass('active'))
-        {
-            list.removeClass('active');
-        }
-        else
-        {
-            list.addClass('active');
-        }
-
-        $(document).one('click', function closeForm(e)
-        {
-            if($(e.target).hasClass('clc'))
-            {
-                $(document).one('click', closeForm);
-            }
-            else
-            {
-                list.removeClass('active');
-            }
-        });
-
-    });
-
-    $('.custom_list a').on('click', function (ev)
-    {
-        ev.preventDefault();
-        var index = $(this).parent().index();
-
-        placeholder.text( $(this).text() ).css('opacity', '1');
-
-        if(list.hasClass('active'))
-        {
-            list.removeClass('active');
-        }
-        else
-        {
-            list.addClass('active');
-        }
-    });
-
-
-    $('select').on('change', function (e)
-    {
-        placeholder.text(this.value);
-
-        $(this).animate({width: placeholder.width() + 'px' });
-    });
-}
-
-/* 
-
-4. Init Page Menu
-
-*/
-
-function initPageMenu()
-{
-    if($('.page_menu').length && $('.page_menu_content').length)
-    {
-        var menu = $('.page_menu');
-        var menuContent = $('.page_menu_content');
-        var menuTrigger = $('.menu_trigger');
-
-        //Open / close page menu
-        menuTrigger.on('click', function()
-        {
-            if(!menuActive)
-            {
-                openMenu();
-            }
-            else
-            {
-                closeMenu();
-            }
-        });
-
-        //Handle page menu
-        if($('.page_menu_item').length)
-        {
-            var items = $('.page_menu_item');
-            items.each(function()
-            {
-                var item = $(this);
-                if(item.hasClass("has-children"))
-                {
-                    item.on('click', function(evt)
-                    {
-                        evt.preventDefault();
-                        evt.stopPropagation();
-                        var subItem = item.find('> ul');
-                        if(subItem.hasClass('active'))
-                        {
-                            subItem.toggleClass('active');
-                            TweenMax.to(subItem, 0.3, {height:0});
-                        }
-                        else
-                        {
-                            subItem.toggleClass('active');
-                            TweenMax.set(subItem, {height:"auto"});
-                            TweenMax.from(subItem, 0.3, {height:0});
-                        }
-                    });
-                }
-            });
-        }
-    }
-}
-
-function openMenu()
-{
-    var menu = $('.page_menu');
-    var menuContent = $('.page_menu_content');
-    TweenMax.set(menuContent, {height:"auto"});
-    TweenMax.from(menuContent, 0.3, {height:0});
-    menuActive = true;
-}
-
-function closeMenu()
-{
-    var menu = $('.page_menu');
-    var menuContent = $('.page_menu_content');
-    TweenMax.to(menuContent, 0.3, {height:0});
-    menuActive = false;
-}
-
-   
-});
-    </script>
-
-        <!-- All CDN -->
-        <script src="
-        https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
-        ">
-    </script>
-
-        <script> 
-    (function($) {
-    $.fn.menumaker = function(options) {
-        var cssmenu = $(this),
-            settings = $.extend({
-                format: "dropdown",
-                sticky: false
-            }, options);
-        return this.each(function() {
-            $(this).find(".button").on('click', function() {
-                $(this).toggleClass('menu-opened');
-                var mainmenu = $(this).next('ul');
-                if (mainmenu.hasClass('open')) {
-                    mainmenu.slideToggle().removeClass('open');
-                } else {
-                    mainmenu.slideToggle().addClass('open');
-                    if (settings.format === "dropdown") {
-                        mainmenu.find('ul').show();
-                    }
-                }
-            });
-            cssmenu.find('li ul').parent().addClass('has-sub');
-            multiTg = function() {
-                cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
-                cssmenu.find('.submenu-button').on('click', function() {
-                    $(this).toggleClass('submenu-opened');
-                    if ($(this).siblings('ul').hasClass('open')) {
-                        $(this).siblings('ul').removeClass('open').slideToggle();
-                    } else {
-                        $(this).siblings('ul').addClass('open').slideToggle();
-                    }
-                });
-            };
-            if (settings.format === 'multitoggle') multiTg();
-            else cssmenu.addClass('dropdown');
-            if (settings.sticky === true) cssmenu.css('position', 'fixed');
-            resizeFix = function() {
-                var mediasize = 1000;
-                if ($(window).width() > mediasize) {
-                    cssmenu.find('ul').show();
-                }
-                if ($(window).width() <= mediasize) {
-                    cssmenu.find('ul').hide().removeClass('open');
-                }
-            };
-            resizeFix();
-            return $(window).on('resize', resizeFix);
-        });
-    };
-})(jQuery);
-
-(function($) {
-    $(document).ready(function() {
-        $("#cssmenu").menumaker({
-            format: "multitoggle"
-        });
-    });
-})(jQuery);
-    </script>
 
         <!-- All CDN -->
         <script src="My-Animations/why-seg.js"></script>
@@ -1409,6 +1100,8 @@ function closeMenu()
 
         <script src="My-Animations/right-animation.js"></script>
         <script src="My-Animations/Text-animations.js"></script>
+
+        <script src="/MyJS/test.js"></script>
         <!-- all js here -->
         <script src="owl-js/jquery-3.4.1.min.js"></script>
         <script src="owl-js/bootstrap.min.js"></script>
@@ -1441,6 +1134,12 @@ function closeMenu()
         }
         slider_carouselInit();
 
+    </script>
+
+        <script>
+        function ProductD(){
+            window.location = '/Product.html'
+        }
     </script>
     </body>
 

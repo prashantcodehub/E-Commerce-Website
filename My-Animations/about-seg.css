@@ -4,13 +4,40 @@
   white-space: nowrap;
 }
 
+
+
+
+
+
+.my-container{
+  margin-top: -8%;
+}
+
+@media only screen and (max-width: 1368px) {
+  
+  #back-img1{
+    margin-top: 0;
+    display: none;
+  }
+}
+@media only screen and (max-height: 668px) {
+  
+  #back-img1{
+    /* margin-top: 0; */
+    display: none;
+  }
+}
+
+
+
+
 .heading:first-of-type {
   /* For increasing performance 
                          ID/Class should've been used. 
                          For a small demo 
                          it's okaish for now */
   animation: showup 7s infinite;
-}
+} 
 
 .heading:last-of-type {
   width: 0px;

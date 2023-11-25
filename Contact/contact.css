@@ -129,7 +129,7 @@
 }
 
 .contact-form .input-box input[type="submit"] {
-    width: 100%;
+    width: 20%;
     background: #00723c;
     color: #FFF;
     border: none;
@@ -142,7 +142,7 @@
 
 .contact-form .input-box input[type="submit"]:hover {
     background: #FFF;
-    color: #00bcd4;
+    color: #00723c;
 }
 
 @media (max-width: 991px) {
