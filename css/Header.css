@@ -7,6 +7,138 @@ h6 {
   color: #ffffff;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bigbox {
+  width: 1024px;
+  height: 150px;
+  background-color: red;
+}
+
+/* #bigbox div {
+  float: left;
+  } */
+
+#logobox {
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+}
+
+/* #column2 {
+  height: 150px;
+  width: 550px;
+  background-color: green;
+  } */
+
+/* .row {
+  height: 50%;
+  width: 550px;
+  background-color: black;
+  color: white;
+  } */
+
+/* #rightContent {
+  float: right !important;
+  background-color: yellow;
+  height: 100%;
+  width: 200px;
+  } */
+
+.eco-heading {
+  letter-spacing: 10px;
+  color: #00723c;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  /* background-color:#25d366; */
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+header {
+  box-shadow: 2px 5px 20px 2px rgba(95, 94, 94, 0.8);
+
+}
+
+/* .fixed-header{
+  width: 100%;
+  position: fixed;        
+  background: #333;
+  background-color: rgb(253, 253, 253);
+  padding: 10px 0;
+  color: #fff;
+  }
+  .fixed-header{
+  top: 0;
+  } */
+
+
+
+.home-image {
+  /* max-width: ; */
+  width: 100%;
+  /* position: absolute; */
+  margin-top: -70px;
+  height: 110dvh;
+}
+
+
+
+.text-home-page {
+  position: absolute;
+  /* margin-top: 125px; */
+  top: 45%;
+  left: 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 a,
 a:hover,
 a:focus,
@@ -163,6 +295,9 @@ nav#cssmenu ul {
 
 .logo img {
   max-width: 170px;
+  /* padding: 18px; */
+  margin-top: -70px;
+  height: 110px;
 }
 
 .logo2 img {
@@ -740,4 +875,3 @@ div#slider-home .carousel-item::before {
     /* display: none; */
   }
 }
-
