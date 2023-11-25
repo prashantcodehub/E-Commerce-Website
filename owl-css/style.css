@@ -50,7 +50,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .card_box {
-	background: aqua;
+	/* background: aqua; */
 	/* background: #ffffff; */
 	border-radius: 40px;
 	/* margin-top: 40px; */
