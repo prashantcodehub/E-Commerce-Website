@@ -240,9 +240,9 @@ header i.fa.fa-mobile {
 
 /* search btn  */
 .form-outline {
-  width: 86%;
-  margin-right: -38px;
-  margin-left: 25px;
+  width: 76%;
+  margin-right: -50px;
+  margin-left: 81px;
 
 }
 
@@ -294,7 +294,7 @@ nav#cssmenu ul {
 }
 
 .logo img {
-  max-width: 170px;
+  max-width: 109px;
   /* padding: 18px; */
   margin-top: -70px;
   height: 110px;
