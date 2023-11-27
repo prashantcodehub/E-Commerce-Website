@@ -92,6 +92,10 @@ a, a:hover {
   text-align: justify;
   height: 100%;
 }
+
+.postcard .postcard__preview-txt:hover{
+  color: #00723c;
+}
 .postcard .postcard__tagbox {
   display: flex;
   flex-flow: row wrap;

@@ -226,6 +226,11 @@ main[role=main] {
 .product .product-sidebar button:hover .shop-icon {
   display: none;
 }
+.product .product-sidebar button:hover .info-i-con {
+  display: none;
+}
+
+
 
 .product .product-sidebar button:hover span {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
