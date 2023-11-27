@@ -23,13 +23,13 @@
 
 
 
-.container-login {
+.container{
     position: relative;
     min-height: 100vh;
     overflow: hidden;
 }
 
-.row-login {
+.row {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
@@ -188,7 +188,7 @@
     transform: scale(1);
 }
 
-.content-row-login {
+.content-row {
     position: absolute;
     top: 0;
     left: 0;
@@ -294,11 +294,11 @@
         transform: translateY(0);
     }
 
-    .content-row-login {
+    .content-row {
         align-items: flex-start !important;
     }
 
-    .content-row-login .col {
+    .content-row .col {
         transform: translateY(0);
         background-color: unset;
     }
@@ -314,7 +314,7 @@
         transition: 1s ease-in-out;
     }
 
-    .row-login {
+    .row {
         align-items: flex-end;
         justify-content: flex-end;
     }
