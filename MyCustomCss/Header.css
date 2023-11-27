@@ -1,8 +1,7 @@
-
 #bigbox {
-width: 1024px;
-height: 150px;
-background-color: red;
+    width: 1024px;
+    height: 150px;
+    background-color: red;
 }
 
 /* #bigbox div {
@@ -10,9 +9,9 @@ float: left;
 } */
 
 #logobox {
-height: 150px;
-width: 150px;
-background-color: blue;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
 }
 
 /* #column2 {
@@ -35,36 +34,37 @@ height: 100%;
 width: 200px;
 } */
 
-.eco-heading{
-letter-spacing: 10px;
-color: #00723c;
-padding: 20px;
-text-transform: capitalize;
+.eco-heading {
+    letter-spacing: 10px;
+    color: #00723c;
+    padding: 20px;
+    text-transform: capitalize;
 }
 
-.float{
-position:fixed;
-width:60px;
-height:60px;
-bottom:40px;
-right:40px;
-/* background-color:#25d366; */
-color:#FFF;
-border-radius:50px;
-text-align:center;
-font-size:30px;
-box-shadow: 2px 2px 3px #999;
-z-index:100;
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    /* background-color:#25d366; */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
 }
 
-.my-float{
-margin-top:16px;
+.my-float {
+    margin-top: 16px;
 }
 
 header {
-box-shadow: 2px 1px 10px 1px rgba(95, 94, 94, 0.8);
+    box-shadow: 2px 1px 10px 1px rgba(95, 94, 94, 0.8);
 
 }
+
 /* .fixed-header{
 width: 100%;
 position: fixed;        
@@ -79,7 +79,7 @@ top: 0;
 
 
 
-.home-image{
+.home-image {
     /* max-width: ; */
     width: 100%;
     /* position: absolute; */
@@ -89,9 +89,16 @@ top: 0;
 
 
 
-.text-home-page{
+.text-home-page {
     position: absolute;
     /* margin-top: 125px; */
     top: 45%;
     left: 8%;
+}
+
+
+@media only screen and (max-width: 1096px) {
+    .input-group {
+        display: none;
+    }
 }

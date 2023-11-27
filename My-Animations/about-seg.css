@@ -17,13 +17,19 @@
   
   #back-img1{
     margin-top: 0;
-    display: none;
+    /* display: none; */
   }
 }
 @media only screen and (max-height: 668px) {
   
   #back-img1{
     /* margin-top: 0; */
+    /* display: none; */
+  }
+}
+
+@media (max-width:1024px){
+  .my-container{
     display: none;
   }
 }
