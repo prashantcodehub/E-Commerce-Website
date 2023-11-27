@@ -80,11 +80,11 @@ top: 0;
 
 
 .home-image {
-    /* max-width: ; */
+   
     width: 100%;
-    /* position: absolute; */
+
     margin-top: -69px;
-    height: 112dvh;
+    height: 113dvh !important;
 }
 
 
