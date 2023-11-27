@@ -30,7 +30,7 @@
 
 @media (max-width:1024px){
   .my-container{
-    display: none;
+    /* display: none; */
   }
 }
 
