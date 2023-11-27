@@ -12,6 +12,10 @@ ul {
     border-bottom: 1px solid #373636;
 }
 
+.address-row{
+    margin-left: 2%;
+}
+
 .single-cta i {
     color: #ff5e14;
     font-size: 30px;
