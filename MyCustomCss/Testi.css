@@ -19,7 +19,7 @@
     --first_color: #15241c;
     --second-color: #09382f;
     --third-color: #ffffff;
-    --fourth-color: #fafafa;
+    /* --fourth-color: #fafafa; */
     --fifth-color: #110d04;
     --sixth-color: #EC9937;
 }
@@ -34,11 +34,21 @@
     margin-top: 52px !important;
     position: absolute;
 }
+#Testimonials {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    max-width: 100%;
+    margin: 40px 0px;
+    margin-top: 30px !important;
+    /* position: absolute; */
+}
 
 
 #test-image{
-    position: absolute;
-    margin-top: 105px;
+    position: absolute;margin-left: 10px;
+    margin-top: -150px;
 }
 
 .Testimonials_title h2 {
@@ -65,7 +75,7 @@
 
 .testimonials_container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;margin-top: 100px;
     align-items: center;
     justify-content: center;
     position: relative;
