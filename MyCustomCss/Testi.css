@@ -164,12 +164,16 @@
     left: 30px;
 }
 
+.fa-quote-right{
+    color: #f79410;
+}
 
 .testimonials_text p {
-    color: var(--second-color);
+    /* color: var(--second-color); */
+    color: black;
     font-size: 14px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
+    /* font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic; */
     line-height: 24px;
     padding-bottom: 10px;
     font-weight: 500;
