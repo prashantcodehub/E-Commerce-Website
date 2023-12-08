@@ -38,6 +38,7 @@ a, a:hover {
   overflow: hidden;
   position: relative;
   color: #ffffff;
+  cursor: pointer;
 }
 .postcard.dark {
   background-color: #18151f;
