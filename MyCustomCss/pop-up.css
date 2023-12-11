@@ -18,6 +18,11 @@
     background-color: white;
 }
 
+.is-blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
 /* buttons */
 .mc4-btn {
     position: relative;
