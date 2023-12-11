@@ -29,7 +29,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -37,8 +37,8 @@
     <link rel="stylesheet" href="Header.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="scss/i-Cart.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -219,7 +219,7 @@
             </div>
         </div>
     </header>
-
+    
     <main class="cd-main-content">
         <section class="cd-gallery">
             <ul>
@@ -227,7 +227,7 @@
                     <main role="main">
                         <div class="product">
                             <figure>
-                                <img src="new-img/Product-image/f122.png" alt="Product Image" class="product-image">
+                                <img src="new-img/Product-image/f122.pn" alt="Product Image" class="product-image">
                             </figure>
 
                             <div class="product-description">
@@ -246,7 +246,8 @@
                             </div>
 
                             <div class="product-sidebar">
-                                <button class="buy button-pop" id="six" class="">
+                                <button class="buy button-pop" id="six" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModal">
                                     <i class="bi bi-shop shop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
                                             <path
@@ -255,7 +256,7 @@
                                         Buy
                                         Now</span>
                                 </button>
-
+                             
                                 <button class="info" onclick="redirect()">
                                     <i class="bi bi-arrow-right info-i-con"><svg xmlns="http://www.w3.org/2000/svg"
                                             width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
@@ -551,7 +552,7 @@
                             </div>
 
                             <div class="product-sidebar">
-                                <button class="buy " >
+                                <button class="buy ">
                                     <i class="bi bi-shop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
                                             <path
@@ -961,60 +962,28 @@
     <!-- strt location section -->
 
     <!-- new sction -->
-    <div id="myModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
 
-            <form action="" method="POST" id="formId">
-
-                <div class="container">
-                    <div>
-                        <input type="text" placeholder="Name" name="firstname">
-                    </div>
-                    <div class="beside">
-                        <div> <input type="text" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
-                                placeholder="PHONE NUMBER" name="number" min="10" max="10"></div>
-
-                        <select>
-                            <option>GENDER</option>
-                            <option>MALE</option>
-                            <option>FEMALE</option>
-
-                        </select>
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email" id='email' name="email">
-                        <div id='result'></div>
-                    </div>
-                    <div>
-                        <input type="text" placeholder="State" name="state">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="City" name="city">
-                    </div>
-                    <input id="checkbox" type="checkbox" class="term" />
-                    <label for="checkbox"> I agree Terms
-                        & Conditions.</label>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <button type="submit" name="submit" class="btn btn-danger submit-btn" value="Next"
-                    onclick="clickme()">Save</button>
-
-            </form>
-
-            <!-- <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <form class="card p-2" action="redeem.php" method="post" style="color: red;">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="refferalId" name="firstname">
-                                <div class="input-group-append">
-                                    <button type="submit" class="btn btn-secondary" name="submit">submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div> -->
-
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-
     </div>
     <!-- Footer -->
 
@@ -1375,6 +1344,11 @@
                 modal.style.display = "none";
             }
         }
+    </script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
     </script>
 </body>
 

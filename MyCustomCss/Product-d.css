@@ -4,10 +4,12 @@
     padding: 15px;*/
 }
 
+
 .picZoomer-pic-wp {
     position: relative;
     overflow: hidden;
     text-align: center;
+   
 }
 
 .picZoomer-pic-wp:hover .picZoomer-cursor {
@@ -42,10 +44,10 @@
     height: 100px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100%;
     border-radius: 50%;
-    border: 1px solid #eee;
-    background-color: rgba(0, 0, 0, .1);
+    /* border: 1px solid #eee; */
+    /* background-color: rgba(0, 0, 0, .1); */
 }
 
 .picZoomCursor-ico {
@@ -53,7 +55,7 @@
     height: 23px;
     position: absolute;
     top: 40px;
-    left: 40px;
+    left: 1140px;
     background: url(images/zoom-ico.png) left top no-repeat;
 }
 
@@ -87,7 +89,10 @@
 }
 
 .section-bg {
-    background-color: #fff1e0;
+    /* background-color: #fff1e0; */
+    background-color: #fdfdfd;
+    /* position: inherit; */
+    background-image: url("new-img/Product-page.png");
 }
 
 section {
@@ -117,6 +122,7 @@ section {
 ._boxzoom ._product-images {
     width: 80%;
     display: inline-block;
+    background-image: url("new-img/Product-back-image.png");
 }
 
 ._boxzoom ._product-images .picZoomer {
@@ -124,6 +130,7 @@ section {
 }
 
 ._boxzoom ._product-images .picZoomer .picZoomer-pic-wp img {
+
     left: 0px;
 }
 

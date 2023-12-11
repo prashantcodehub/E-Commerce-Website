@@ -49,15 +49,7 @@
 
 
 
-//newjsfileforpoductpage
-/*!     
-        jquery.picZoomer.js
-        v 1.0
-        David
-        http://www.CodingSerf.com
-*/
 
-//放大镜控件
 ;
 (function($) {
     $.fn.picZoomer = function(options) {
@@ -76,13 +68,13 @@
         opts.zoomHeight = opts.zoomHeight || opts.picHeight;
         var zoomWPSizeHalf = { w: opts.zoomWidth / 2, h: opts.zoomHeight / 2 };
 
-        //初始化zoom容器大小
+       
         $zoomWP.css({ 'width': opts.zoomWidth + 'px', 'height': opts.zoomHeight + 'px' });
-        $zoomWP.css(opts.zoomerPosition || { top: 0, left: opts.picWidth + 30 + 'px' });
-        //初始化zoom图片大小
+        $zoomWP.css(opts.zoomerPosition || { top: 0, left: opts.picWidth + 300 + 'px' });
+        
         $zoomPic.css({ 'width': opts.picWidth * opts.scale + 'px', 'height': opts.picHeight * opts.scale + 'px' });
 
-        //初始化事件
+       
         $picBD.on('mouseenter', function(event) {
             $cursor.show();
             $zoomWP.show();
@@ -95,7 +87,7 @@
                 y = event.pageY - picBDOffset.y;
 
             $cursor.css({ 'left': x - cursorSizeHalf.w + 'px', 'top': y - cursorSizeHalf.h + 'px' });
-            $zoomPic.css({ 'left': -(x * opts.scale - zoomWPSizeHalf.w) + 'px', 'top': -(y * opts.scale - zoomWPSizeHalf.h) + 'px' });
+            $zoomPic.css({ 'left': -(x * opts.scale - zoomWPSizeHalf.w +50 + "px") + 'px', 'top': -(y * opts.scale - zoomWPSizeHalf.h) + 'px' });
 
         });
         return $this;
@@ -103,11 +95,11 @@
     };
     $.fn.picZoomer.defaults = {
         picHeight: 460,
-        scale: 2.5,
+        scale: 3.5,
         zoomerPosition: { top: '0', left: '380px' },
 
-        zoomWidth: 400,
-        zoomHeight: 460
+        zoomWidth: 500,
+        zoomHeight: 490
     };
 })(jQuery);
 

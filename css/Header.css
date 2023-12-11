@@ -17,7 +17,7 @@
   float: left;
   } */
     .btn-shop-now {
-margin-top: 35%;
+        margin-top: 35%;
         cursor: pointer;
         border: 1px solid #00723c;
         border-radius: 5px;
@@ -36,23 +36,7 @@ margin-top: 35%;
         background-color: blue;
     }
 
-    /* #column2 {
-  height: 150px;
-  width: 550px;
-  background-color: green;
-  } */
-    /* .row {
-  height: 50%;
-  width: 550px;
-  background-color: black;
-  color: white;
-  } */
-    /* #rightContent {
-  float: right !important;
-  background-color: yellow;
-  height: 100%;
-  width: 200px;
-  } */
+
 
     .eco-heading {
         letter-spacing: 10px;
@@ -84,17 +68,6 @@ margin-top: 35%;
         box-shadow: 2px 5px 20px 2px rgba(95, 94, 94, 0.8);
     }
 
-    /* .fixed-header{
-  width: 100%;
-  position: fixed;        
-  background: #333;
-  background-color: rgb(253, 253, 253);
-  padding: 10px 0;
-  color: #fff;
-  }
-  .fixed-header{
-  top: 0;
-  } */
 
     .home-image {
         /* max-width: ; */
