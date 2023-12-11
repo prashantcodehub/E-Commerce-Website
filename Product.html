@@ -287,7 +287,7 @@
                             </div>
 
                             <div class="product-sidebar">
-                                <button class="buy button-pop"  class="mc4-btn mc4-btn--primary "
+                                <button class="buy button-pop" class="mc4-btn mc4-btn--primary "
                                     aria-controls="modal-name-1" onclick="myFunction()">
                                     <i class="bi bi-shop shop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
@@ -340,7 +340,7 @@
 
                             <div class="product-sidebar">
                                 <button class="buy" id="myBtn1" class="mc4-btn mc4-btn--primary "
-                                aria-controls="modal-name-1" onclick="myFunction()">
+                                    aria-controls="modal-name-1" onclick="myFunction()">
                                     <i class="bi bi-shop shop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
                                             <path
@@ -395,7 +395,8 @@
                             </div>
 
                             <div class="product-sidebar">
-                                <button class="buy" id="myBtn">
+                                <button class="buy" id="myBtsdn" class="mc4-btn mc4-btn--primary "
+                                aria-controls="modal-name-1" onclick="myFunction()">
                                     <i class="bi bi-shop shop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
                                             <path
@@ -448,7 +449,8 @@
                             </div>
 
                             <div class="product-sidebar">
-                                <button class="buy" id="myBtn">
+                                <button class="buy" id="myBt23n" class="mc4-btn mc4-btn--primary "
+                                aria-controls="modal-name-1" onclick="myFunction()">
                                     <i class="bi bi-shop shop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
                                             <path
@@ -1030,7 +1032,7 @@
             <footer class="mc4-padding-md">
                 <div class="mc4-flex mc4-justify-end mc4-gap-xs">
                     <button class="mc4-btn mc4-btn--subtle js-modal__close"
-                        style="background-color: #00723c; color:white;border: none;" >Cancel</button>
+                        style="background-color: #00723c; color:white;border: none;" onclick="removeblur()" class="remove-blur">Cancel</button>
                     <button class="mc4-btn mc4-btn--subtle js-modal__close"
                         style="background-color: #00723c; color:white;border: none;">Request for call</button>
 
@@ -1417,9 +1419,18 @@
     <script>
         function myFunction() {
             var element = document.getElementById("box12");
-            element.classList.add("is-blurred");$('body').removeClass('is-blurred');
+            element.classList.add("is-blurred");
+
         }
-        </script>
+        function removeblur() {
+            var element = document.getElementById("box12");
+            element.classList.remove("is-blurred");
+
+        }
+
+        const div = document.querySelector('.bo');
+        div.classList.remove('.is-blured');
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script>

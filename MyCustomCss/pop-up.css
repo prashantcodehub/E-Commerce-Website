@@ -19,8 +19,8 @@
 }
 
 .is-blurred {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
   }
 
 /* buttons */
