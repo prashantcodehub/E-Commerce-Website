@@ -16,6 +16,15 @@
     <script src="js/modernizr.js"></script>
     <!-- Modernizr -->
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <link rel="stylesheet" href="MyCustomCss/CSS.css"> -->
@@ -50,8 +59,8 @@
     <link rel="stylesheet" href="css/Header.css">
 
     <link rel="stylesheet" href="/MyCustomCss/shop-btn.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <!-- <link rel="stylesheet" href="/Product-Page/Product.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -107,6 +116,19 @@
 
         .product-img12 {
             margin-left: 42px;
+        }
+    </style>
+    <style>
+        .wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+            padding-top: 8rem;
+        }
+
+        dialog#d1 {
+            background: #efe;
+            background: none;
+            background-color: #97ceaa;
         }
     </style>
 
@@ -219,7 +241,26 @@
             </div>
         </div>
     </header>
-    
+    <dialog id="d1"><button onclick="d1.close()" class="btn btn-danger">X</button><br />Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Magnam consequatur aliquid libero, odit earum rem unde fugiat,
+    </dialog>
+
+    <div id="demo-modal" class="modal">
+        <div class="modal__content">
+            <h1>CSS Only Modal</h1>
+
+            <p>
+                You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!
+            </p>
+
+            <div class="modal__footer">
+                Made with <i class="fa fa-heart"></i>, by <a href="https://twitter.com/denicmarko"
+                    target="_blank">@denicmarko</a>
+            </div>
+
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+    </div>
     <main class="cd-main-content">
         <section class="cd-gallery">
             <ul>
@@ -227,7 +268,7 @@
                     <main role="main">
                         <div class="product">
                             <figure>
-                                <img src="new-img/Product-image/f122.pn" alt="Product Image" class="product-image">
+                                <img src="new-img/Product-image/f122.png" alt="Product Image" class="product-image">
                             </figure>
 
                             <div class="product-description">
@@ -246,17 +287,18 @@
                             </div>
 
                             <div class="product-sidebar">
-                                <button class="buy button-pop" id="six" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModal">
+                                <button class="buy button-pop" id="six" class="mc4-btn mc4-btn--primary"
+                                    aria-controls="modal-name-1">
                                     <i class="bi bi-shop shop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
                                             <path
                                                 d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
                                         </svg></i> <span>
                                         Buy
-                                        Now</span>
+                                        Now
+                                    </span>
                                 </button>
-                             
+
                                 <button class="info" onclick="redirect()">
                                     <i class="bi bi-arrow-right info-i-con"><svg xmlns="http://www.w3.org/2000/svg"
                                             width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
@@ -297,14 +339,16 @@
                             </div>
 
                             <div class="product-sidebar">
-                                <button class="buy" id="myBtn">
+                                <button class="buy" id="myBtn1">
                                     <i class="bi bi-shop shop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
                                             <path
                                                 d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
                                         </svg></i> <span>
                                         Buy
-                                        Now</span>
+                                        Now
+                                        <a href="#demo-modal">Open Demo Modal</a>
+                                    </span>
                                 </button>
 
                                 <button class="info">
@@ -934,6 +978,290 @@
         <a href="#0" class="cd-filter-trigger">Filters</a>
     </main>
 
+
+
+
+
+
+
+    <!-- <button class="mc4-btn mc4-btn--primary" aria-controls="modal-name-1">Show modal window</button> -->
+
+    <div id="modal-name-1"
+        class="modal modal--animate-scale mc4-flex mc4-flex-center mc4-bg-black mc4-bg-opacity-90% mc4-padding-md js-modal">
+        <div class="modal__content mc4-width-100% mc4-max-width-xs mc4-max-height-100% mc4-overflow-auto mc4-bg mc4-radius-md mc4-inner-glow mc4-shadow-md"
+            role="alertdialog" aria-labelledby="modal-title-1" aria-describedby="modal-description-1">
+
+
+            <div class="mc4-padding-y-sm mc4-padding-x-md">
+                <div class="mc4-text-component">
+                    <!-- <p id="modal-description-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa,
+                        inventore alias ab atque similique quod ea reprehenderit.</p> -->
+                    <form class="form-card" onsubmit="event.preventDefault()">
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group  flex-column d-flex"> <label class="form-control-label px-3">Your
+                                    Name<span class="text-danger"> *</span></label> <input type="text" id="fname"
+                                    name="fname" placeholder="Enter your  name" onblur="validate(1)"> </div>
+                            
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group  flex-column d-flex"> <label class="form-control-label px-3">Your
+                                    email<span class="text-danger"> *</span></label> <input type="text" id="email"
+                                    name="email" placeholder="" onblur="validate(3)"> </div>
+                            <div class="form-group  flex-column d-flex"> <label class="form-control-label px-3">Phone
+                                    number<span class="text-danger"> *</span></label> <input type="text" id="mob"
+                                    name="mob" placeholder="" onblur="validate(4)"> </div>
+                        </div>
+                        
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Description Product Details<span
+                                        class="text-danger"> *</span></label> <textarea type="text" id="ans" name="ans"
+                                    placeholder="" onblur="validate(6)" ></textarea> </div>
+                        </div>
+                        <!-- <div class="row justify-content-end">
+                            <div class="form-group "> <button type="submit" class="btn-block btn-primary">Request a
+                                    demo</button> </div>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+
+            <footer class="mc4-padding-md">
+                <div class="mc4-flex mc4-justify-end mc4-gap-xs">
+                    <button class="mc4-btn mc4-btn--subtle js-modal__close" style="background-color: #00723c; color:white;border: none;">Cancel</button>
+                    <button class="mc4-btn mc4-btn--subtle js-modal__close" style="background-color: #00723c; color:white;border: none;">Request for call</button>
+
+                </div>
+            </footer>
+        </div> 
+
+
+    </div>
+
+    <script>
+        // File#: _1_modal-window
+        // Usage: codyhouse.co/license
+        (function () {
+            var Modal = function (element) {
+                this.element = element;
+                this.triggers = document.querySelectorAll('[aria-controls="' + this.element.getAttribute('id') + '"]');
+                this.firstFocusable = null;
+                this.lastFocusable = null;
+                this.moveFocusEl = null; // focus will be moved to this element when modal is open
+                this.modalFocus = this.element.getAttribute('data-modal-first-focus') ? this.element.querySelector(this.element.getAttribute('data-modal-first-focus')) : null;
+                this.selectedTrigger = null;
+                this.preventScrollEl = this.getPreventScrollEl();
+                this.showClass = "modal--is-visible";
+                this.initModal();
+            };
+
+            Modal.prototype.getPreventScrollEl = function () {
+                var scrollEl = false;
+                var querySelector = this.element.getAttribute('data-modal-prevent-scroll');
+                if (querySelector) scrollEl = document.querySelector(querySelector);
+                return scrollEl;
+            };
+
+            Modal.prototype.initModal = function () {
+                var self = this;
+                //open modal when clicking on trigger buttons
+                if (this.triggers) {
+                    for (var i = 0; i < this.triggers.length; i++) {
+                        this.triggers[i].addEventListener('click', function (event) {
+                            event.preventDefault();
+                            if (self.element.classList.contains(self.showClass)) {
+                                self.closeModal();
+                                return;
+                            }
+                            self.selectedTrigger = event.currentTarget;
+                            self.showModal();
+                            self.initModalEvents();
+                        });
+                    }
+                }
+
+                // listen to the openModal event -> open modal without a trigger button
+                this.element.addEventListener('openModal', function (event) {
+                    if (event.detail) self.selectedTrigger = event.detail;
+                    self.showModal();
+                    self.initModalEvents();
+                });
+
+                // listen to the closeModal event -> close modal without a trigger button
+                this.element.addEventListener('closeModal', function (event) {
+                    if (event.detail) self.selectedTrigger = event.detail;
+                    self.closeModal();
+                });
+
+                // if modal is open by default -> initialise modal events
+                if (this.element.classList.contains(this.showClass)) this.initModalEvents();
+            };
+
+            Modal.prototype.showModal = function () {
+                var self = this;
+                this.element.classList.add(this.showClass);;
+                this.getFocusableElements();
+                if (this.moveFocusEl) {
+                    this.moveFocusEl.focus();
+                    // wait for the end of transitions before moving focus
+                    this.element.addEventListener("transitionend", function cb(event) {
+                        self.moveFocusEl.focus();
+                        self.element.removeEventListener("transitionend", cb);
+                    });
+                }
+                this.emitModalEvents('modalIsOpen');
+                // change the overflow of the preventScrollEl
+                if (this.preventScrollEl) this.preventScrollEl.style.overflow = 'hidden';
+            };
+
+            Modal.prototype.closeModal = function () {
+                if (!this.element.classList.contains(this.showClass)) return;
+                this.element.classList.remove(this.showClass);
+                this.firstFocusable = null;
+                this.lastFocusable = null;
+                this.moveFocusEl = null;
+                if (this.selectedTrigger) this.selectedTrigger.focus();
+                //remove listeners
+                this.cancelModalEvents();
+                this.emitModalEvents('modalIsClose');
+                // change the overflow of the preventScrollEl
+                if (this.preventScrollEl) this.preventScrollEl.style.overflow = '';
+            };
+
+            Modal.prototype.initModalEvents = function () {
+                //add event listeners
+                this.element.addEventListener('keydown', this);
+                this.element.addEventListener('click', this);
+            };
+
+            Modal.prototype.cancelModalEvents = function () {
+                //remove event listeners
+                this.element.removeEventListener('keydown', this);
+                this.element.removeEventListener('click', this);
+            };
+
+            Modal.prototype.handleEvent = function (event) {
+                switch (event.type) {
+                    case 'click': {
+                        this.initClick(event);
+                    }
+                    case 'keydown': {
+                        this.initKeyDown(event);
+                    }
+                }
+            };
+
+            Modal.prototype.initKeyDown = function (event) {
+                if (event.keyCode && event.keyCode == 9 || event.key && event.key == 'Tab') {
+                    //trap focus inside modal
+                    this.trapFocus(event);
+                } else if ((event.keyCode && event.keyCode == 13 || event.key && event.key == 'Enter') && event.target.closest('.js-modal__close')) {
+                    event.preventDefault();
+                    this.closeModal(); // close modal when pressing Enter on close button
+                }
+            };
+
+            Modal.prototype.initClick = function (event) {
+                //close modal when clicking on close button or modal bg layer 
+                if (!event.target.closest('.js-modal__close') && !event.target.classList.contains('js-modal')) return;
+                event.preventDefault();
+                this.closeModal();
+            };
+
+            Modal.prototype.trapFocus = function (event) {
+                if (this.firstFocusable == document.activeElement && event.shiftKey) {
+                    //on Shift+Tab -> focus last focusable element when focus moves out of modal
+                    event.preventDefault();
+                    this.lastFocusable.focus();
+                }
+                if (this.lastFocusable == document.activeElement && !event.shiftKey) {
+                    //on Tab -> focus first focusable element when focus moves out of modal
+                    event.preventDefault();
+                    this.firstFocusable.focus();
+                }
+            }
+
+            Modal.prototype.getFocusableElements = function () {
+                //get all focusable elements inside the modal
+                var allFocusable = this.element.querySelectorAll(focusableElString);
+                this.getFirstVisible(allFocusable);
+                this.getLastVisible(allFocusable);
+                this.getFirstFocusable();
+            };
+
+            Modal.prototype.getFirstVisible = function (elements) {
+                //get first visible focusable element inside the modal
+                for (var i = 0; i < elements.length; i++) {
+                    if (isVisible(elements[i])) {
+                        this.firstFocusable = elements[i];
+                        break;
+                    }
+                }
+            };
+
+            Modal.prototype.getLastVisible = function (elements) {
+                //get last visible focusable element inside the modal
+                for (var i = elements.length - 1; i >= 0; i--) {
+                    if (isVisible(elements[i])) {
+                        this.lastFocusable = elements[i];
+                        break;
+                    }
+                }
+            };
+
+            Modal.prototype.getFirstFocusable = function () {
+                if (!this.modalFocus || !Element.prototype.matches) {
+                    this.moveFocusEl = this.firstFocusable;
+                    return;
+                }
+                var containerIsFocusable = this.modalFocus.matches(focusableElString);
+                if (containerIsFocusable) {
+                    this.moveFocusEl = this.modalFocus;
+                } else {
+                    this.moveFocusEl = false;
+                    var elements = this.modalFocus.querySelectorAll(focusableElString);
+                    for (var i = 0; i < elements.length; i++) {
+                        if (isVisible(elements[i])) {
+                            this.moveFocusEl = elements[i];
+                            break;
+                        }
+                    }
+                    if (!this.moveFocusEl) this.moveFocusEl = this.firstFocusable;
+                }
+            };
+
+            Modal.prototype.emitModalEvents = function (eventName) {
+                var event = new CustomEvent(eventName, { detail: this.selectedTrigger });
+                this.element.dispatchEvent(event);
+            };
+
+            function isVisible(element) {
+                return element.offsetWidth || element.offsetHeight || element.getClientRects().length;
+            };
+
+            window.Modal = Modal;
+
+            //initialize the Modal objects
+            var modals = document.getElementsByClassName('js-modal');
+            // generic focusable elements string selector
+            var focusableElString = '[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex]:not([tabindex="-1"]), [contenteditable], audio[controls], video[controls], summary';
+            if (modals.length > 0) {
+                var modalArrays = [];
+                for (var i = 0; i < modals.length; i++) {
+                    (function (i) { modalArrays.push(new Modal(modals[i])); })(i);
+                }
+
+                window.addEventListener('keydown', function (event) { //close modal window on esc
+                    if (event.keyCode && event.keyCode == 27 || event.key && event.key.toLowerCase() == 'escape') {
+                        for (var i = 0; i < modalArrays.length; i++) {
+                            (function (i) { modalArrays[i].closeModal(); })(i);
+                        };
+                    }
+                });
+            }
+        }());
+    </script>
+
     <!-- cd-main-content -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="filter/js/jquery-2.1.1.js"></script>
@@ -941,65 +1269,26 @@
     <script src="/filter/js/jquery.mixitup.min.js"></script>
 
     <script src="/filter/js/main.js"></script>
-    <!-- Resource jQuery -->
-    <!-- New Section -->
-
-    <!-- start new sectin to why sunfieldagro product -->
-
-    <!--  end new sectin to why sunfieldagro  product -->
-
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/lity.css"> -->
-
-    <!-- New section -->
-
-    <!-- new section testinomal -->
-    <!-- <link rel="stylesheet" href="/myNewScss/NewScss.css"> -->
-    <!-- <link rel="stylesheet" href="MyJS/test.js"> -->
-
-    <!-- new section testinomal -->
-
-    <!-- strt location section -->
-
-    <!-- new sction -->
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Footer -->
 
     <link rel="stylesheet" href="Footer.css">
-    <div id="modal-container">
-        <div class="modal-background">
-            <div class="modal-pop">
-                <h2>I'm a Modal</h2>
-                <p>Hear me roar.</p>
-                <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                    preserveAspectRatio="none">
-                    <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
-                </svg>
-            </div>
-        </div>
-    </div>
+
     <footer class="footer-section">
         <div class="container-footer">
             <div class="footer-cta pt-1 pb-1">
@@ -1043,7 +1332,8 @@
                                         class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod
+                                    tempor
                                     incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.</p>
                             </div>
 
@@ -1106,6 +1396,16 @@
         function buyNow() {
             // location.href = "/Product-d.html"
         }
+        $('.button12').click(function () {
+            var buttonId = $(this).attr('id');
+            $('#modal-container').removeAttr('class').addClass(buttonId);
+            $('body').addClass('modal-active');
+        })
+
+        $('#modal-container').click(function () {
+            $(this).addClass('out');
+            $('body').removeClass('modal-active');
+        });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -1173,9 +1473,9 @@
             }
 
             /* 
-
+ 
             4. Init Page Menu
-
+ 
             */
 
             function initPageMenu() {

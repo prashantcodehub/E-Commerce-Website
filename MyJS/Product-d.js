@@ -82,7 +82,7 @@
         }).on('mouseleave', function(event) {
             $cursor.hide();
             $zoomWP.hide();
-        }).on('mousemove', function(event) {
+        }).on('mousemove', function(event) {    
             var x = event.pageX - picBDOffset.x,
                 y = event.pageY - picBDOffset.y;
 
