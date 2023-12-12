@@ -152,3 +152,25 @@ body {
     line-height: 75px;
     margin: -40px auto 0 auto;
 }
+
+
+.nextText-m{
+    position: absolute;
+    top: 62%;
+    cursor: pointer;
+    color: red;
+}
+.nextText-d{
+    position: absolute;
+    top: 38%;
+    left: 64%;
+    color: red;
+    cursor: pointer;
+}
+.nextText-k{
+    position: absolute;
+    top: 15%;
+    left: 24%;
+    color: red;
+    cursor: pointer;
+}

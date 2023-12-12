@@ -69,11 +69,17 @@
 .contact-info-content h4 {
     color: #00723c;
     font-size: 1.4em;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 700;
     margin-bottom: 5px;
+}
+.contact-info-content h4:hover {
+    color: #f79410;
 }
 
 .contact-info-content p {
-    /* color: #FFF; */
+    color: black;
     font-size: 1em;
 }
 
