@@ -5,11 +5,34 @@
 }
 
 
+.faq {
+    color: #00723c;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.accordion-body {
+    background-color: #bbebd4;
+}
+
+.accordion-button {
+    background-color: #c0ecd8;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #00723c;
+}
+
+
+
 .picZoomer-pic-wp {
     position: relative;
     overflow: hidden;
     text-align: center;
-   
+
 }
 
 .picZoomer-pic-wp:hover .picZoomer-cursor {
@@ -412,5 +435,5 @@ s .sq_box span.wishlist i {
 }
 
 .product_name {
-    color: #00723c!important;
+    color: #00723c !important;
 }

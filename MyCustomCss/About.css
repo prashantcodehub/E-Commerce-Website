@@ -3,13 +3,14 @@
     text-align: center;
     color: white;
 }
+
 .container-about-page {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.container-about-page img{
+.container-about-page img {
     height: 80vh;
     top: 10% !important;
 }
@@ -23,23 +24,28 @@
 .top-left {
     position: absolute;
     top: 1%;
-     left: 8%;
+    left: 8%;
 }
+
 .top-left-home {
     position: absolute !important;
     top: -8%;
-     left: 8%;
+    left: 8%;
 }
-.top-left-home h6{
+
+.top-left-home h6 {
     font-size: large;
     font-weight: 600;
+    font-size: 1.1rem;
 
 }
 
 
 .top-left-home p {
     color: #ffffff;
+    font-size: 1rem;
 }
+
 .container-who {
     text-align: center;
     padding: 37px;
@@ -72,7 +78,7 @@
 
 .centered {
     position: absolute;
-    color: black!important;
+    color: black !important;
     top: 20%;
     left: 50%;
     font-size: xx-large;
@@ -88,6 +94,7 @@
     background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #00723c);
     /* background: linear-gradient(0deg, #00723c 0%, rgba(0, 114, 60, 1) 35%, #00723c 100%); */
 }
+
 .top-left-home {
     height: 25rem;
     /* opacity: 0.5; */
