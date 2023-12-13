@@ -3,7 +3,7 @@
 Primary style
 
 -------------------------------- */
-*,
+/* *,
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
@@ -13,7 +13,7 @@ Primary style
 
 html {
   font-size: 62.5%;
-}
+} */
 /* 
 html * {
   -webkit-font-smoothing: antialiased;

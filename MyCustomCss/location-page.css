@@ -33,7 +33,7 @@ section .location-animate {
 }
 
 .sect2 .location-animate {
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
 }
 
 .sect2.show-animate .location-animate {
@@ -42,7 +42,7 @@ section .location-animate {
 
 
 .sect2 .location-animate {
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
 }
 
 .sect2.show-animate .location-animate {

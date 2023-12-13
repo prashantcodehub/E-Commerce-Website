@@ -81,6 +81,7 @@
 .contact-info-content p {
     color: black;
     font-size: 1em;
+    width: 400px;
 }
 
 .contact-form {

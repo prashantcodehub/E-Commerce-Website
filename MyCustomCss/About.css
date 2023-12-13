@@ -15,6 +15,28 @@
     top: 10% !important;
 }
 
+@media(max-width:900px) {
+    .container-about-page img {
+        height: 100vh;
+        margin-top: 30px;
+    }
+
+    .top-left-home {
+        margin-top: 40px;
+    }
+
+    .top-left-home h6 {
+        font-size: 15px !important;
+    }
+
+    .top-left-home p {
+        /* display: none; */
+        color: #ffffff;
+        font-size: 13px !important;
+    }
+
+}
+
 .bottom-left {
     position: absolute;
     bottom: 8px;
@@ -154,23 +176,141 @@ body {
 }
 
 
-.nextText-m{
+.nextText-m {
     position: absolute;
-    top: 62%;
+    top: 55%;
+    left: 17%;
     cursor: pointer;
     color: red;
 }
-.nextText-d{
+
+.nextText-m img {
+    width: 25px;
+    height: 25px;
+}
+
+.nextText-d {
     position: absolute;
     top: 38%;
     left: 64%;
     color: red;
     cursor: pointer;
 }
-.nextText-k{
+
+.nextText-k {
     position: absolute;
     top: 15%;
     left: 24%;
     color: red;
     cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col-xs-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .col-md-4 {
+        flex: 0 0 calc(33.3333% - 20px);
+        max-width: calc(33.3333% - 20px);
+    }
+
+    .card {
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Additional styles for larger screens (customize as needed) */
+@media (min-width: 992px) {
+    /* Add styles for screens wider than 992px */
+}
+
+/* Additional styles for larger screens (customize as needed) */
+@media (min-width: 1200px) {
+    /* Add styles for screens wider than 1200px */
+}
+
+
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .card-img-overlay.text-content {
+        left: 5%;
+        text-align: center;
+    }
+
+    .ani-container {
+        line-height: 1.5; /* Adjust line-height for better mobile readability */
+    }
+}
+
+
+/* Default styles for the card container */
+.card-container {
+    padding: 20px;
+}
+
+.hr-lines {
+    border-bottom: 2px solid #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-img2 img {
+    width: 100%;
+    height: auto;
+}
+
+.card_wrapper {
+    margin-top: 20px;
+}
+
+.card_box {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.card_box img {
+    width: 100%;
+    height: auto;
+}
+
+.card_text {
+    text-align: center;
+}
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .card-container {
+        padding: 10px;
+    }
+
+    .hr-lines {
+        margin-bottom: 10px;
+    }
+
+    .card_wrapper {
+        margin-top: 10px;
+    }
+
+    .card_box {
+        margin: 5px;
+    }
 }
