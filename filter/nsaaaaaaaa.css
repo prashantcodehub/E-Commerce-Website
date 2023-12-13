@@ -1,6 +1,6 @@
 .product .product-description,
 main[role=main] {
-  *zoom: 1;
+  zoom: 1;
 }
 
 .product .product-description:after,
@@ -250,6 +250,11 @@ main[role=main] {
   #content {
     margin-top: 60px;
   }
+  main[role=main] {
+    max-width: 500px;
+    margin: 20px auto;
+    position: sticky;
+}
 
   .product .product-sidebar {
     width: 100%;
@@ -264,6 +269,11 @@ main[role=main] {
   .product:hover .product-sidebar {
     bottom: -50px;
   }
+  main[role=main] {
+    max-width: 500px;
+    margin: 20px auto;
+    position: sticky;
+}
 }
 
 @media screen and (max-width: 360px) {

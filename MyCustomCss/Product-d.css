@@ -437,3 +437,40 @@ s .sq_box span.wishlist i {
 .product_name {
     color: #00723c !important;
 }
+
+
+
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 767px) {
+    .col-md-5._boxzoom,
+    .col-md-7 {
+        width: 100%;
+    }
+
+    .zoom-thumb {
+        display: none; /* Hide thumbnail list on mobile */
+    }
+
+    .my_img {
+        width: 100%; /* Make product image full width on mobile */
+    }
+
+    ._p-name {
+        font-size: 24px; /* Adjust font size for better mobile readability */
+    }
+
+    ._product-detail-content {
+        margin-top: 20px;
+    }
+
+    ._p-qty,
+    ._p-qty-and-cart {
+        text-align: center;
+    }
+
+    /* Hide similar products section on mobile */
+    .sec {
+        display: none;
+    }
+}

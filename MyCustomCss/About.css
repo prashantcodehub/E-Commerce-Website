@@ -312,20 +312,71 @@ body {
     }
 
     .testi-cint {
-        margin-top: 121%!important;
+        margin-top: 131% !important;
     }
 
-    .india-map{
+    .india-map {
         display: none;
     }
+
     .contact-wrap {
         /* width: 80%;
         width: 401px; */
-        padding: 73px!important;
+        padding: 73px !important;
     }
-    .align-items-stretch{
+
+    .align-items-stretch {
         padding: 20px;
     }
+
+    .container233 img {
+        height: 100vh;
+    }
+
+    .top-left {
+        height: 50vh;
+        width: 40% !important;
+    }
+
+    .top-left p {
+        font-size: 10px !important;
+    }
+
+    .left-img-grz img {
+        height: 100%;
+    }
+
+    .vision2 {
+        font-size: 1.3rem !important;
+    }
+
+    .text-logo p {
+        font-size: 11px !important;
+    }
+
+    .container-our-values img {
+        height: 80vh;
+        /* margin-top: ;
+        padd */
+        padding: 20px;
+    }
+
+    .centered {
+        top: 30%;
+    }
+
+    .Carousel1 {
+        display: none;
+    }
+
+    .hand-img img {
+        display: none;
+    }
+
+    .images-7 {
+        display: none;
+    }
+ 
 }
 
 
