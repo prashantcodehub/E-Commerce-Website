@@ -270,11 +270,12 @@ body {
     .typewriter {
         display: none;
     }
-    header{
-        height:110px;
+
+    header {
+        height: 110px;
     }
 
-    .logo img{
+    .logo img {
         margin-top: -39px;
     }
 
@@ -296,6 +297,34 @@ body {
     .ani-container {
         line-height: 1.5;
         /* Adjust line-height for better mobile readability */
+    }
+
+    .graz-img {
+        display: none;
+    }
+
+    .back-img img {
+        display: none;
+    }
+
+    #Testimonials {
+        top: 50%;
+    }
+
+    .testi-cint {
+        margin-top: 121%!important;
+    }
+
+    .india-map{
+        display: none;
+    }
+    .contact-wrap {
+        /* width: 80%;
+        width: 401px; */
+        padding: 73px!important;
+    }
+    .align-items-stretch{
+        padding: 20px;
     }
 }
 
