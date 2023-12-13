@@ -251,13 +251,51 @@ body {
 
 /* Media Query for mobile devices */
 @media only screen and (max-width: 768px) {
+    .home-page {
+        /* margin-top: -28px; */
+    }
+
+    .input-group {
+        display: none;
+    }
+
+    .search-btn2 {
+        display: none;
+    }
+
+    .form1 {
+        display: none;
+    }
+
+    .typewriter {
+        display: none;
+    }
+    header{
+        height:110px;
+    }
+
+    .logo img{
+        margin-top: -39px;
+    }
+
+    .serch-input {
+        display: none;
+    }
+
+
+    .cart {
+        display: none;
+    }
+
     .card-img-overlay.text-content {
-        left: 5%;
+        /* left: 5%; */
+        top: 70%;
         text-align: center;
     }
 
     .ani-container {
-        line-height: 1.5; /* Adjust line-height for better mobile readability */
+        line-height: 1.5;
+        /* Adjust line-height for better mobile readability */
     }
 }
 
