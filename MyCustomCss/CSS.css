@@ -12069,7 +12069,8 @@ input[type=password]::-ms-clear {
   }
 
   .container {
-    max-width: 100%
+    max-width: 100%;
+    background-color: white;
   }
 
   .home-slide .search-box form {
