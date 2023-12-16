@@ -401,6 +401,13 @@ body {
         height: 50vh;
     }
 
+    .carousel-item{
+        height: 50vh!important;
+    }
+    .carousel-item img{
+        height: 50vh!important;
+    }
+
     .contact-info {
         width: 50%;
         /* /* left: 150px; */
