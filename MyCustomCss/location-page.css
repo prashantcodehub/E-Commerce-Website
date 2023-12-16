@@ -1,9 +1,9 @@
 .haeding-location {
     text-align: center;
     /* font-size: large; */
-    font-weight: 700;
+    font-weight: 700;padding: 20px;
     color: #00723c;
-    margin-top: 8%;
+    /* margin-top: 8%; */
 }
 
 .location-image {
@@ -11,7 +11,7 @@
     height: 520px;
     margin-top: 20px;
     /* background-color: aqua; */
-    background-image: url("/new-img/sunfield\ agro\ images\ 1.png");
+    /* background-image: url("/new-img/sunfield\ agro\ images\ 1.png"); */
 }
 
 #location-img2 {

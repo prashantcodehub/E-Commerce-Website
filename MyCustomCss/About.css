@@ -323,7 +323,8 @@ body {
 
     .testi-cint {
         padding: 10px !important;
-        margin-top: 135% !important;
+        margin-top: 155% !important;
+        /* position: absolute; */
     }
 
     .india-map {
@@ -400,7 +401,12 @@ body {
     .carousel-inner{
         height: 80vh;
     }
-
+    #form1{
+        display: none;
+    }
+#cssmenu{
+    top: 27px;
+}
     .carousel-item{
         height: 80vh!important;
     }
