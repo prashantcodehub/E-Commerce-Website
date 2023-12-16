@@ -17,7 +17,7 @@
 
 @media(max-width:900px) {
     .container-about-page img {
-        height: 100vh;
+        height: 80vh;
         margin-top: 30px;
     }
 
@@ -318,7 +318,7 @@ body {
     }
 
     #Testimonials {
-        top: 50%;
+        margin-top: 50%!important;
     }
 
     .testi-cint {
@@ -356,6 +356,9 @@ body {
         font-size: 1rem !important;
     }
 
+    .down-para{
+        display: none;
+    }
     .left-img-grz img {
         height: 100%;
     }
