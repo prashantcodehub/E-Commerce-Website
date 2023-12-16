@@ -82,6 +82,7 @@
     color: black;
     font-size: 1em;
     width: 400px;
+    text-transform: capitalize;
 }
 
 .contact-form {

@@ -23,17 +23,17 @@
 
     .top-left-home {
         margin-top: 40px;
-        height: 50vh!important;
+        height: 50vh !important;
     }
 
     .top-left-home h6 {
-        font-size: 15px!important;
+        font-size: 15px !important;
     }
 
     .top-left-home p {
         /* display: none; */
         color: #ffffff;
-        font-size: 13px!important;
+        font-size: 13px !important;
     }
 
 }
@@ -186,6 +186,16 @@ body {
     color: red;
 }
 
+.nextText-b {
+    position: absolute;
+    top: 57%;
+    left: 19%;
+    cursor: pointer;
+    color: red;
+}
+
+
+
 .nextText {
     position: absolute;
     top: 55%;
@@ -199,6 +209,11 @@ body {
     height: 25px;
 }
 
+.nextText-b img {
+    width: 25px;
+    height: 25px;
+}
+
 .nextText-d {
     position: absolute;
     top: 38%;
@@ -206,6 +221,105 @@ body {
     color: red;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+.a-brabch-ofc {
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    cursor: pointer;
+    color: red;
+}
+
+.a-brabch-ofc img {
+    width: 25px;
+    height: 25px;
+}
+.jh-brabch-ofc{
+    position: absolute;
+    top: 31%;
+    left: 20%;
+    cursor: pointer;
+    color: red;
+}
+
+.jh-brabch-ofc img {
+    width: 25px;
+    height: 25px;
+}
+.gzb-brabch-ofc {
+    position: absolute;
+    top: 24%;
+    left: 34%;
+    cursor: pointer;
+    color: red;
+}
+
+.gzb-brabch-ofc img {
+    width: 25px;
+    height: 25px;
+}
+.v-brabch-ofc {
+    position: absolute;
+    top: 32%;
+    left: 44%;
+    cursor: pointer;
+    color: red;
+}
+
+.v-brabch-ofc img {
+    width: 25px;
+    height: 25px;
+}
+.p-brabch-ofc {
+    position: absolute;
+    top: 35%;
+    left: 56%;
+    cursor: pointer;
+    color: red;
+}
+
+.p-brabch-ofc img {
+    width: 25px;
+    height: 25px;
+}
+.g-brabch-ofc {
+    position: absolute;
+    top: 32%;
+    left: 73%;
+    cursor: pointer;
+    color: red;
+}
+
+.g-brabch-ofc img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nextText-k {
     position: absolute;
@@ -318,7 +432,7 @@ body {
     }
 
     #Testimonials {
-        margin-top: 50%!important;
+        margin-top: 50% !important;
     }
 
     .testi-cint {
@@ -356,9 +470,10 @@ body {
         font-size: 1rem !important;
     }
 
-    .down-para{
+    .down-para {
         display: none;
     }
+
     .left-img-grz img {
         height: 100%;
     }
@@ -401,26 +516,31 @@ body {
     .contact-info {
         /* width: 200px !important; */
     }
-    .carousel-inner{
+
+    .carousel-inner {
         height: 80vh;
     }
-    #form1{
+
+    #form1 {
         display: none;
     }
-#cssmenu{
-    top: 27px;
-}
-    .carousel-item{
-        height: 80vh!important;
+
+    #cssmenu {
+        top: 27px;
     }
-    .carousel-item img{
-        height: 80vh!important;
+
+    .carousel-item {
+        height: 80vh !important;
+    }
+
+    .carousel-item img {
+        height: 80vh !important;
     }
 
     .contact-info {
         width: 50%;
         /* /* left: 150px; */
-        left: 8px!important;
+        left: 8px !important;
     }
 
     .contact-info-content p {
@@ -437,8 +557,9 @@ body {
     .get-in-touch {
         font-size: 35px !important;
     }
-    .mobile-home-img1{
-        display: block!important;
+
+    .mobile-home-img1 {
+        display: block !important;
         height: 100vh;
         width: 100vw;
     }
@@ -446,7 +567,7 @@ body {
 
 
 @media only screen and (min-width: 768px) {
-    .mobile-home-img1{
+    .mobile-home-img1 {
         display: none;
     }
 }
@@ -754,4 +875,50 @@ a:hover {
         display: block;
         visibility: visible;
     } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-section {
+    height: 100vh;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: black;
+}
+
+.btn-shop-now {
+    /* margin-top: 25%; */
+    /* cursor: pointer; */
+    cursor: pointer;
+    border: 1px solid #00723c;
+    border-radius: 5px;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    color: #00723c;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+
+}
+
+.btn-shop-now:hover {
+    border: 1px solid #00723c;
+    background-color: #f79410;
 }

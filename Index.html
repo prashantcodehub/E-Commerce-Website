@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="MyJS/Custom.js">
     <link rel="stylesheet" href="css/Header.css">
     <link rel="stylesheet" href="Header.css">
+    <!-- product acrds caegory silder  -->
+    <link rel="stylesheet" href="MyCustomCss/About.css">
     <!-- <link href="style.css" rel="stylesheet"> -->
     <style>
         * {
@@ -382,38 +384,45 @@
         <!-- <p class="p-4 m-4">The lower version uses 3 columns instead of 4</p> -->
 
     </div>
-    <!-- product acrds caegory silder  -->
-    <link rel="stylesheet" href="MyCustomCss/About.css">
-    <div class="container-about-page">
-        <img src="new-img/D..png" alt="Snow" style="width:100%;">
-        <div class="container">
-            <div class="top-left-home col-10">
-                <h1 class="mt-5">
-                    About Us
-                </h1>
-                <h6 class="r-heading">A well-known manufacturer, exporter and importer of high grade
-                    organic fertilizers, soil conditioners, plant growth promoters and bio-
-                    pesticides and fungicides.s</h6>
-                <p class="r-heading">The decreasing quality of food and increasing use of chemicals in agriculture
-                    has posed
 
-                    a serious threat to the human life. Customers are increasingly concerned about the envi
-                    ronment, health and food safety. We are committed to promoting a better tomorrow with ou
-                    r organic plant growth and bio based pest management and agricultural solution. Our env
-                    ironment friendly agro products are highly appreciated for their unique composition and
-                    strong disinfectant properties
-                </p>
-                <p class="r-heading down-para">Our solutions/products are effective in improving plant health and growth
-                    and
-                    soil fertility. It
-                    also helps our customers control pests and increase crop yield while reducing environmental load
-                    ofn pesticides and decreasing chemical residues of food for the betterment of the countrymen.
-                    Below are the details of product offering.</p>
+
+
+    <!-- new about section  -->
+
+
+    <section>
+        <div class="container about-section">
+            <div class="row h-50 ">
+                <div class="col-md-6 mt-3">
+                    <h1>About Us</h1>
+                    <p>The decreasing quality of food and increasing use of chemicals in agriculture has posed a serious
+                        threat to the human life. Customers are increasingly concerned about the environment, health and
+                        food safety. We are committed to promoting a better tomorrow with our organic plant growth and
+                        bio based pest management and agricultural solution. Our environment friendly agro products are
+                        highly appreciated for their unique composition and strong disinfectant properties.</p>
+
+                    <button class="btn-shop-now" onclick="shopnow()">READ MORE</button>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="new-img/Farmer.png" class="img-fluid animated bounceInRight reveal-about-img"
+                        alt="farmar_image">
+                </div>
+
             </div>
         </div>
-        <!-- <img src="" alt=""> -->
+    </section>
+    <!-- new about section  -->
 
-    </div>
+
+
+
+
+
+
+
+
+
+
 
     <!-- start new sectin to why sunfieldagro product -->
     <link rel="stylesheet" href="/MyCustomCss/WSagro.css">
@@ -703,8 +712,9 @@
                                 </div>
 
                                 <div class="contact-info-content">
-                                    <h4 id="originalTextbb">Head Office</h4>
-                                    <p>Mumbai Maharshtra</p>
+                                    <h4 id="originalTextbb" onmouseover="showElementB()" onmouseout="hideElementB()">Branch Offices</h4>
+                                    <p>Ahmedabad-gujarat,Guwhati-Assam, south-tripura,Ghaziabad
+                                        uttar-pradesh,patna-bihar, varanasi uttar-pradesh,Jhunjhunu-rajasthan </p>
                                 </div>
                             </div>
                             <div class="contact-info-item">
@@ -714,7 +724,7 @@
                                 </div>
 
                                 <div class="contact-info-content">
-                                    <h4 id="internationalOffice">internationalOffice</h4>
+                                    <h4 id="myElement" onmouseover="showElement()" onmouseout="hideElement()">internationalOffice</h4>
                                     <p>Moscow-Russia</p>
                                 </div>
                             </div>
@@ -726,23 +736,27 @@
                                 <img id="india-map1" src="/new-img/india.png" style="display: block;" alt>
                                 <img id="internation" class="international-ofc" src="new-img/international-ofc.png"
                                     style="display: none;" alt="">
-                                <div id="newText" class="nextText-m" style="display: none;"> <img
-                                        src="new-img/location.png" alt="">Mumbai</div>
-                                <div id="newTextbb" class="nextText-m newTextbb" style="display: none;"> <img
-                                        src="new-img/location.png" alt="">Mumbai</div>
-                                <div class="nextText-gujarat newText brabch-ofc" id="brabch-ofc" style="display: none;">
-                                    <img src="new-img/location.png" alt="">Gujarat
+                                <div id="newText" class="nextText-m" style="display: none;">
+                                    <img src="new-img/location.png" alt="">
+                                    
                                 </div>
-                                <div class="nextText-ahem newText brabch-ofc" style="display: none;"> <img
-                                        src="new-img/location.png" alt="">Ahmedabad</div>
-                                <div class="nextText-gzb brabch-ofc" style="display: none;"> <img
-                                        src="new-img/location.png" alt="">Ghaziabad</div>
-                                <div class="nextText-gzb newText brabch-ofc" style="display: none;"> <img
-                                        src="new-img/location.png" alt="">Patna Bihar</div>
-                                <div class="nextText-gzb newText brabch-ofc" style="display: none;"> <img
-                                        src="new-img/location.png" alt="">Guwhati-Assam </div>
-                                <div class="nextText-gzb newText brabch-ofc" style="display: none;"> <img
-                                        src="new-img/location.png" alt="">Jhunjhunu Rajasthan</div>
+                                <div id="newTextbb" class="nextText-b" style="display: none;">
+                                    <img src="new-img/location.png" alt="">
+                                    
+                                </div>
+                                <div class="nextText-gujarat jh-brabch-ofc" id="branchofc1" style="display: none;">
+                                    <img src="new-img/location.png" alt="">
+                                </div>
+                                <div id="branchofc12" class="nextText-ahem a-brabch-ofc" style="display: none;">
+                                     <img src="new-img/location.png" alt=""></div>
+                                <div id="branchofc13" class="nextText-gzb gzb-brabch-ofc" style="display: none;"> <img
+                                        src="new-img/location.png" alt=""></div>
+                                <div id="branchofc14" class="nextText-gzb  p-brabch-ofc" style="display: none;"> <img
+                                        src="new-img/location.png" alt=""></div>
+                                <div id="branchofc15" class="nextText-gzb  g-brabch-ofc" style="display: none;"> <img
+                                        src="new-img/location.png" alt=""> </div>
+                                <div id="branchofc16" class="nextText-gzb v-brabch-ofc" style="display: none;"> <img
+                                        src="new-img/location.png" alt=""></div>
                                 <div id="newText2" class="nextText-d " style="display: none;"><i
                                         class="bi bi-geo-alt-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-geo-alt-fill"
@@ -1169,6 +1183,7 @@
     <script src="owl-js/jquery-3.4.1.min.js"></script>
     <script src="owl-js/bootstrap.min.js"></script>
     <script src="owl-js/owl.carousel.min.js"></script>
+    <script src="JS__FILE/Redirect.js"></script>
     <script src="/MyJS/Custom.js"></script>
     <script>
         function slider_carouselInit() {
@@ -1197,87 +1212,7 @@
         }
         slider_carouselInit();
     </script>
-    <script>
-        document.getElementById('originalText').addEventListener('mouseover', function () {
-            console.log("");
-
-            document.getElementById('newText').style.display = 'block';
-        });
-
-        document.getElementById('originalText').addEventListener('mouseout', function () {
-            document.getElementById('newText').style.display = 'none';
-        });
-
-        document.getElementById('originalText21').addEventListener('mouseover', function () {
-            document.getElementById('newText').style.display = 'block';
-        });
-
-        document.getElementById('originalText21').addEventListener('mouseout', function () {
-            document.getElementById('newText').style.display = 'none';
-        });
-        document.getElementById('originalText2').addEventListener('mouseover', function () {
-            document.getElementById('newText2').style.display = 'block';
-        });
-
-        document.getElementById('originalText2').addEventListener('mouseout', function () {
-            document.getElementById('newText2').style.display = 'none';
-        });
-        document.getElementById('originalText3').addEventListener('mouseover', function () {
-            document.getElementById('newText3').style.display = 'block';
-        });
-
-        document.getElementById('originalText3  ').addEventListener('mouseout', function () {
-            document.getElementById('newText3').style.display = 'none';
-        });
-
-
-        document.getElementById('originalTextBranch').addEventListener('mouseover', function () {
-            console.log("hhhhhhhhhh");
-
-            document.getElementById('brabch-ofc').style.display = 'none';
-        });
-        //     console.log("hhhhhhhhhh");
-        //     for (var i = 0; i < elements.length; i++) {
-        //         elements[i].style.display = 'block';
-        //     }
-        // });
-
-        document.getElementById('originalTextBranch').addEventListener('mouseout', function () {
-            var elements = document.getElementsByClassName('brabch-ofc');
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = 'none';
-            }
-        });
-
-        document.getElementById('originalTextbb').addEventListener('mouseover', function () {
-            console.log("");
-
-            var elements = document.getElementsByClassName('newTextbb');
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = 'block';
-            }
-        });
-
-        document.getElementById('originalTextbb').addEventListener('mouseout', function () {
-            var elements = document.getElementsByClassName('newTextbb');
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = 'none';
-            }
-        });
-
-
-        document.getElementById('internationalOffice').addEventListener('mouseover', function () {
-            console.log("22222222222222222");
-
-            // document.getElementById('india-map1').style.display = 'none';
-        });
-
-        // document.getElementById('internationalOffice').addEventListener('mouseout', function () {
-        //     document.getElementById('india-map1').style.display = 'none';
-        // });
-
-
-    </script>
+   
 
     <script>
         $(document).ready(function () {
