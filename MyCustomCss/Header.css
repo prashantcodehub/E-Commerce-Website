@@ -84,6 +84,8 @@ top: 0;
     position: fixed;
     bottom: 30px;
     right: 35px;
+
+
     outline: none;
     border: none;
     height: 50px;
@@ -101,7 +103,7 @@ top: 0;
   }
   .chatbot-toggler span {
     color: #fff;
-    position: absolute;
+    position: fixed;
   }
   .chatbot-toggler span:last-child,
   body.show-chatbot .chatbot-toggler span:first-child  {

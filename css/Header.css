@@ -17,7 +17,8 @@
   float: left;
   } */
     .btn-shop-now {
-        margin-top: 35%;
+        margin-top: 25%;
+        /* cursor: pointer; */
         cursor: pointer;
         border: 1px solid #00723c;
         border-radius: 5px;
@@ -56,8 +57,9 @@
         position: fixed;
         width: 60px;
         height: 60px;
-        bottom: 40px;
-        right: 40px;
+        bottom: 68px;
+        right: 23px;
+        cursor: pointer;
         /* background-color:#25d366; */
         color: #FFF;
         border-radius: 50px;
@@ -81,7 +83,7 @@
         width: 100%;
         /* position: absolute; */
         margin-top: -70px;
-        height: 110dvh;
+        height: 100dvh;
     }
 
     .text-home-page {
@@ -898,3 +900,22 @@
         background-color: none
         ;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* modal css */
+
+    

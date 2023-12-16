@@ -143,20 +143,16 @@ main[role=main] {
   transition: all 0.4s ease;
 }
 
-.product .product-sidebar button.buy {
-  background: transparent url("https://raw.githubusercontent.com/brunodsgn/productpreview/master/assets/img/icons/buy.png") no-repeat 15px;
+.product .product-sidebar button.buy {background-color: #00723c;
 }
 
-.product .product-sidebar button.info {
-  background: transparent url("https://raw.githubusercontent.com/brunodsgn/productpreview/master/assets/img/icons/info.png") no-repeat 15px;
+.product .product-sidebar button.info {background-color: #00723c;
 }
 
-.product .product-sidebar button.size {
-  background: transparent url("https://raw.githubusercontent.com/brunodsgn/productpreview/master/assets/img/icons/sizes.png") no-repeat 15px;
+.product .product-sidebar button.size {background-color: #00723c;
 }
 
-.product .product-sidebar button.colors {
-  background: transparent url("https://raw.githubusercontent.com/brunodsgn/productpreview/master/assets/img/icons/colors.png") no-repeat 15px;
+.product .product-sidebar button.colors {background-color: #00723c;
 }
 
 .product .product-sidebar button.colors span {
