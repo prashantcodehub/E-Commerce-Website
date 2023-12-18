@@ -4,6 +4,12 @@
     color: white;
 }
 
+.container233 img {
+    width: 100%;
+    height: 84vh;
+}
+
+
 .container-about-page {
     position: relative;
     text-align: center;
@@ -71,7 +77,18 @@
 
 .container-who {
     text-align: center;
-    padding: 37px;
+    padding: 54px;
+    padding-bottom: 100px;
+}
+
+.container-who h1 {
+    color: #00723c;
+    font-weight: 700;
+}
+
+.container-who p {
+    color: black;
+    /* font-weight: 700; */
 }
 
 .container h1 {
@@ -240,7 +257,8 @@ body {
     width: 25px;
     height: 25px;
 }
-.jh-brabch-ofc{
+
+.jh-brabch-ofc {
     position: absolute;
     top: 31%;
     left: 20%;
@@ -252,6 +270,7 @@ body {
     width: 25px;
     height: 25px;
 }
+
 .gzb-brabch-ofc {
     position: absolute;
     top: 24%;
@@ -264,6 +283,7 @@ body {
     width: 25px;
     height: 25px;
 }
+
 .v-brabch-ofc {
     position: absolute;
     top: 32%;
@@ -276,6 +296,7 @@ body {
     width: 25px;
     height: 25px;
 }
+
 .p-brabch-ofc {
     position: absolute;
     top: 35%;
@@ -288,6 +309,7 @@ body {
     width: 25px;
     height: 25px;
 }
+
 .g-brabch-ofc {
     position: absolute;
     top: 32%;
@@ -310,11 +332,17 @@ body {
 
 
 
+.international-ofc {
+    width: 100%;
+}
 
 
 
+#india-map1 {
+    width: 90%;
+    height: 84vh;
 
-
+}
 
 
 
@@ -921,4 +949,105 @@ a:hover {
 .btn-shop-now:hover {
     border: 1px solid #00723c;
     background-color: #f79410;
+}
+
+.textandimg {
+    padding-left: 70px;
+    padding-bottom: 60px;
+}
+
+.textandimg h1 {
+    color: #f79410;
+    font-weight: 700;
+}
+
+.textandimg p {
+    color: #00723c;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.hexa-shape {
+    height: 110vh;
+    width: auto;
+    padding: 10px;
+}
+
+.green-color {
+    outline-color: #00723c;
+}
+
+.vision-imgtext {
+    background-color: white;
+    border-radius: 5px;
+    outline: 1px solid black;
+}
+
+.vision-imgtext p {
+    color: black;
+}
+
+
+.hexagon-container {
+    position: relative;
+    width: 200px;
+    height: 115.5px;
+    /* Adjust based on your design */
+    margin: 57.75px 15px;
+    /* Adjust based on your design */
+}
+
+.hexagon {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 115.5%;
+    /* Adjust based on your design */
+    background-color: #f79410;
+    /* Adjust the background color */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border: 2px solid #00723c;
+    /* Add border with desired color */
+}
+
+.content {
+
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* Adjust the text color */
+}
+
+.content img {
+    /* max-width: 50%; */
+    justify-content: center; max-width: 70%;
+    height: auto;
+    margin: 15px 15px;
+}
+
+.content p {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.middle-hexa {
+    padding-left: 108px !important;
+    /* padding-top: -36px; */
+    margin-top: -47px !important;
+}
+
+.shape {
+    margin-left: 17% !important;
 }
