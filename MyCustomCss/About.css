@@ -190,7 +190,17 @@ body {
     color: #ffffff;
     width: 75px;
     height: 75px;
+    border-radius: 20px;
     line-height: 75px;
+    margin: -40px auto 0 auto;
+}
+.testimonials .card img {
+    background-color: #00723c;
+    color: #ffffff;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 43px;
     margin: -40px auto 0 auto;
 }
 
@@ -1050,4 +1060,14 @@ a:hover {
 
 .shape {
     margin-left: 17% !important;
+    margin-top: -35px;
+    padding-bottom: 40px;
+}
+
+.shape-cont h1{
+    color: #f89410;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: -50px;
+    font-weight: 500!important;
 }
