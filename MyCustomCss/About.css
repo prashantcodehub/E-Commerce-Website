@@ -194,6 +194,7 @@ body {
     line-height: 75px;
     margin: -40px auto 0 auto;
 }
+
 .testimonials .card img {
     background-color: #00723c;
     color: #ffffff;
@@ -211,6 +212,19 @@ body {
     left: 17%;
     cursor: pointer;
     color: red;
+}
+
+.inter-location {
+    position: absolute;
+    top: 23%;
+    left: 29%;
+    cursor: pointer;
+    color: red;
+}
+
+.inter-location img {
+    width: 25px;
+    height: 25px;
 }
 
 .nextText-b {
@@ -335,6 +349,9 @@ body {
 
 
 
+.view-more-btn {
+    display: none;
+}
 
 
 
@@ -344,6 +361,7 @@ body {
 
 .international-ofc {
     width: 100%;
+    padding: 33px;
 }
 
 
@@ -480,7 +498,7 @@ body {
     }
 
     .india-map {
-        display: none;
+        display: block;
     }
 
     .contact-wrap {
@@ -578,7 +596,7 @@ body {
     .contact-info {
         width: 50%;
         /* /* left: 150px; */
-        left: 8px !important;
+        left: -10% !important;
     }
 
     .contact-info-content p {
@@ -613,7 +631,7 @@ body {
 
 /* Default styles for the card container */
 .card-container {
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .hr-lines {
@@ -645,24 +663,7 @@ body {
     text-align: center;
 }
 
-/* Media Query for mobile devices */
-@media only screen and (max-width: 768px) {
-    .card-container {
-        padding: 10px;
-    }
 
-    .hr-lines {
-        margin-bottom: 10px;
-    }
-
-    .card_wrapper {
-        margin-top: 10px;
-    }
-
-    .card_box {
-        margin: 5px;
-    }
-}
 
 
 
@@ -846,7 +847,25 @@ a:hover {
     text-decoration: none !important;
 }
 
+.carousel-slide {
+    height: 100vh;
+    width: 100vw;
+    top: 5rem;
+}
+
+/* .carousel-inner{
+    height: 82vh;
+    width: 100vw;
+} */
 /*--carousel css--*/
+
+.carousel-inner .carousel-item img {
+    height: 100vh;
+}
+
+
+
+
 
 @media (min-width: 768px) {
 
@@ -989,7 +1008,8 @@ a:hover {
 .hexa-shape {
     height: 110vh;
     width: auto;
-    padding: 10px;
+
+    /* padding: 10px; */
 }
 
 .green-color {
@@ -1006,68 +1026,438 @@ a:hover {
     color: black;
 }
 
-
 .hexagon-container {
-    position: relative;
-    width: 200px;
-    height: 115.5px;
-    /* Adjust based on your design */
-    margin: 57.75px 15px;
-    /* Adjust based on your design */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
 
+.hexagon-container .content p {
+    text-align: center;
+    margin-left: 2.5rem;
+}
+
+/* 
 .hexagon {
+    width: 100px;
+    height: 58px;
+    background-color: #3498db;
+    position: relative;
+    margin-right: 10px;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: '';
     position: absolute;
-    width: 100%;
-    padding-bottom: 115.5%;
-    /* Adjust based on your design */
-    background-color: #f79410;
-    /* Adjust the background color */
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    border: 2px solid #00723c;
-    /* Add border with desired color */
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+    top: -29px;
+    border-bottom: 29px so
+    
+    lid #3498db;
+}
+
+.hexagon:after {
+    bottom: -29px;
+    border-top: 29px solid #3498db;
+} */
+
+.shape-cont h1 {
+    text-align: center;
+}
+
+.custom-hexagon {
+    color: #00723c;
+    position: relative;
+    /* border: 2px solid #ffffff;  */
 }
 
 .content {
-
     position: absolute;
-    top: 94%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    /* Adjust the text color */
+    /* top: 35%;
+    left: 38%; */
+    text-align: center;
 }
 
 .content img {
-    /* max-width: 50%; */
-    justify-content: center; max-width: 70%;
-    height: auto;
-    margin: 15px 15px;
+    /* position: absolute; */
+    width: 40%;
+    height: 40%;
+    /* margin-left: 25px; */
 }
 
 .content p {
-    color: black;
-    font-size: 1rem;
+    position: absolute;
+    /* top: 30%;
+    left: 30%; */
     text-align: center;
     text-transform: capitalize;
+    color: black;
+    margin: 0;
+    padding: 0;
 }
 
-.middle-hexa {
-    padding-left: 108px !important;
-    /* padding-top: -36px; */
-    margin-top: -47px !important;
+.top-hexa-shape {
+    margin-left: 15% !important;
+    margin-right: 5% !important;
+    margin-top: 5%;
+    /* padding: 40px; */
 }
 
-.shape {
-    margin-left: 17% !important;
-    margin-top: -35px;
-    padding-bottom: 40px;
+.middle-row-hexa {
+    margin-left: 25% !important;
+    margin-top: 12% !important;
+    margin-right: 10% !important;
 }
 
-.shape-cont h1{
-    color: #f89410;
+.bottom-hexa-shape {
+    margin-left: 35% !important;
+    margin-top: 12% !important;
+    margin-right: 32% !important;
+}
+
+
+.hexagon12 {
+    width: 200px;
+    height: 114.74px;
+    position: absolute;
+    /* top: 20%;
+    left: 20%; */
+    /* background-color: white; */
+    transform: translate(-50%, -50%);
+    transform: rotate(180deg);
+}
+
+.hexagon12:before,
+.hexagon12:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* background-color:white ; */
+    position: absolute;
+}
+
+.hexagon12:before {
+    transform: rotate(60deg);
+}
+
+.hexagon12:after {
+    transform: rotate(-60deg);
+}
+
+.hexagon12,
+.hexagon12:before,
+.hexagon12:after {
+    /* border-color: transparent; */
+    background: white;
+    /* border: 1px solid red; */
+    border-left: 1px solid #00723c;
+    border-right: 1px solid #00723c;
+    /* border-top: 2px solid red;
+    border-bottom: 2px solid red; */
+}
+
+.yellow-color,
+.yellow-color:before,
+.yellow-color:after {
+    /* border-color: transparent; */
+    background: white;
+    /* border: 1px solid red; */
+    border-left: 1px solid #f79410 !important;
+    border-right: 1px solid #f79410 !important;
+    /* border-top: 2px solid red;
+    border-bottom: 2px solid red; */
+}
+
+.botm-hexa-cont img {
+    width: 5vw;
+    height: 12vh;
     text-align: center;
-    text-transform: uppercase;
-    padding-bottom: -50px;
-    font-weight: 500!important;
+    margin-left: 60px;
 }
+
+
+
+
+@media (max-width: 767px) {
+    /* Styles for screens smaller than 768px (mobile) */
+
+    .hexa-shape {
+        height: auto;
+    }
+
+    .top-hexa-shape,
+    .middle-row-hexa,
+    .bottom-hexa-shape {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
+    .hexagon-container {
+        margin: 10px;
+    }
+
+    .hexagon12 {
+        width: 100px;
+        height: 57.37px;
+    }
+
+    .hexagon12:before,
+    .hexagon12:after {
+        border-left-width: 0.5px;
+        border-right-width: 0.5px;
+    }
+
+    .content img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for screens between 768px and 991px (tablet) */
+
+    .hexa-shape {
+        height: auto;
+    }
+
+    .top-hexa-shape,
+    .middle-row-hexa,
+    .bottom-hexa-shape {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
+    .hexagon-container {
+        margin: 15px;
+    }
+
+    .hexagon12 {
+        width: 150px;
+        height: 86.60px;
+    }
+
+    .hexagon12:before,
+    .hexagon12:after {
+        border-left-width: 1px;
+        border-right-width: 1px;
+    }
+
+    .content img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .about-section {
+        padding-top: 30px;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .btn-shop-now {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+
+    .btn-shop-now {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media(max-width:1024px) {
+    .hexa-shape {
+        height: 62vh;
+        width: auto;
+        /* padding: 10px; */
+    }
+    .about-section {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .haeding-location {
+        font-size: 1.5rem;
+        /* Adjust the font size for smaller screens */
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        grid-gap: 1px;
+        /* background-color: #2196F3; */
+        /* padding: 10px; */
+    }
+
+    .contact-info .contact-info-content {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        /* padding: 20px 0; */
+        border-bottom: 1px #f79410 solid !important;
+        transition: 0.5s;
+        margin-left: 33px;
+        font-size: 30px;
+        border-radius: 5px;
+        width: 184px;
+    }
+
+    #india-map1 {
+        width: 86%;
+        height: 70vh;
+        margin-left: 4% !important;
+    }
+
+    .view-more-btn {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .view-more-btn {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 1px #f79410 solid !important;
+        color: #00723c;
+        padding: 5px 10px;
+        border-radius: 5px;
+        width: 35%;
+        text-align: center;
+        justify-content: center;
+        left: unset;
+        margin-left: 30%;
+        transition: background-color 0.3s ease;
+    }
+
+    .view-more-btn:hover {
+        background-color: #00723c;
+        color: #f79410;
+    }
+
+    .view-more-btn span.arrow {
+        margin-left: 8px;
+    }
+
+    /* 
+    .view-more-btn {
+        grid-row-start: div 3;
+      } */
+
+
+
+
+    /* Optional: If you want the arrow to be bigger */
+    .view-more-btn span.arrow {
+        font-size: 1.2em;
+    }
+
+    .contact-info-icon {
+        height: 0 !important;
+        width: 0 !important;
+        /* background-color: #fff; */
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .contact-info-item:hover {
+        -webkit-box-shadow: none;
+        /* width: 80%; */
+        /* padding: 20px; */
+        box-shadow: none;
+        /* color: red; */
+        /* background-color: green; */
+    }
+
+    .contact-info-item {
+        width: 100%;
+        /* Make contact info items full width on smaller screens */
+        margin-bottom: 20px;
+        /* display: flex; */
+    }
+
+    .contact-info-item .contact-info-content p {
+        display: none;
+    }
+
+    .contact-info-item img {
+        display: none;
+    }
+
+    .contact-info-item .contact-info-content h4 {
+        /* display: none; */
+        font-size: 1rem;
+        text-align: center;
+        /* background-color: #f79410; */
+        border-color: black;
+
+    }
+
+    .reveal-address {
+        text-align: center;
+        /* Center the contact info items on smaller screens */
+    }
+
+    .contact-info-content {
+        text-align: center;
+        /* Center the content within contact info items on smaller screens */
+    }
+
+    .contact-form1 {
+        margin-top: 20px;
+        /* Add space between contact info and the contact form on smaller screens */
+    }
+
+    .india-map {
+        margin-top: 20px;
+        /* Add space between the map and the contact form on smaller screens */
+    }
+
+    .nextText-m,
+    .nextText-b,
+    .nextText-ahem,
+    .nextText-gzb,
+    .nextText-d,
+    .nextText-k {
+        text-align: center;
+        /* Center the location text on smaller screens */
+    }
+}
+
+
+/* Additional styles for mobile responsiveness */
+

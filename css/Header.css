@@ -17,19 +17,20 @@
     /* #bigbox div {
   float: left;
   } */
-    
+
 
 
     @media(max-width:900.98px) {
         .btn-shop-now {
-            margin-top: 40%;
+            /* margin-top: 40%; */
         }
-        
+
     }
+
     #logobox {
         height: 150px;
         width: 150px;
-        background-color: blue;
+        background-color: blue; 
     }
 
 
@@ -63,6 +64,7 @@
 
     header {
         box-shadow: 2px 5px 20px 2px rgba(95, 94, 94, 0.8);
+        background-color: white;
     }
 
 
@@ -96,7 +98,8 @@
     }
 
     header {
-        position: relative;
+        position: fixed;
+        background-color: white;
         width: 100%;
         /* background: rgb(0, 0, 0); */
         z-index: 99;
@@ -885,8 +888,7 @@
     }
 
     #myBtn12:hover {
-        background-color: none
-        ;
+        background-color: none;
     }
 
 
@@ -905,5 +907,3 @@
 
 
     /* modal css */
-
-    

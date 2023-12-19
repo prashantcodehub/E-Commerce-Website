@@ -66,7 +66,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .card_box:hover {
-	box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.05);
+	/* box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.05); */
 	transform: translateY(-10px);
 }
 
@@ -94,8 +94,8 @@ button:focus, input:focus, textarea:focus {
 }
 
 .slider_carousel .owl-prev, .slider_carousel .owl-next {
-	width: 60px;
-	height: 40px;
+	width: 80px;
+    height: 7px;
 	background: #ffffff;
 	display: flex;
 	align-items: center;
