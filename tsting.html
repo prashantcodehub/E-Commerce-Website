@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal hexa-columns that floats next to each other */
+        .hexa-column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the hexa-columns */
+        /* .hexa-row:after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+
+        /* Float four hexa-columns side by side */
+        .hexa-column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        .hexa-row {
+            display: block;
+            width: 100%;
+        }
+
+        .hexa-column {
+            width: 100%;
+            display: block;
+            margin-bottom: -51px;
+        }
+
+
+
+        .card {
+            /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+            /* padding: 16px; */
+            /* text-align: center; */
+            /* background-color: #f1f1f1; */
+        }
+
+        .hexagon12 {
+            width: 200px;
+            height: 114.74px;
+            position: absolute;
+            /* top: 20%;
+    left: 20%; */
+            /* background-color: white; */
+            transform: translate(-50%, -50%);
+            transform: rotate(180deg);
+        }
+
+        .hexagon12:before,
+        .hexagon12:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+        }
+
+        .hexagon12:before {
+            transform: rotate(60deg);
+        }
+
+        .hexagon12:after {
+            transform: rotate(-60deg);
+        }
+
+        .hexagon12,
+        .hexagon12:before,
+        .hexagon12:after {
+            /* border-color: transparent; */
+            background: white;
+            /* border: 1px solid red; */
+            border-left: 1px solid #00723c;
+            border-right: 1px solid #00723c;
+            /* border-top: 2px solid red;
+    border-bottom: 2px solid red; */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container" style="display: flex;">
+        <div class="hexa-col-1" style="height: 100%; background-color: #00723c; width: 50%;">
+          <div class="colmn12" style="padding: 20px; background-color: aqua; height: 100%;">
+            
+            <div class="hexa-row">
+                <div class="hexa-column">
+                    <div class="card">
+                        <div class="hexagon12">
+                            
+                        </div> <br>
+                    </div>
+                </div>
+
+                <div class="hexa-column">
+                    <div class="card">
+                        <div class="hexagon12"></div> <br>
+                    </div>
+                </div>
+
+                <div class="hexa-column">
+                    <div class="card">
+                        <div class="hexagon12"></div> <br>
+                    </div>
+                </div>
+
+                <div class="hexa-column">
+                    <div class="card">
+                        <div class="hexagon12"></div> <br>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+           
+        </div>
+        <div class="hexa-col-12" style="height: 500px; background-color: red; width: 50%;">
+            <div class="hexa-row">
+                <div class="hexa-column">
+                    <div class="card">
+                        <div class="hexagon12"></div> <br>
+                    </div>
+                </div>
+
+                <div class="hexa-column">
+                    <div class="card">
+                        <div class="hexagon12"></div> <br>
+                    </div>
+                </div>
+
+                <div class="hexa-column">
+                    <div class="card">
+                        <div class="hexagon12"></div> <br>
+                    </div>
+                </div>
+
+                <div class="hexa-column">
+                    <div class="card">
+                        <div class="hexagon12"></div> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

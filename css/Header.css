@@ -30,7 +30,7 @@
     #logobox {
         height: 150px;
         width: 150px;
-        background-color: blue; 
+        background-color: blue;
     }
 
 
@@ -98,11 +98,22 @@
     }
 
     header {
-        position: fixed;
+        position: relative;
         background-color: white;
         width: 100%;
         /* background: rgb(0, 0, 0); */
         z-index: 99;
+     
+     
+     
+     
+     
+     
+     
+     
+     scroll-behavior: smooth;
+     
+     
         /* background-color: aqua; */
     }
 
@@ -254,10 +265,18 @@
         text-align: center;
     }
 
+    .header-main{
+        /* position: fixed; */
+        /* float: inline-end;
+        background-color: white;
+        width: 100%; */
+    }
     /* search btn  */
     /*-----------header-top Close------------*/
     /*-----------header-menu------------*/
-
+#cssmenu{
+    /* position: fixed; */
+}
     nav#cssmenu ul {
         float: right;
         margin-top: 10px;

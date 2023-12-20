@@ -10,7 +10,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- <link href="owl-css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
@@ -252,6 +254,29 @@
     </header>
 
 
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        wondow.onscroll = function () {
+            let bottomNavbar = document.getElementsByClassName(".header-main");
+            let logo = document.getElementsByClassName(".logo");
+            // console.log(logo);
+            console.log("uygfiysadgfiasyldr");
+
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                // bottomNavbar.style.position = "fixed";
+                // bottomNavbar.style.bottom = "0";
+                logo.style.display = "none";
+            } else {
+                // bottomNavbar.style.position = "relative";
+                // bottomNavbar.style.bottom = "auto";
+            }
+        }
+
+    </script>
+
     <div class="carousel slide carousel-slide" data-bs-ride="carousel" id="carouselExampleIndicators">
         <div class="carousel-indicators">
             <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
@@ -391,33 +416,48 @@
         <!-- <p class="p-4 m-4">The lower version uses 3 columns instead of 4</p> -->
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider_carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000, // Set autoplay interval in milliseconds (3 seconds in this example)
+            });
+        });
 
+        function ProductD() {
+            // Add your ProductD function logic here
+        }
+    </script>
 
 
     <!-- new about section  -->
 
 
-        <section>
-            <div class="container about-section">
-                <div class="row h-50 ">
-                    <div class="col-md-6 mt-3">
-                        <h1>About Us</h1>
-                        <p>The decreasing quality of food and increasing use of chemicals in agriculture has posed a serious
-                            threat to the human life. Customers are increasingly concerned about the environment, health and
-                            food safety. We are committed to promoting a better tomorrow with our organic plant growth and
-                            bio based pest management and agricultural solution. Our environment friendly agro products are
-                            highly appreciated for their unique composition and strong disinfectant properties.</p>
+    <section>
+        <div class="container about-section">
+            <div class="row h-50 ">
+                <div class="col-md-6 mt-3">
+                    <h1>About Us</h1>
+                    <p>The decreasing quality of food and increasing use of chemicals in agriculture has posed a serious
+                        threat to the human life. Customers are increasingly concerned about the environment, health and
+                        food safety. We are committed to promoting a better tomorrow with our organic plant growth and
+                        bio based pest management and agricultural solution. Our environment friendly agro products are
+                        highly appreciated for their unique composition and strong disinfectant properties.</p>
 
-                        <button class="btn-shop-now" onclick="shopnow()">READ MORE</button>
-                    </div>
-                    <div class="col-md-6 ">
-                        <img src="new-img/Farmer.png" class="img-fluid animated bounceInRight reveal-about-img"
-                            alt="farmar_image">
-                    </div>
-
+                    <button class="btn-shop-now" onclick="shopnow()">READ MORE</button>
                 </div>
+                <div class="col-md-6 ">
+                    <img src="new-img/Farmer.png" class="img-fluid animated bounceInRight reveal-about-img"
+                        alt="farmar_image">
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
     <!-- new about section  -->
 
 
@@ -428,14 +468,14 @@
 
 
 
-    <section>
+    <section class="hexagon-cont">
 
         <div class="hexa-shape">
             <div class="container shape-cont">
                 <h1>our core values</h1>
                 <div class="shape">
                     <div class="row col-lg-10 top-hexa-shape">
-                        <div class="col-3 col-lg-3 ">
+                        <div class="col-3 col-lg-3 col-md-3 hex1">
                             <div class="hexagon-container green-color">
                                 <!-- <div class="hexagon">
                                     <i class="bi bi-hexagon">
@@ -456,7 +496,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 col-lg-3">
+                        <div class="col-3 col-lg-3 col-md-3 hex2">
                             <div class="hexagon-container yellow-color">
                                 <div class="hexagon12 yellow-color"></div>
 
@@ -475,7 +515,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 col-lg-3">
+                        <div class="col-3 col-lg-3 col-md-4 hex3 ">
                             <div class="hexagon-container ">
                                 <div class="hexagon12"></div>
 
@@ -496,7 +536,7 @@
                         </div>
                     </div>
                     <div class="row col-9 col-md-10 middle-row-hexa  col middle-hexa" style="">
-                        <div class="col-md-3 col-lg-3">
+                        <div class="col-md-3 col-lg-3  hex4">
                             <div class="hexagon-container green-color">
                                 <div class="hexagon12 yellow-color"></div>
 
@@ -518,7 +558,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 hex5">
                             <div class="hexagon-container green-color">
                                 <div class="hexagon12 yellow-color"></div>
 
@@ -541,12 +581,12 @@
                         </div>
                     </div>
                     <div class="row col-3 bottom-hexa-shape" style="">
-                        <div class="col-3 col-lg-3">
+                        <div class="col-3 col-lg-3 hex6">
                             <div class="hexagon-container botm-hexa-cont">
                                 <div class="hexagon12"></div>
 
                                 <div class="content">
-                                 
+
                                     <img src="new-img/Home-slider/28.png" alt="">
                                     <p>cost effectivemess</p>
                                 </div>
@@ -554,6 +594,71 @@
                         </div>
 
 
+                    </div>
+                </div>
+
+                <div class="container-hexa" style="">
+                    <div class="hexa-col-1" style="">
+                        <div class="colmn12" style="">
+
+                            <div class="hexa-row">
+                                <div class="hexa-column">
+                                    <div class="card-hexa">
+                                        <div class="hexagon12">
+
+                                        </div> <br>
+                                    </div>
+                                </div>
+                                <!-- 
+                                <div class="hexa-column">
+                                    <div class="card-hexa">
+                                        <div class="hexagon12"></div> <br>
+                                    </div>
+                                </div> -->
+
+                                <div class="hexa-column">
+                                    <div class="card-hexa">
+                                        <div class="hexagon12"></div> <br>
+                                    </div>
+                                </div>
+
+                                <div class="hexa-column">
+                                    <div class="card-hexa">
+                                        <div class="hexagon12"></div> <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-122" style="">
+                        <div class="hexa-row">
+                            <div class="hexa-column">
+                                <div class="card-hexa">
+                                    <div class="hexagon12"></div> <br>
+                                </div>
+                            </div>
+                            <!-- 
+                            <div class="hexa-column">
+                                <div class="card-hexa">
+                                    <div class="hexagon12"></div> <br>
+                                </div>
+                            </div> -->
+
+                            <div class="hexa-column">
+                                <div class="card-hexa">
+                                    <div class="hexagon12"></div> <br>
+                                </div>
+                            </div>
+
+                            <div class="hexa-column">
+                                <div class="card-hexa">
+                                    <div class="hexagon12"></div> <br>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -681,8 +786,8 @@
     <link rel="stylesheet" href="Contact/contact.css">
     <div class="container-location">
         <div class="text-area">
-            
-        
+
+
             <div class="contact-container">
                 <!-- <div class="contact-form-container">-->
                 <div class="container-fluid">
@@ -745,11 +850,12 @@
                                     <p>Moscow,Russia</p>
                                 </div>
                             </div>
-                           
+
                             <!-- <div class="btn_wrapper">
                                 <button class="btn_view_more">View More <i class="arrow_right"></i></button>
                             </div> -->
-                        </div> <div class="view-more-btn">
+                        </div>
+                        <div class="view-more-btn">
                             <span>View More</span>
                             <span class="arrow">&#9654;</span>
                         </div>
@@ -1094,7 +1200,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
                                 <h4>Find us</h4>
-                                <span>1354 New Delhi, India</span>
+                                <span> Mumbai-400068. MH, India.</span>
                             </div>
                         </div>
                     </div>
@@ -1224,10 +1330,10 @@
                 loop: true,
                 margin: 30,
                 stagePadding: 2,
-                autoplay: false,
+                autoplay: true,
                 nav: true,
                 navText: ["<i' class='fas fa-less-than fa-fw fa-2x'></i>", "<i' class='fas fa-greater-than fa-fw fa-2x'></i>"],
-                autoplayTimeout: 1500,
+                autoplayTimeout: 3000,
                 autoplayHoverPause: true,
                 responsive: {
                     0: {
@@ -1237,6 +1343,10 @@
                         items: 2,
                     },
                     992: {
+                        items: 5
+                    }
+                    ,
+                    1100: {
                         items: 5
                     }
                 }

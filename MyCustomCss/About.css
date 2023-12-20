@@ -6,9 +6,18 @@
 
 .container233 img {
     width: 100%;
-    height: 84vh;
+    height: 90vh;
+    top: 5rem !important;
+    margin-top: 5rem;
 }
 
+h1 {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.container-who h1 {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
 
 .container-about-page {
     position: relative;
@@ -121,10 +130,10 @@
     color: black !important;
     top: 20%;
     left: 50%;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     letter-spacing: 10px;
-    font-weight: 700;
-    transform: translate(-50%, -50%);
+    /* font-weight: 700; */
+    /* transform: translate(-50%, -50%); */
 }
 
 .top-left {
@@ -849,8 +858,8 @@ a:hover {
 
 .carousel-slide {
     height: 100vh;
-    width: 100vw;
-    top: 5rem;
+    width: 100%;
+    /* top: 5rem; */
 }
 
 /* .carousel-inner{
@@ -1103,6 +1112,7 @@ a:hover {
 }
 
 .top-hexa-shape {
+    display: flex;
     margin-left: 15% !important;
     margin-right: 5% !important;
     margin-top: 5%;
@@ -1181,86 +1191,203 @@ a:hover {
     margin-left: 60px;
 }
 
+/* .top-hexa-shape {
+    display: flex;
+}
+
+.middle-row-hexa {
+    display: flex;
+}
+
+.bottom-hexa-shape {
+    display: flex;
+} */
+
+
+
+
+
+
+
+
+
+.container-hexa {
+    display: none;
+}
 
 
 
 @media (max-width: 767px) {
-    /* Styles for screens smaller than 768px (mobile) */
-
-    .hexa-shape {
-        height: auto;
+    .shape {
+        display: none;
     }
 
-    .top-hexa-shape,
-    .middle-row-hexa,
-    .bottom-hexa-shape {
-        margin-left: 5% !important;
-        margin-right: 5% !important;
+    .carousel-indicators {
+        display: none;
     }
 
-    .hexagon-container {
-        margin: 10px;
+    .carousel-slide {
+        height: 74vh !important;
+        width: 100%;
+        /* top: 5rem; */
     }
 
-    .hexagon12 {
-        width: 100px;
-        height: 57.37px;
+    .container-hexa {
+        display: flex !important;
+        margin-top: 80%!important;
     }
 
-    .hexagon12:before,
-    .hexagon12:after {
-        border-left-width: 0.5px;
-        border-right-width: 0.5px;
+
+
+    .hexa-col-1 {
+        height: 100%;
+        background-color: #00723c;
+        width: 50%;
     }
 
-    .content img {
-        width: 30%;
-        height: 30%;
+
+    .colmn12 {
+        padding: 5px;
+        background-color: aqua;
+        height: 100%;
     }
 
-    .content p {
-        font-size: 14px;
+    .col-122 {
+        height: 100%;
+        background-color: red;
+        width: 50%;
+        padding: 5px;
     }
+
+    .hexa-column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the hexa-columns */
+    /* .hexa-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    } */
+
+    /* Float four hexa-columns side by side */
+    .hexa-column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+    }
+
+    .hexa-row {
+        display: block;
+        width: 100%;
+    }
+
+    .hexa-column {
+        width: 100%;
+        display: block;
+        margin-bottom: -51px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .gallery {
+        --s: 130px;
+        /* control the size */
+        --g: 10px;
+        /* control the gap */
+        display: grid;
+        margin: calc(var(--s) + var(--g));
+    }
+
+    .shape1 {
+        width: 200px;
+        height: 200px;
+        background-color: #f79410;
+        border-color: black !important;
+    }
+
+    .gallery>.shape1 {
+        grid-area: 1/1;
+        width: var(--s);
+        aspect-ratio: 0.866;
+        object-fit: cover;
+        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
+        transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+        cursor: pointer;
+        filter: grayscale(80%);
+        transition: .2s linear;
+        border-color: black !important;
+        /* Add the following line to set border color dynamically */
+        border: 2px solid var(--border-color, black);
+    }
+
+    .gallery>.shape1:hover {
+        filter: grayscale(0);
+        z-index: 1;
+        --_t: 1.2;
+    }
+
+    .gallery>.shape1:nth-child(1) {
+        --_x: calc(-100% - var(--g))
+    }
+
+    .gallery>.shape1:nth-child(7) {
+        --_x: calc(100% + var(--g))
+    }
+
+    .gallery>.shape1:nth-child(3),
+    .gallery>.shape1:nth-child(5) {
+        --_y: calc(-75% - .87*var(--g))
+    }
+
+    .gallery>.shape1:nth-child(4),
+    .gallery>.shape1:nth-child(6) {
+        --_y: calc(75% + .87*var(--g))
+    }
+
+    .gallery>.shape1:nth-child(3),
+    .gallery>.shape1:nth-child(4) {
+        --_x: calc(-50% - .5*var(--g))
+    }
+
+    .gallery>.shape1:nth-child(5),
+    .gallery>.shape1:nth-child(6) {
+        --_x: calc(50% + .5*var(--g))
+    }
+
+
+    /* body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: #aabbfb;
+    } */
+
+
+
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Styles for screens between 768px and 991px (tablet) */
+/* Media query for smaller screens */
 
-    .hexa-shape {
-        height: auto;
-    }
 
-    .top-hexa-shape,
-    .middle-row-hexa,
-    .bottom-hexa-shape {
-        margin-left: 5% !important;
-        margin-right: 5% !important;
-    }
 
-    .hexagon-container {
-        margin: 15px;
-    }
 
-    .hexagon12 {
-        width: 150px;
-        height: 86.60px;
-    }
-
-    .hexagon12:before,
-    .hexagon12:after {
-        border-left-width: 1px;
-        border-right-width: 1px;
-    }
-
-    .content img {
-        width: 40%;
-        height: 40%;
-    }
-
-    .content p {
-        font-size: 16px;
-    }
-}
 
 
 
@@ -1303,6 +1430,7 @@ a:hover {
         width: auto;
         /* padding: 10px; */
     }
+
     .about-section {
         height: 50vh;
     }
@@ -1338,7 +1466,7 @@ a:hover {
     #india-map1 {
         width: 86%;
         height: 70vh;
-        margin-left: 4% !important;
+        margin-left: 7% !important;
     }
 
     .view-more-btn {
@@ -1460,4 +1588,3 @@ a:hover {
 
 
 /* Additional styles for mobile responsiveness */
-
