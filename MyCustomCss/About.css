@@ -497,7 +497,7 @@ body {
     }
 
     #Testimonials {
-        margin-top: 50% !important;
+        /* margin-top: 50% !important; */
     }
 
     .testi-cint {
@@ -1222,6 +1222,10 @@ a:hover {
         display: none;
     }
 
+    .shape-cont h1{
+        margin-top: 66%;
+        text-align: center;
+    }
     .carousel-indicators {
         display: none;
     }
@@ -1232,32 +1236,110 @@ a:hover {
         /* top: 5rem; */
     }
 
+
     .container-hexa {
         display: flex !important;
-        margin-top: 80%!important;
+        margin-top: 15%!important;
     }
 
 
 
     .hexa-col-1 {
         height: 100%;
-        background-color: #00723c;
-        width: 50%;
+        /* background-color: #00723c; */
+        width: 52%;
     }
 
 
     .colmn12 {
         padding: 5px;
-        background-color: aqua;
+        /* background-color: aqua; */
         height: 100%;
     }
 
     .col-122 {
         height: 100%;
-        background-color: red;
-        width: 50%;
+        /* background-color: red; */
+        width: 40%;
         padding: 5px;
     }
+
+
+
+    .content .content-img1 {
+        margin-right: 44% !important;
+        padding: 0;
+        margin: 0;
+
+        width: 22% !important;
+        height: auto !important;
+    }
+
+    .content .content-img2 {
+        margin-right: 44% !important;
+        padding: 0;
+        margin: 0;
+        margin-top: -35px;
+        width: 22% !important;
+        height: auto !important;
+    }
+
+    .content .content-img3 {
+        margin-right: 44% !important;
+        padding: 0;
+        margin: 0;
+        margin-top: -35px;
+        width: 22% !important;
+        height: auto !important;
+    }
+
+    .content .content-img4 {
+        /* position: absolute; */
+        width: 35%!important;
+        height: auto !important;
+        /* margin-left: -148px; */
+        margin-right: 0% !important;
+        padding: 0% !important;
+        margin-top: -35px;
+    }
+
+    .content .content-img5 {
+        /* position: absolute; */
+        /* width: 25%!important; */
+        height: auto !important;
+        /* margin-left: -148px; */
+        margin-right: 0% !important;
+        padding: 0% !important;
+        margin-top: -35px;
+    }
+
+    .content .content-img6 {
+        /* position: absolute; */
+        width: 27% !important;
+        height: auto !important;
+        /* margin-left: -148px; */
+        margin-right: 0% !important;
+        padding: 0% !important;
+        margin-top: -35px;
+    }
+
+
+
+
+    .content p {
+        position: absolute;
+        text-align: center;
+        text-transform: capitalize;
+        color: black;
+        margin: 0;
+        margin-left: 10%!important;
+        padding: 0;
+    }
+
+
+
+
+
 
     .hexa-column {
         float: left;
