@@ -255,25 +255,37 @@
 
 
     <script>
-        window.onscroll = function () {
-            scrollFunction();
-        };
+        var bottomNavbar = document.querySelector(".header-main");
+        var logo = document.querySelector(".logo");
+        var cssmenu = document.querySelector("#cssmenu");
 
-        wondow.onscroll = function () {
-            let bottomNavbar = document.getElementsByClassName(".header-main");
-            let logo = document.getElementsByClassName(".logo");
-            // console.log(logo);
-            console.log("uygfiysadgfiasyldr");
-
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                // bottomNavbar.style.position = "fixed";
-                // bottomNavbar.style.bottom = "0";
-                logo.style.display = "none";
-            } else {
-                // bottomNavbar.style.position = "relative";
-                // bottomNavbar.style.bottom = "auto";
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth > 768) {
+                console.log("heloooooeweweooo");
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    bottomNavbar.style.position = "fixed";
+                    bottomNavbar.style.top = "0";
+                    bottomNavbar.style.textAlign = "center";
+                    // bottomNavbar.style.height = "20%";
+                    bottomNavbar.style.width = "100%";
+                    bottomNavbar.style.backgroundColor = "white";
+                    bottomNavbar.style.boxShadow = "0 6px 8px rgba(0, 0, 0, 0.1)";
+                    cssmenu.style.paddingRight = "15%";
+                    if (logo) {
+                        logo.style.display = "none";
+                    }
+                    // cssmenu.style.paddingLeft = "10%";
+                } else {
+                    bottomNavbar.style.position = "relative";
+                    bottomNavbar.style.top = "auto";
+                    bottomNavbar.style.width = "auto";
+                    bottomNavbar.style.boxShadow = "none";
+                    cssmenu.style.paddingRight = "auto";
+                    logo.style.display = "block";
+                    // }
+                }
             }
-        }
+        });
 
     </script>
 
@@ -327,7 +339,8 @@
             viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
             <path
                 d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-        </svg></button>
+        </svg>
+    </button>
 
 
     <!-- product acrds caegory silder  -->
@@ -343,7 +356,14 @@
             <img class="graz-img" src="/new-img/C..png" alt>
         </div>
 
+
+
+
         <div class="card_wrapper" style="">
+
+
+
+
             <div class="container">
                 <div class="row">
 
@@ -1373,7 +1393,7 @@
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true,
                 responsive: {
-                    350: {
+                    0: {
                         items: 1
                     },
                     768: {

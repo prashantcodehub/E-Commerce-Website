@@ -198,16 +198,16 @@ a, a:hover {
 }
 /* COLORS */
 .postcard .postcard__tagbox .green.play:hover {
-  background: #79dd09;
+  /* background: #79dd09; */
   color: black;
 }
 
 .green .postcard__title:hover {
-  color: #79dd09;
+  /* color: #79dd09; */
 }
 
 .green .postcard__bar {
-  background-color: #79dd09;
+  /* background-color: #79dd09; */
 }
 
 .green::before {

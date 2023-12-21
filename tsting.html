@@ -1,168 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Image Slider in HTML, CSS & JavaScript - Coding Power</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <style>
-        * {
+        /* * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-        }
-
-        /* Create two equal hexa-columns that floats next to each other */
-        .hexa-column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-            height: 300px;
-            /* Should be removed. Only for demonstration */
-        }
-
-        /* Clear floats after the hexa-columns */
-        /* .hexa-row:after {
-            content: "";
-            display: table;
-            clear: both;
         } */
 
-        /* Float four hexa-columns side by side */
-        .hexa-column {
-            float: left;
-            width: 25%;
-            padding: 0 10px;
+        .container-sider {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #f0e922; */
         }
 
-        .hexa-row {
-            display: block;
-            width: 100%;
+        .containernew {
+            width: 90%;
+            height: 240px;
         }
 
-        .hexa-column {
-            width: 100%;
-            display: block;
-            margin-bottom: -51px;
-        }
-
-
-
-        .card {
-            /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-            /* padding: 16px; */
-            /* text-align: center; */
-            /* background-color: #f1f1f1; */
-        }
-
-        .hexagon12 {
-            width: 200px;
-            height: 114.74px;
-            position: absolute;
-            /* top: 20%;
-    left: 20%; */
-            /* background-color: white; */
-            transform: translate(-50%, -50%);
-            transform: rotate(180deg);
-        }
-
-        .hexagon12:before,
-        .hexagon12:after {
-            content: '';
-            width: 100%;
+        .slider {
+            margin: 0 40px;
             height: 100%;
-            background-color: white;
-            position: absolute;
+            overflow: hidden;
+            position: relative;
         }
 
-        .hexagon12:before {
-            transform: rotate(60deg);
+        .slider .image-items {
+            height: 100%;
         }
 
-        .hexagon12:after {
-            transform: rotate(-60deg);
+        .slider .image-items .image {
+            height: 100%;
         }
 
-        .hexagon12,
-        .hexagon12:before,
-        .hexagon12:after {
-            /* border-color: transparent; */
-            background: white;
-            /* border: 1px solid red; */
-            border-left: 1px solid #00723c;
-            border-right: 1px solid #00723c;
-            /* border-top: 2px solid red;
-    border-bottom: 2px solid red; */
+        .slider .image-items .image img {
+            height: 100%;
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .arrowButton {
+            position: absolute !important;
+            top: 50% !important;
+            color: black !important;
+            width: 50px !important;
+            height: 50px !important;
+            border-radius: 50% !important;
+            background-color: white !important;
+            padding: 10px !important;
+        }
+
+        .arrowButton.left {
+            left: 0 !important;
+        }
+
+        .arrowButton.right {
+            right: 0 !important;
+        }
+
+        .arrowButton::after {
+            font-size: 20px !important;
+        }
+
+        @media only screen and (max-width:868px) {
+            .slider {
+                margin: 0 20px;
+            }
         }
     </style>
-
 </head>
 
 <body>
 
-    <div class="container" style="display: flex;">
-        <div class="hexa-col-1" style="height: 100%; background-color: #00723c; width: 50%;">
-          <div class="colmn12" style="padding: 20px; background-color: aqua; height: 100%;">
-            
-            <div class="hexa-row">
-                <div class="hexa-column">
-                    <div class="card">
-                        <div class="hexagon12">
-                            
-                        </div> <br>
-                    </div>
-                </div>
-
-                <div class="hexa-column">
-                    <div class="card">
-                        <div class="hexagon12"></div> <br>
-                    </div>
-                </div>
-
-                <div class="hexa-column">
-                    <div class="card">
-                        <div class="hexagon12"></div> <br>
-                    </div>
-                </div>
-
-                <div class="hexa-column">
-                    <div class="card">
-                        <div class="hexagon12"></div> <br>
-                    </div>
+    <div class="container-sider">
+        <div class="containernew">
+            <div class="slider mySwiper">
+                <div class="image-items swiper-wrapper">
+                    <div class="image swiper-slide">
+                            <img src="./images/image1.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="./images/image2.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="./images/image3.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="./images/image4.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="./images/image5.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="./images/image6.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="./images/image7.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="./images/image8.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="./images/image9.jpg" alt=""></div>
                 </div>
             </div>
-
-          </div>
-
-           
-        </div>
-        <div class="hexa-col-12" style="height: 500px; background-color: red; width: 50%;">
-            <div class="hexa-row">
-                <div class="hexa-column">
-                    <div class="card">
-                        <div class="hexagon12"></div> <br>
-                    </div>
-                </div>
-
-                <div class="hexa-column">
-                    <div class="card">
-                        <div class="hexagon12"></div> <br>
-                    </div>
-                </div>
-
-                <div class="hexa-column">
-                    <div class="card">
-                        <div class="hexagon12"></div> <br>
-                    </div>
-                </div>
-
-                <div class="hexa-column">
-                    <div class="card">
-                        <div class="hexagon12"></div> <br>
-                    </div>
-                </div>
-            </div>
+            <div class="swiper-button-next arrowButton right"></div>
+            <div class="swiper-button-prev arrowButton left"></div>
         </div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerGroup: 1,
+            loop: true,
+            fade: true,
+            grabCursor: true,
+            loopFillGroupWithBlank: true,
+            autoplay:true, autoplayTimeout: 3000,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                868: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1000: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1250: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
 
 </body>
 

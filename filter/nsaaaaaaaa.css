@@ -60,6 +60,9 @@ img {
 figure {
   margin: 0;
   line-height: 0;
+  /* height: 346px!important;
+  position: relative;
+  width: 81%; */
 }
 
 main[role=main] {
@@ -143,16 +146,20 @@ main[role=main] {
   transition: all 0.4s ease;
 }
 
-.product .product-sidebar button.buy {background-color: #00723c;
+.product .product-sidebar button.buy {
+  background-color: #00723c;
 }
 
-.product .product-sidebar button.info {background-color: #00723c;
+.product .product-sidebar button.info {
+  background-color: #00723c;
 }
 
-.product .product-sidebar button.size {background-color: #00723c;
+.product .product-sidebar button.size {
+  background-color: #00723c;
 }
 
-.product .product-sidebar button.colors {background-color: #00723c;
+.product .product-sidebar button.colors {
+  background-color: #00723c;
 }
 
 .product .product-sidebar button.colors span {
@@ -222,6 +229,7 @@ main[role=main] {
 .product .product-sidebar button:hover .shop-icon {
   display: none;
 }
+
 .product .product-sidebar button:hover .info-i-con {
   display: none;
 }
@@ -246,11 +254,12 @@ main[role=main] {
   #content {
     margin-top: 60px;
   }
+
   main[role=main] {
     max-width: 500px;
     margin: 20px auto;
     position: sticky;
-}
+  }
 
   .product .product-sidebar {
     width: 100%;
@@ -265,11 +274,12 @@ main[role=main] {
   .product:hover .product-sidebar {
     bottom: -50px;
   }
+
   main[role=main] {
     max-width: 500px;
     margin: 20px auto;
     position: sticky;
-}
+  }
 }
 
 @media screen and (max-width: 360px) {
