@@ -583,7 +583,7 @@ body {
     }
 
     .carousel-inner {
-        height: 80vh;
+        height: 90vh;
     }
 
     #form1 {
@@ -599,7 +599,7 @@ body {
     }
 
     .carousel-item img {
-        height: 80vh !important;
+        height: 90vh !important;
     }
 
     .contact-info {
@@ -1015,9 +1015,10 @@ a:hover {
 
 
 .hexa-shape {
-    height: 110vh;
+    height: 100vh;
     width: auto;
-
+    bottom: 0!important;
+    margin-top: -4%!important;
     /* padding: 10px; */
 }
 
@@ -1084,6 +1085,7 @@ a:hover {
 .custom-hexagon {
     color: #00723c;
     position: relative;
+
     /* border: 2px solid #ffffff;  */
 }
 
@@ -1098,7 +1100,7 @@ a:hover {
     /* position: absolute; */
     width: 40%;
     height: 40%;
-    /* margin-left: 25px; */
+    margin-left: 24px;
 }
 
 .content p {
@@ -1223,10 +1225,11 @@ a:hover {
         display: none;
     }
 
-    .shape-cont h1{
+    .shape-cont h1 {
         margin-top: 66%;
         text-align: center;
     }
+
     .carousel-indicators {
         display: none;
     }
@@ -1240,7 +1243,7 @@ a:hover {
 
     .container-hexa {
         display: flex !important;
-        margin-top: 15%!important;
+        margin-top: 15% !important;
     }
 
 
@@ -1296,7 +1299,7 @@ a:hover {
 
     .content .content-img4 {
         /* position: absolute; */
-        width: 35%!important;
+        width: 35% !important;
         height: auto !important;
         /* margin-left: -148px; */
         margin-right: 0% !important;
@@ -1333,7 +1336,7 @@ a:hover {
         text-transform: capitalize;
         color: black;
         margin: 0;
-        margin-left: 10%!important;
+        margin-left: 10% !important;
         padding: 0;
     }
 

@@ -303,6 +303,8 @@ xgallery
   display: block;
   width: auto;
   height: 292px;
+  margin-left: 32px;
+  padding: 10px;
 }
 
 .cd-gallery .cd-fail-message {
