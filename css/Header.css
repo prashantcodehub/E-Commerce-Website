@@ -227,7 +227,7 @@
         background-color: green;
         outline: none;
         border: 1px solid #ced4da;
-        border-radius: 10px 10px 10px 10px;
+        /* border-radius: 10px 10px 10px 10px; */
     }
 
     /* search btn  */
@@ -256,7 +256,7 @@
         background-color: #fff !important;
         background-clip: padding-box;
         border: 1px solid #f79410;
-        border-radius: 0.25rem;
+        /* border-radius: 0.25rem; */
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
@@ -399,7 +399,7 @@
     }
 
     #cssmenu ul li.active:hover {
-        
+
         -ms-transform: scale(1.1);
         /* IE 9 */
         -webkit-transform: scale(1);
@@ -490,7 +490,14 @@
 
     #cssmenu ul ul li:hover>a,
     #cssmenu ul ul li a:hover {
-        color: #00723c
+        color: #00723c;
+        --bs-text-opacity: .85;
+        text-decoration: none;
+        background: #f79410 !important;
+        -webkit-transition: background .3s ease;
+        -ms-transition: background .3s ease;
+        transition: background .3s ease;
+        box-shadow: 0 0px 5px 0 black;
     }
 
     #cssmenu ul ul li.has-sub>a:after {

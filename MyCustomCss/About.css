@@ -111,7 +111,7 @@ h1 {
 }
 
 .vision2 {
-    color: #00723c;
+    color: #f79410;
     text-transform: capitalize;
 }
 
@@ -121,17 +121,22 @@ h1 {
     color: white;
 }
 
+.container-our-values .vlus-bgimg {
+    /* width: 100%; */
+    height: 65vh !important;
+}
+
 .cad-hyt {
     height: 16rem;
 }
 
 .centered {
-    position: absolute;
-    color: black !important;
-    top: 20%;
-    left: 50%;
+    position: relative;
+    color: #f79410 !important;
+    /* top: 20%; */
+    /* left: 50%; */
     /* font-size: xx-large; */
-    letter-spacing: 10px;
+    letter-spacing: 2px;
     /* font-weight: 700; */
     /* transform: translate(-50%, -50%); */
 }
@@ -157,6 +162,17 @@ h1 {
     margin-top: -22%;
 }
 
+.visiionheading {
+    /* color: red ; */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.visiionheading h3 {
+    color: #00723c;
+    font-weight: 600;
+}
+
 .lgo-images {
     height: 500px;
     position: relative;
@@ -176,12 +192,56 @@ h1 {
     width: 30rem;
 }
 
+
+
+.core_values .main {
+    /* margin-top: 30rem; */
+    margin-top: 10rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.core_values .images-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.images-container .image img {
+    width: 100px;
+}
+
+.image {
+    border-radius: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 210px;
+    display: flex;
+    border: 15px solid #f79410;
+    height: 210px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ff7a00;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .testimonials {
     padding: 100px 0;
+    /* padding-bottom: 1rem; */
 }
 
 .testimonials h3 {
@@ -205,13 +265,18 @@ body {
 }
 
 .testimonials .card img {
+    /* background-color: #00723c; */
     background-color: #00723c;
-    color: #ffffff;
+    /* color: #ffffff; */
     width: 75px;
     height: 75px;
     line-height: 75px;
     border-radius: 43px;
     margin: -40px auto 0 auto;
+}
+
+.blockquote .card-text{
+    font-size: 1rem!important;
 }
 
 
@@ -502,7 +567,7 @@ body {
 
     .testi-cint {
         padding: 10px !important;
-        margin-top: 155% !important;
+        margin-top: 95% !important;
         /* position: absolute; */
     }
 
@@ -545,6 +610,8 @@ body {
 
     .vision2 {
         font-size: 1.3rem !important;
+        color: #f79410;
+        font-weight: 700;
     }
 
     .text-logo p {
@@ -962,6 +1029,12 @@ a:hover {
 
 .about-section {
     height: 100vh;
+    margin-top: 1%;
+}
+
+.about-section .reveal-about-img {
+    margin-top: 1%;
+    padding: 10px;
 }
 
 .about-section p {
@@ -1015,10 +1088,10 @@ a:hover {
 
 
 .hexa-shape {
-    height: 100vh;
+    height: 90vh;
     width: auto;
-    bottom: 0!important;
-    margin-top: -4%!important;
+    bottom: 0 !important;
+    margin-top: -4% !important;
     /* padding: 10px; */
 }
 
@@ -1045,6 +1118,7 @@ a:hover {
 .hexagon-container .content p {
     text-align: center;
     margin-left: 2.5rem;
+    font-size: 0.85rem;
 }
 
 /* 
@@ -1100,7 +1174,8 @@ a:hover {
     /* position: absolute; */
     width: 40%;
     height: 40%;
-    margin-left: 24px;
+    margin-left: 18px;
+    padding: 10px;
 }
 
 .content p {
@@ -1144,6 +1219,19 @@ a:hover {
     /* background-color: white; */
     transform: translate(-50%, -50%);
     transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.hexagon12:hover .botm-hexa-cont img {
+    transform: scale3d(1.5);
+}
+
+.botm-hexa-cont img:hover {
+    width: 5vw;
+    height: 12vh;
+    text-align: center;
+    margin-left: 60px;
+    cursor: pointer;
 }
 
 .hexagon12:before,
@@ -1610,7 +1698,7 @@ a:hover {
 
     .contact-info-item:hover {
         -webkit-box-shadow: none;
-        /* width: 80%; */
+        width: none !important;
         /* padding: 20px; */
         box-shadow: none;
         /* color: red; */
@@ -1618,7 +1706,7 @@ a:hover {
     }
 
     .contact-info-item {
-        width: 100%;
+        width: none;
         /* Make contact info items full width on smaller screens */
         margin-bottom: 20px;
         /* display: flex; */

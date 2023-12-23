@@ -72,17 +72,17 @@ section {
 
 
 .socail-icon .tt {
-    color: #1DA1F2;
+    /* color: #1DA1F2; */
     cursor: pointer;
 }
 
 .socail-icon .ff {
-    color: #0056b3;
+    /* color: #0056b3; */
     cursor: pointer;
 }
 
 .socail-icon .insta {
-    color: #cd486b ;
+    /* color: #cd486b ; */
     cursor: pointer;
 }
 
@@ -651,8 +651,9 @@ pre code {
 }
 
 .no-gutters {
-    margin-right: -73px;
-    margin-left: -73px;
+    margin-right: -8%;
+    margin-left: -8%;
+    
 }
 
 .no-gutters>.col,
@@ -11510,8 +11511,8 @@ body {
     font-size: 16px;
     line-height: 1.8;
     font-weight: normal; */
-    /* background: #fafafa;
-    color: gray; */
+    background: #fafafa;
+    /* color: gray; */
 }
 
 a {
