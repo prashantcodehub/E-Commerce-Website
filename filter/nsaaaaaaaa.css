@@ -219,10 +219,11 @@ main[role=main] {
 
 .product .product-sidebar button:hover {
   width: 83px;
-  grid-area: 1 / 1;
+  right: 66%!important;
+  /* grid-area: 1 / 1; */
   background-color: #f79410;
   position: relative;
-  background-position: 15px center;
+  /* background-position: 15px center; */
   border-color: #9bb6aa;
 }
 
