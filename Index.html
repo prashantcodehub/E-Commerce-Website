@@ -267,6 +267,7 @@
 
 
 
+
     <div class="carousel slide carousel-slide" data-bs-ride="carousel" id="carouselExampleIndicators">
         <div class="carousel-indicators">
             <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
@@ -279,8 +280,8 @@
             </button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item ">
-                <img alt=".11111111111111111.." class="d-block w-100 mySlides w3-animate-top"
+            <div class="carousel-item active carousel-image-01-animation">
+                <img alt=".11111111111111111.." class="d-block w-100 mySlides w3-animate-top image_No1_animetion "
                     src="new-img/Home-slider/experinece.png">
                 <div class="carousel-caption">
                     <!-- <h5 class="animated bounceInRight" style="animation-delay: 1s">hading</h5>
@@ -288,7 +289,7 @@
 					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Learn More</a></p> -->
                 </div>
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item  carousel-image-02-animation">
                 <img alt="..22222222222222222." class="d-block w-100" src="new-img/Home-slider/E&F.png">
                 <div class="carousel-caption">
                     <!-- <h5 class="animated bounceInRight" style="animation-delay: 1s">heading </h5>
@@ -296,11 +297,11 @@
 					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Learn More</a></p> -->
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item carousel-image-03-animation">
                 <img alt=".33333333333333.." class="d-block w-100" src="new-img/Home-slider/nature.png">
 
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item carousel-image-04-animation">
                 <img alt=".33333333333333.." class="d-block w-100" src="new-img/Home-slider/sldier.png">
 
             </div>
@@ -513,10 +514,13 @@
     <!-- new about section  -->
 
 
+    <!-- new about section  -->
+
+
     <section>
         <div class="container about-section">
             <div class="row h-50 ">
-                <div class="col-md-6 mt-3">
+                <div class="col-md-6 mt-3 text-in-box" id="about-text-animation">
                     <h1>About Us</h1>
                     <p>The decreasing quality of food and increasing use of chemicals in agriculture has posed a serious
                         threat to the human life. Customers are increasingly concerned about the environment, health and
@@ -526,7 +530,7 @@
 
                     <button class="btn-shop-now" onclick="shopnow()">READ MORE</button>
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-6 image-in-box" id="about-image-animation">
                     <img src="new-img/Farmer.png" class="img-fluid animated bounceInRight reveal-about-img"
                         alt="farmar_image">
                 </div>
@@ -535,7 +539,6 @@
         </div>
     </section>
     <!-- new about section  -->
-
 
 
     <!-- hexa shgap using boostrap   -->
@@ -1420,10 +1423,6 @@
         }
         slider_carouselInit();
     </script>
-
-
-
-
     <script>
         const chatbotToggler = document.querySelector(".chatbot-toggler");
         const closeBtn = document.querySelector(".close-btn");
@@ -1534,6 +1533,37 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+    </script>
+    <script>
+        var container = document.getElementById("about-text-animation");
+        var container_image = document.getElementById("about-image-animation");
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 1050) {
+                // If scrolled more than 100px, add the 'scrolled' class
+                container.classList.add("text-in-box-ani"); container_image.classList.add("image-in-box-ani");
+                container.classList.remove("text-in-box"); container_image.classList.remove("image-in-box");
+            } else {
+                // If not scrolled enough, remove the 'scrolled' class
+                container.classList.remove("text-in-box-ani"); container_image.classList.remove("image-in-box-ani");
+                container.classList.add("text-in-box"); container_image.classList.add("image-in-box");
+            }
+        });
+        var text_ani = document.getElementById("about-text-animation");
+        var image_ani = document.getElementById("about-image-animation");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 200) {
+                // If scrolled more than 100px, add the 'scrolled' class
+                text_ani.classList.add("text-in-box-ani"); image_ani.classList.add("image-in-box-ani");
+                text_ani.classList.remove("text-in-box"); image_ani.classList.remove("image-in-box");
+            } else {
+                // If not scrolled enough, remove the 'scrolled' class
+                text_ani.classList.remove("text-in-box-ani"); image_ani.classList.remove("image-in-box-ani");
+                text_ani.classList.add("text-in-box"); image_ani.classList.add("image-in-box");
+            }
+        });
+
+
     </script>
 </body>
 

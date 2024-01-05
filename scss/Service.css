@@ -30,7 +30,7 @@ a, a:hover {
 
 /* Cards */
 .postcard {
-  height: 50vh;
+  height: 45vh;
   flex-wrap: wrap;
   display: flex;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
